@@ -39,15 +39,15 @@ namespace IOOP_Assignment
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(888, 186);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(592, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(222, 20);
+            this.label1.Size = new System.Drawing.Size(151, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "By Elvis but Kaung added this \r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -72,26 +72,25 @@ namespace IOOP_Assignment
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(399, 135);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Location = new System.Drawing.Point(266, 88);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(399, 222);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Location = new System.Drawing.Point(266, 144);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 2;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(255, 228);
+            this.checkBox1.Location = new System.Drawing.Point(170, 148);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(113, 24);
+            this.checkBox1.Size = new System.Drawing.Size(80, 17);
             this.checkBox1.TabIndex = 3;
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -99,9 +98,10 @@ namespace IOOP_Assignment
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(307, 290);
+            this.checkBox2.Location = new System.Drawing.Point(205, 188);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(113, 24);
+            this.checkBox2.Size = new System.Drawing.Size(80, 17);
             this.checkBox2.TabIndex = 4;
             this.checkBox2.Text = "checkBox2";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -109,29 +109,40 @@ namespace IOOP_Assignment
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(325, 360);
+            this.label4.Location = new System.Drawing.Point(217, 234);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 20);
+            this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 5;
             this.label4.Text = "JEFF";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 20;
             this.listBox1.Items.AddRange(new object[] {
             "Jeff"});
-            this.listBox1.Location = new System.Drawing.Point(610, 332);
+            this.listBox1.Location = new System.Drawing.Point(407, 216);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 84);
+            this.listBox1.Size = new System.Drawing.Size(81, 56);
             this.listBox1.TabIndex = 6;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(541, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "finally";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1303, 450);
+            this.ClientSize = new System.Drawing.Size(869, 292);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.checkBox2);
@@ -140,7 +151,6 @@ namespace IOOP_Assignment
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -165,6 +175,7 @@ namespace IOOP_Assignment
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
