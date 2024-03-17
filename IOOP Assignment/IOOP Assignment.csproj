@@ -58,6 +58,36 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coach Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coach Home Page.Designer.cs">
+      <DependentUpon>Coach Home Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Display Training Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Display Training Schedule.Designer.cs">
+      <DependentUpon>Display Training Schedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form6.Designer.cs">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment.Designer.cs">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Training Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Training Schedule.Designer.cs">
+      <DependentUpon>Manage Training Schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,11 +96,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Coach Home Page.resx">
+      <DependentUpon>Coach Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Display Training Schedule.resx">
+      <DependentUpon>Display Training Schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form6.resx">
+      <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Training Schedule.resx">
+      <DependentUpon>Manage Training Schedule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -81,6 +123,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
