@@ -29,12 +29,6 @@
         private void InitializeComponent()
         {
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.btn_add_coa = new System.Windows.Forms.Button();
-            this.btn_edit_coa = new System.Windows.Forms.Button();
-            this.btn_del_coa = new System.Windows.Forms.Button();
-            this.btn_exit004 = new System.Windows.Forms.Button();
-            this.btn_coatbl = new System.Windows.Forms.Label();
-            this.btn_hmpage001 = new System.Windows.Forms.Button();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,6 +37,13 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btn_add_coa = new System.Windows.Forms.Button();
+            this.btn_edit_coa = new System.Windows.Forms.Button();
+            this.btn_del_coa = new System.Windows.Forms.Button();
+            this.btn_exit004 = new System.Windows.Forms.Button();
+            this.btn_coatbl = new System.Windows.Forms.Label();
+            this.btn_hmpage001 = new System.Windows.Forms.Button();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,87 +59,14 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView2.Location = new System.Drawing.Point(128, 89);
+            this.dataGridView2.Location = new System.Drawing.Point(85, 58);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 62;
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(992, 560);
+            this.dataGridView2.Size = new System.Drawing.Size(661, 364);
             this.dataGridView2.TabIndex = 0;
-            // 
-            // btn_add_coa
-            // 
-            this.btn_add_coa.BackColor = System.Drawing.Color.Teal;
-            this.btn_add_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_add_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_add_coa.Location = new System.Drawing.Point(1156, 89);
-            this.btn_add_coa.Name = "btn_add_coa";
-            this.btn_add_coa.Size = new System.Drawing.Size(143, 57);
-            this.btn_add_coa.TabIndex = 1;
-            this.btn_add_coa.Text = "Add Coach";
-            this.btn_add_coa.UseVisualStyleBackColor = false;
-            // 
-            // btn_edit_coa
-            // 
-            this.btn_edit_coa.BackColor = System.Drawing.Color.Teal;
-            this.btn_edit_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_edit_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_edit_coa.Location = new System.Drawing.Point(1156, 179);
-            this.btn_edit_coa.Name = "btn_edit_coa";
-            this.btn_edit_coa.Size = new System.Drawing.Size(143, 62);
-            this.btn_edit_coa.TabIndex = 2;
-            this.btn_edit_coa.Text = "Edit Coach";
-            this.btn_edit_coa.UseVisualStyleBackColor = false;
-            // 
-            // btn_del_coa
-            // 
-            this.btn_del_coa.BackColor = System.Drawing.Color.Teal;
-            this.btn_del_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_del_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_del_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_del_coa.Location = new System.Drawing.Point(1156, 274);
-            this.btn_del_coa.Name = "btn_del_coa";
-            this.btn_del_coa.Size = new System.Drawing.Size(143, 76);
-            this.btn_del_coa.TabIndex = 3;
-            this.btn_del_coa.Text = "Delete Coach";
-            this.btn_del_coa.UseVisualStyleBackColor = false;
-            // 
-            // btn_exit004
-            // 
-            this.btn_exit004.BackColor = System.Drawing.Color.Teal;
-            this.btn_exit004.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_exit004.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit004.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exit004.Location = new System.Drawing.Point(1156, 686);
-            this.btn_exit004.Name = "btn_exit004";
-            this.btn_exit004.Size = new System.Drawing.Size(143, 73);
-            this.btn_exit004.TabIndex = 4;
-            this.btn_exit004.Text = "Exit";
-            this.btn_exit004.UseVisualStyleBackColor = false;
-            // 
-            // btn_coatbl
-            // 
-            this.btn_coatbl.AutoSize = true;
-            this.btn_coatbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_coatbl.Location = new System.Drawing.Point(12, 9);
-            this.btn_coatbl.Name = "btn_coatbl";
-            this.btn_coatbl.Size = new System.Drawing.Size(212, 37);
-            this.btn_coatbl.TabIndex = 5;
-            this.btn_coatbl.Text = "Coach Table";
-            // 
-            // btn_hmpage001
-            // 
-            this.btn_hmpage001.BackColor = System.Drawing.Color.Teal;
-            this.btn_hmpage001.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_hmpage001.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hmpage001.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_hmpage001.Location = new System.Drawing.Point(19, 686);
-            this.btn_hmpage001.Name = "btn_hmpage001";
-            this.btn_hmpage001.Size = new System.Drawing.Size(132, 73);
-            this.btn_hmpage001.TabIndex = 6;
-            this.btn_hmpage001.Text = "Home Page";
-            this.btn_hmpage001.UseVisualStyleBackColor = false;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
             // Number
             // 
@@ -196,12 +124,93 @@
             this.Column7.Name = "Column7";
             this.Column7.Width = 150;
             // 
+            // btn_add_coa
+            // 
+            this.btn_add_coa.BackColor = System.Drawing.Color.Teal;
+            this.btn_add_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_add_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_add_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_add_coa.Location = new System.Drawing.Point(771, 58);
+            this.btn_add_coa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_add_coa.Name = "btn_add_coa";
+            this.btn_add_coa.Size = new System.Drawing.Size(95, 37);
+            this.btn_add_coa.TabIndex = 1;
+            this.btn_add_coa.Text = "Add Coach";
+            this.btn_add_coa.UseVisualStyleBackColor = false;
+            // 
+            // btn_edit_coa
+            // 
+            this.btn_edit_coa.BackColor = System.Drawing.Color.Teal;
+            this.btn_edit_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_edit_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_edit_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_edit_coa.Location = new System.Drawing.Point(771, 116);
+            this.btn_edit_coa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_edit_coa.Name = "btn_edit_coa";
+            this.btn_edit_coa.Size = new System.Drawing.Size(95, 40);
+            this.btn_edit_coa.TabIndex = 2;
+            this.btn_edit_coa.Text = "Edit Coach";
+            this.btn_edit_coa.UseVisualStyleBackColor = false;
+            // 
+            // btn_del_coa
+            // 
+            this.btn_del_coa.BackColor = System.Drawing.Color.Teal;
+            this.btn_del_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_del_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_del_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_del_coa.Location = new System.Drawing.Point(771, 178);
+            this.btn_del_coa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_del_coa.Name = "btn_del_coa";
+            this.btn_del_coa.Size = new System.Drawing.Size(95, 49);
+            this.btn_del_coa.TabIndex = 3;
+            this.btn_del_coa.Text = "Delete Coach";
+            this.btn_del_coa.UseVisualStyleBackColor = false;
+            // 
+            // btn_exit004
+            // 
+            this.btn_exit004.BackColor = System.Drawing.Color.Teal;
+            this.btn_exit004.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_exit004.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_exit004.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_exit004.Location = new System.Drawing.Point(771, 446);
+            this.btn_exit004.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_exit004.Name = "btn_exit004";
+            this.btn_exit004.Size = new System.Drawing.Size(95, 47);
+            this.btn_exit004.TabIndex = 4;
+            this.btn_exit004.Text = "Exit";
+            this.btn_exit004.UseVisualStyleBackColor = false;
+            // 
+            // btn_coatbl
+            // 
+            this.btn_coatbl.AutoSize = true;
+            this.btn_coatbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_coatbl.Location = new System.Drawing.Point(8, 6);
+            this.btn_coatbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.btn_coatbl.Name = "btn_coatbl";
+            this.btn_coatbl.Size = new System.Drawing.Size(146, 26);
+            this.btn_coatbl.TabIndex = 5;
+            this.btn_coatbl.Text = "Coach Table";
+            // 
+            // btn_hmpage001
+            // 
+            this.btn_hmpage001.BackColor = System.Drawing.Color.Teal;
+            this.btn_hmpage001.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_hmpage001.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_hmpage001.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_hmpage001.Location = new System.Drawing.Point(13, 446);
+            this.btn_hmpage001.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_hmpage001.Name = "btn_hmpage001";
+            this.btn_hmpage001.Size = new System.Drawing.Size(88, 47);
+            this.btn_hmpage001.TabIndex = 6;
+            this.btn_hmpage001.Text = "Home Page";
+            this.btn_hmpage001.UseVisualStyleBackColor = false;
+            // 
             // Coach_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1311, 771);
+            this.ClientSize = new System.Drawing.Size(874, 501);
             this.Controls.Add(this.btn_hmpage001);
             this.Controls.Add(this.btn_coatbl);
             this.Controls.Add(this.btn_exit004);
@@ -209,6 +218,7 @@
             this.Controls.Add(this.btn_edit_coa);
             this.Controls.Add(this.btn_add_coa);
             this.Controls.Add(this.dataGridView2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Coach_Form";
             this.Text = "Coach_Form";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -234,5 +244,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }

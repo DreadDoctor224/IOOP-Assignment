@@ -16,5 +16,10 @@ namespace IOOP_Assignment
         {
             InitializeComponent();
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
