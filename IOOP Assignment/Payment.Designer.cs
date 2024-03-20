@@ -47,35 +47,46 @@
             this.Overdue,
             this.OutstandingFee,
             this.Paid});
-            this.dataGridView1.Location = new System.Drawing.Point(124, 101);
+            this.dataGridView1.Location = new System.Drawing.Point(111, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 310);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(641, 310);
             this.dataGridView1.TabIndex = 0;
             // 
             // Member
             // 
             this.Member.HeaderText = "Member";
+            this.Member.MinimumWidth = 8;
             this.Member.Name = "Member";
+            this.Member.Width = 150;
             // 
             // Fine
             // 
             this.Fine.HeaderText = "Fine";
+            this.Fine.MinimumWidth = 8;
             this.Fine.Name = "Fine";
+            this.Fine.Width = 150;
             // 
             // Overdue
             // 
             this.Overdue.HeaderText = "Overdue";
+            this.Overdue.MinimumWidth = 8;
             this.Overdue.Name = "Overdue";
+            this.Overdue.Width = 150;
             // 
             // OutstandingFee
             // 
             this.OutstandingFee.HeaderText = "Outstanding Fee";
+            this.OutstandingFee.MinimumWidth = 8;
             this.OutstandingFee.Name = "OutstandingFee";
+            this.OutstandingFee.Width = 150;
             // 
             // Paid
             // 
             this.Paid.HeaderText = "Paid";
+            this.Paid.MinimumWidth = 8;
             this.Paid.Name = "Paid";
+            this.Paid.Width = 150;
             // 
             // label1
             // 
@@ -83,13 +94,13 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(334, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 31);
+            this.label1.Size = new System.Drawing.Size(189, 47);
             this.label1.TabIndex = 1;
             this.label1.Text = "Payment";
             // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);

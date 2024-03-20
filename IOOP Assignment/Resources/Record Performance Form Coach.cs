@@ -8,21 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IOOP_Assignment
+namespace IOOP_Assignment.Resources
 {
-    public partial class login_adminstrator : Form
+    public partial class Record_Performance_Form_Coach : Form
     {
-        public login_adminstrator()
+        public Record_Performance_Form_Coach()
         {
             InitializeComponent();
         }
 
         private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class login_adminstrator : Form
+    public partial class Coach_Login : Form
     {
-        public login_adminstrator()
+        public Coach_Login()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void label1_Click(object sender, EventArgs e)

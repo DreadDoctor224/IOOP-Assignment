@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form2 : Form
+    public partial class Coach_update_profile : Form
     {
-        public Form2()
+        public Coach_update_profile()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

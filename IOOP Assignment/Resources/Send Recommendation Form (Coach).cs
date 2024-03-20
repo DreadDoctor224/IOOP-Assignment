@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IOOP_Assignment
+namespace IOOP_Assignment.Resources
 {
-    public partial class login_adminstrator : Form
+    public partial class Send_Recommendation_Form__Coach_ : Form
     {
-        public login_adminstrator()
+        public Send_Recommendation_Form__Coach_()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

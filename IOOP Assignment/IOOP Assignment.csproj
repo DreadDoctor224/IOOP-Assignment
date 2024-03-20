@@ -52,17 +52,29 @@
     <Compile Include="adminstrator.Designer.cs">
       <DependentUpon>adminstrator.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Coach Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Coach Form.Designer.cs">
+      <DependentUpon>Coach Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Coach Home Page.cs">
+    <Compile Include="Coach_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coach Home Page.Designer.cs">
-      <DependentUpon>Coach Home Page.cs</DependentUpon>
+    <Compile Include="Coach_Login.Designer.cs">
+      <DependentUpon>Coach_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Coach_update_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coach_update_profile.Designer.cs">
+      <DependentUpon>Coach_update_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Competitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Competitions.Designer.cs">
+      <DependentUpon>Competitions.cs</DependentUpon>
     </Compile>
     <Compile Include="Display Training Schedule.cs">
       <SubType>Form</SubType>
@@ -75,6 +87,24 @@
     </Compile>
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home Page Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home Page Admin.Designer.cs">
+      <DependentUpon>Home Page Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Page_Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home_Page_Coach.Designer.cs">
+      <DependentUpon>Home_Page_Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Income.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
     </Compile>
     <Compile Include="Payment.cs">
       <SubType>Form</SubType>
@@ -96,17 +126,89 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Coach Home Page.resx">
-      <DependentUpon>Coach Home Page.cs</DependentUpon>
+    <Compile Include="Resources\Manage Member Form%28Admin%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Manage Member Form%28Admin%29.Designer.cs">
+      <DependentUpon>Manage Member Form%28Admin%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Manage Training Schedule Form %28Coach%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Manage Training Schedule Form %28Coach%29.Designer.cs">
+      <DependentUpon>Manage Training Schedule Form %28Coach%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Record Performance Form Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Record Performance Form Coach.Designer.cs">
+      <DependentUpon>Record Performance Form Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Send Recommendation Form %28Coach%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\Send Recommendation Form %28Coach%29.Designer.cs">
+      <DependentUpon>Send Recommendation Form %28Coach%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\View Payment Coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\View Payment Coach.Designer.cs">
+      <DependentUpon>View Payment Coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Suggestion Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suggestion Form.Designer.cs">
+      <DependentUpon>Suggestion Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update profile coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update profile coach.Designer.cs">
+      <DependentUpon>update profile coach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update Profile.Designer.cs">
+      <DependentUpon>Update Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Competition Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Competition Form.Designer.cs">
+      <DependentUpon>View Competition Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminstrator.resx">
+      <DependentUpon>adminstrator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach Form.resx">
+      <DependentUpon>Coach Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach_Login.resx">
+      <DependentUpon>Coach_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach_update_profile.resx">
+      <DependentUpon>Coach_update_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Competitions.resx">
+      <DependentUpon>Competitions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Display Training Schedule.resx">
       <DependentUpon>Display Training Schedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home Page Admin.resx">
+      <DependentUpon>Home Page Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home_Page_Coach.resx">
+      <DependentUpon>Home_Page_Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -122,9 +224,37 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Manage Member Form%28Admin%29.resx">
+      <DependentUpon>Manage Member Form%28Admin%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Manage Training Schedule Form %28Coach%29.resx">
+      <DependentUpon>Manage Training Schedule Form %28Coach%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Record Performance Form Coach.resx">
+      <DependentUpon>Record Performance Form Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Send Recommendation Form %28Coach%29.resx">
+      <DependentUpon>Send Recommendation Form %28Coach%29.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\View Payment Coach.resx">
+      <DependentUpon>View Payment Coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suggestion Form.resx">
+      <DependentUpon>Suggestion Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update profile coach.resx">
+      <DependentUpon>update profile coach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update Profile.resx">
+      <DependentUpon>Update Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Competition Form.resx">
+      <DependentUpon>View Competition Form.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -138,6 +268,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-03-20_05-24-09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-03-20_05-43-13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coachj.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-03-20_06-26-44.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-03-20_06-58-06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\manage coach.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suggest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compete.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lllog in.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schedules.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo_2024-03-20_08-16-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recommend.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recommend1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pppayment.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
