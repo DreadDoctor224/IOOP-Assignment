@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment
 {
-    partial class login_adminstrator
+    partial class Main_login
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.pnl_admin3 = new System.Windows.Forms.Panel();
-            this.pnl_admin1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label_username1 = new System.Windows.Forms.Label();
-            this.txt_name1 = new System.Windows.Forms.TextBox();
-            this.txt_pw1 = new System.Windows.Forms.TextBox();
-            this.label_password1 = new System.Windows.Forms.Label();
             this.btn_login1 = new System.Windows.Forms.Button();
             this.pic_box2 = new System.Windows.Forms.PictureBox();
+            this.txt_pw1 = new System.Windows.Forms.TextBox();
+            this.label_password1 = new System.Windows.Forms.Label();
+            this.txt_username1 = new System.Windows.Forms.TextBox();
+            this.label_username1 = new System.Windows.Forms.Label();
+            this.pnl_admin1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.pic_box1 = new System.Windows.Forms.PictureBox();
             this.pnl_admin3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_box2)).BeginInit();
             this.pnl_admin1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_box2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_box1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,70 +52,13 @@
             this.pnl_admin3.Controls.Add(this.pic_box2);
             this.pnl_admin3.Controls.Add(this.txt_pw1);
             this.pnl_admin3.Controls.Add(this.label_password1);
-            this.pnl_admin3.Controls.Add(this.txt_name1);
+            this.pnl_admin3.Controls.Add(this.txt_username1);
             this.pnl_admin3.Controls.Add(this.label_username1);
             this.pnl_admin3.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_admin3.Location = new System.Drawing.Point(468, 0);
             this.pnl_admin3.Name = "pnl_admin3";
             this.pnl_admin3.Size = new System.Drawing.Size(503, 504);
             this.pnl_admin3.TabIndex = 1;
-            // 
-            // pnl_admin1
-            // 
-            this.pnl_admin1.BackColor = System.Drawing.Color.White;
-            this.pnl_admin1.Controls.Add(this.pnl_admin3);
-            this.pnl_admin1.Controls.Add(this.panel2);
-            this.pnl_admin1.Location = new System.Drawing.Point(157, 99);
-            this.pnl_admin1.Name = "pnl_admin1";
-            this.pnl_admin1.Size = new System.Drawing.Size(971, 504);
-            this.pnl_admin1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pic_box1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(468, 504);
-            this.panel2.TabIndex = 0;
-            // 
-            // label_username1
-            // 
-            this.label_username1.AutoSize = true;
-            this.label_username1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_username1.ForeColor = System.Drawing.Color.Black;
-            this.label_username1.Location = new System.Drawing.Point(31, 195);
-            this.label_username1.Name = "label_username1";
-            this.label_username1.Size = new System.Drawing.Size(138, 27);
-            this.label_username1.TabIndex = 1;
-            this.label_username1.Text = "Username ";
-            // 
-            // txt_name1
-            // 
-            this.txt_name1.Location = new System.Drawing.Point(36, 225);
-            this.txt_name1.Multiline = true;
-            this.txt_name1.Name = "txt_name1";
-            this.txt_name1.Size = new System.Drawing.Size(427, 43);
-            this.txt_name1.TabIndex = 2;
-            // 
-            // txt_pw1
-            // 
-            this.txt_pw1.Location = new System.Drawing.Point(36, 307);
-            this.txt_pw1.Multiline = true;
-            this.txt_pw1.Name = "txt_pw1";
-            this.txt_pw1.Size = new System.Drawing.Size(427, 43);
-            this.txt_pw1.TabIndex = 4;
-            // 
-            // label_password1
-            // 
-            this.label_password1.AutoSize = true;
-            this.label_password1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_password1.ForeColor = System.Drawing.Color.Black;
-            this.label_password1.Location = new System.Drawing.Point(31, 277);
-            this.label_password1.Name = "label_password1";
-            this.label_password1.Size = new System.Drawing.Size(124, 27);
-            this.label_password1.TabIndex = 3;
-            this.label_password1.Text = "Password";
             // 
             // btn_login1
             // 
@@ -142,6 +85,63 @@
             this.pic_box2.TabIndex = 5;
             this.pic_box2.TabStop = false;
             // 
+            // txt_pw1
+            // 
+            this.txt_pw1.Location = new System.Drawing.Point(36, 307);
+            this.txt_pw1.Multiline = true;
+            this.txt_pw1.Name = "txt_pw1";
+            this.txt_pw1.Size = new System.Drawing.Size(427, 43);
+            this.txt_pw1.TabIndex = 4;
+            // 
+            // label_password1
+            // 
+            this.label_password1.AutoSize = true;
+            this.label_password1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_password1.ForeColor = System.Drawing.Color.Black;
+            this.label_password1.Location = new System.Drawing.Point(31, 277);
+            this.label_password1.Name = "label_password1";
+            this.label_password1.Size = new System.Drawing.Size(124, 27);
+            this.label_password1.TabIndex = 3;
+            this.label_password1.Text = "Password";
+            // 
+            // txt_username1
+            // 
+            this.txt_username1.Location = new System.Drawing.Point(36, 225);
+            this.txt_username1.Multiline = true;
+            this.txt_username1.Name = "txt_username1";
+            this.txt_username1.Size = new System.Drawing.Size(427, 43);
+            this.txt_username1.TabIndex = 2;
+            // 
+            // label_username1
+            // 
+            this.label_username1.AutoSize = true;
+            this.label_username1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_username1.ForeColor = System.Drawing.Color.Black;
+            this.label_username1.Location = new System.Drawing.Point(31, 195);
+            this.label_username1.Name = "label_username1";
+            this.label_username1.Size = new System.Drawing.Size(138, 27);
+            this.label_username1.TabIndex = 1;
+            this.label_username1.Text = "Username ";
+            // 
+            // pnl_admin1
+            // 
+            this.pnl_admin1.BackColor = System.Drawing.Color.White;
+            this.pnl_admin1.Controls.Add(this.pnl_admin3);
+            this.pnl_admin1.Controls.Add(this.panel2);
+            this.pnl_admin1.Location = new System.Drawing.Point(157, 99);
+            this.pnl_admin1.Name = "pnl_admin1";
+            this.pnl_admin1.Size = new System.Drawing.Size(971, 504);
+            this.pnl_admin1.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pic_box1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(468, 504);
+            this.panel2.TabIndex = 0;
+            // 
             // pic_box1
             // 
             this.pic_box1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -154,7 +154,7 @@
             this.pic_box1.TabIndex = 0;
             this.pic_box1.TabStop = false;
             // 
-            // login_adminstrator
+            // Main_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -164,14 +164,14 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(1333, 827);
-            this.Name = "login_adminstrator";
+            this.Name = "Main_login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Adminstrator_Log_In ";
+            this.Text = "Login";
             this.pnl_admin3.ResumeLayout(false);
             this.pnl_admin3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_box2)).EndInit();
             this.pnl_admin1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic_box2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_box1)).EndInit();
             this.ResumeLayout(false);
 
@@ -182,7 +182,7 @@
         private System.Windows.Forms.Panel pnl_admin3;
         private System.Windows.Forms.Panel pnl_admin1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_name1;
+        private System.Windows.Forms.TextBox txt_username1;
         private System.Windows.Forms.Label label_username1;
         private System.Windows.Forms.TextBox txt_pw1;
         private System.Windows.Forms.Label label_password1;

@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Main_login : Form
+    public partial class Suggestion_Form : Form
     {
-        public Main_login()
+        public Suggestion_Form()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
