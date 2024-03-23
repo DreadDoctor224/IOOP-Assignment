@@ -26,14 +26,15 @@ namespace IOOP_Assignment
         {
             string stat;
             User obj1 = new User(txtUserNameSignUp.Text,txtRoleSignUp.Text,txtPassWordSignUp.Text);
-            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text);
+            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text);
             if (stat != null ) 
             {
                 MessageBox.Show(stat);
             }
             txtUserNameSignUp.Text = String.Empty;
-            txtPassWordSignUp.Text = String.Empty;
             txtRoleSignUp.Text = String.Empty;
+            txtPassWordSignUp.Text = String.Empty;
+            txtEmailSignUp.Text = String.Empty;
 
         }
     }

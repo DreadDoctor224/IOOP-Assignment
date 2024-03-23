@@ -96,7 +96,7 @@ namespace IOOP_Assignment
             //status = "Incorrect username/password" if login fail.
         }
 
-        public string signup(string UserName,string role, string Password)
+        public string signup(string UserName,string role, string Password, string email)
         {
             string status = null;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
@@ -112,13 +112,14 @@ namespace IOOP_Assignment
             }
             else
             {
-                SqlCommand cmdInsert = new SqlCommand("INSERT INTO users (username,password,role),VALUES (username = @a,password =@b, role = @r)", con);
+                SqlCommand cmdInsert = new SqlCommand("INSERT INTO users (username, password, role, email) VALUES (@a, @b, @r, @em)", con); 
                 cmdInsert.Parameters.AddWithValue("@a", UserName);
-                cmdInsert.Parameters.AddWithValue("@b", Password);
                 cmdInsert.Parameters.AddWithValue("@r", role);
+                cmdInsert.Parameters.AddWithValue("@b", Password);
+                cmdInsert.Parameters.AddWithValue("@em", email);
 
 
-                int rowaffected = Convert.ToInt32(cmdInsert.ExecuteScalar());
+                int rowaffected = cmdInsert.ExecuteNonQuery();
                 if (rowaffected > 0) 
                 {
                     status = "Sign up successful";
