@@ -49,6 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -156,11 +157,11 @@
     <Compile Include="Form6.Designer.cs">
       <DependentUpon>Form6.cs</DependentUpon>
     </Compile>
-    <Compile Include="Home Page Admin.cs">
+    <Compile Include="Admin _Home_Page.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Home Page Admin.Designer.cs">
-      <DependentUpon>Home Page Admin.cs</DependentUpon>
+    <Compile Include="Admin _Home_Page.Designer.cs">
+      <DependentUpon>Admin _Home_Page.cs</DependentUpon>
     </Compile>
     <Compile Include="Home_Page_Coach.cs">
       <SubType>Form</SubType>
@@ -278,8 +279,8 @@
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Home Page Admin.resx">
-      <DependentUpon>Home Page Admin.cs</DependentUpon>
+    <EmbeddedResource Include="Admin _Home_Page.resx">
+      <DependentUpon>Admin _Home_Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Home_Page_Coach.resx">
       <DependentUpon>Home_Page_Coach.cs</DependentUpon>

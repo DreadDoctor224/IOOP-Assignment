@@ -12,9 +12,15 @@ namespace IOOP_Assignment
 {
     public partial class Home_Page_Admin : Form
     {
+        public static string name;
         public Home_Page_Admin()
         {
             InitializeComponent();
+        }
+        public Home_Page_Admin(string n)
+        {
+            InitializeComponent();
+            name = n;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -38,6 +44,11 @@ namespace IOOP_Assignment
         }
 
         private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Home_Page_Admin_Load(object sender, EventArgs e)
         {
 
         }
