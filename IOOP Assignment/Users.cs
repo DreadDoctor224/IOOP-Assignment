@@ -29,6 +29,11 @@ namespace IOOP_Assignment
 
         }
 
+        public User()
+        {
+
+        }
+
         public String login(String un)
         {
             string Status = null;
