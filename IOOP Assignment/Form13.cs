@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form1 : Form
+    public partial class Form13 : Form
     {
-        public Form1()
+        public Form13()
         {
             InitializeComponent();
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -29,81 +29,322 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.Pnl_hmad1 = new System.Windows.Forms.Panel();
+            this.btn_manage_mem1 = new System.Windows.Forms.Button();
+            this.pnl_hmad2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_recordperformance = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.Pnl_hmad1.SuspendLayout();
+            this.pnl_hmad2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(284, 50);
+            this.label1.Location = new System.Drawing.Point(321, 40);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manager Home Page";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(357, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Manage Competitions";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(357, 173);
+            this.button2.Location = new System.Drawing.Point(181, 301);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 23);
+            this.button2.Size = new System.Drawing.Size(130, 21);
             this.button2.TabIndex = 2;
             this.button2.Text = "View Recommendations";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // panel9
             // 
-            this.button3.Location = new System.Drawing.Point(357, 237);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(130, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Assign Members";
-            this.button3.UseVisualStyleBackColor = true;
+            this.panel9.BackColor = System.Drawing.Color.White;
+            this.panel9.Controls.Add(this.button11);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Location = new System.Drawing.Point(327, 425);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(325, 73);
+            this.panel9.TabIndex = 6;
             // 
-            // button4
+            // button11
             // 
-            this.button4.Location = new System.Drawing.Point(357, 304);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(130, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Record Results";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button11.BackColor = System.Drawing.Color.Teal;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button11.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.Location = new System.Drawing.Point(114, 0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(211, 73);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "Update Profile";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
-            // button5
+            // panel10
             // 
-            this.button5.Location = new System.Drawing.Point(357, 367);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(130, 23);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "Update Profile";
-            this.button5.UseVisualStyleBackColor = true;
+            this.panel10.Controls.Add(this.pictureBox6);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(114, 73);
+            this.panel10.TabIndex = 2;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox6.Image = global::IOOP_Assignment.Properties.Resources.profile;
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(114, 73);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
+            // Pnl_hmad1
+            // 
+            this.Pnl_hmad1.BackColor = System.Drawing.Color.White;
+            this.Pnl_hmad1.Controls.Add(this.btn_manage_mem1);
+            this.Pnl_hmad1.Controls.Add(this.pnl_hmad2);
+            this.Pnl_hmad1.Location = new System.Drawing.Point(93, 127);
+            this.Pnl_hmad1.Name = "Pnl_hmad1";
+            this.Pnl_hmad1.Size = new System.Drawing.Size(325, 70);
+            this.Pnl_hmad1.TabIndex = 7;
+            // 
+            // btn_manage_mem1
+            // 
+            this.btn_manage_mem1.BackColor = System.Drawing.Color.Teal;
+            this.btn_manage_mem1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_manage_mem1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_manage_mem1.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_manage_mem1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_manage_mem1.Location = new System.Drawing.Point(114, 0);
+            this.btn_manage_mem1.Name = "btn_manage_mem1";
+            this.btn_manage_mem1.Size = new System.Drawing.Size(211, 70);
+            this.btn_manage_mem1.TabIndex = 2;
+            this.btn_manage_mem1.Text = "Assign Members";
+            this.btn_manage_mem1.UseVisualStyleBackColor = false;
+            // 
+            // pnl_hmad2
+            // 
+            this.pnl_hmad2.Controls.Add(this.pictureBox1);
+            this.pnl_hmad2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnl_hmad2.Location = new System.Drawing.Point(0, 0);
+            this.pnl_hmad2.Name = "pnl_hmad2";
+            this.pnl_hmad2.Size = new System.Drawing.Size(114, 70);
+            this.pnl_hmad2.TabIndex = 2;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::IOOP_Assignment.Properties.Resources.manage_member;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(114, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.White;
+            this.panel5.Controls.Add(this.button9);
+            this.panel5.Controls.Add(this.panel6);
+            this.panel5.Location = new System.Drawing.Point(533, 127);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(343, 70);
+            this.panel5.TabIndex = 4;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.Teal;
+            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button9.Location = new System.Drawing.Point(114, 0);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(229, 70);
+            this.button9.TabIndex = 2;
+            this.button9.Text = "Manage Competitions";
+            this.button9.UseVisualStyleBackColor = false;
+            // 
+            // panel6
+            // 
+            this.panel6.Controls.Add(this.pictureBox4);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(114, 70);
+            this.panel6.TabIndex = 2;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox4.Image = global::IOOP_Assignment.Properties.Resources.compete;
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(114, 70);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.btn_recordperformance);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(93, 276);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(325, 73);
+            this.panel1.TabIndex = 8;
+            // 
+            // btn_recordperformance
+            // 
+            this.btn_recordperformance.BackColor = System.Drawing.Color.Teal;
+            this.btn_recordperformance.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_recordperformance.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_recordperformance.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_recordperformance.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_recordperformance.Location = new System.Drawing.Point(76, 0);
+            this.btn_recordperformance.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_recordperformance.Name = "btn_recordperformance";
+            this.btn_recordperformance.Size = new System.Drawing.Size(249, 73);
+            this.btn_recordperformance.TabIndex = 2;
+            this.btn_recordperformance.Text = "Record Results";
+            this.btn_recordperformance.UseVisualStyleBackColor = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(76, 73);
+            this.panel2.TabIndex = 2;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Image = global::IOOP_Assignment.Properties.Resources.photo_2024_03_20_08_16_24;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(76, 73);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.White;
+            this.panel7.Controls.Add(this.button10);
+            this.panel7.Controls.Add(this.panel8);
+            this.panel7.Location = new System.Drawing.Point(533, 274);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(343, 75);
+            this.panel7.TabIndex = 9;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Teal;
+            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Location = new System.Drawing.Point(114, 0);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(229, 75);
+            this.button10.TabIndex = 2;
+            this.button10.Text = "View Suggestion Form";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.pictureBox5);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(114, 75);
+            this.panel8.TabIndex = 2;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox5.Image = global::IOOP_Assignment.Properties.Resources.suggest;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(114, 75);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.ClientSize = new System.Drawing.Size(979, 619);
+            this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.Pnl_hmad1);
+            this.Controls.Add(this.panel9);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "s";
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.Pnl_hmad1.ResumeLayout(false);
+            this.pnl_hmad2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,10 +353,26 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Panel Pnl_hmad1;
+        private System.Windows.Forms.Button btn_manage_mem1;
+        private System.Windows.Forms.Panel pnl_hmad2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_recordperformance;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
