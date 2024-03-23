@@ -76,6 +76,48 @@
     <Compile Include="Display Training Schedule.Designer.cs">
       <DependentUpon>Display Training Schedule.cs</DependentUpon>
     </Compile>
+    <Compile Include="Assign Members Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Assign Members Form.Designer.cs">
+      <DependentUpon>Assign Members Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enroll in Training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enroll in Training.Designer.cs">
+      <DependentUpon>Enroll in Training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member Home Page.Designer.cs">
+      <DependentUpon>Member Home Page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record Result.Designer.cs">
+      <DependentUpon>Record Result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Recommendations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Recommendations.Designer.cs">
+      <DependentUpon>View Recommendations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Competitions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Competitions.Designer.cs">
+      <DependentUpon>Manage Competitions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager Home Page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager Home Page.Designer.cs">
+      <DependentUpon>Manager Home Page.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form6.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,6 +213,9 @@
     <EmbeddedResource Include="adminstrator.resx">
       <DependentUpon>adminstrator.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assign Members Form.resx">
+      <DependentUpon>Assign Members Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Coach Form.resx">
       <DependentUpon>Coach Form.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +227,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Display Training Schedule.resx">
       <DependentUpon>Display Training Schedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enroll in Training.resx">
+      <DependentUpon>Enroll in Training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member Home Page.resx">
+      <DependentUpon>Member Home Page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manage Competitions.resx">
+      <DependentUpon>Manage Competitions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager Home Page.resx">
+      <DependentUpon>Manager Home Page.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form6.resx">
       <DependentUpon>Form6.cs</DependentUpon>
@@ -214,6 +271,9 @@
     <EmbeddedResource Include="Payment.resx">
       <DependentUpon>Payment.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Record Result.resx">
+      <DependentUpon>Record Result.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\Manage Member Form%28Admin%29.resx">
       <DependentUpon>Manage Member Form%28Admin%29.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View Competition Form.resx">
       <DependentUpon>View Competition Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Recommendations.resx">
+      <DependentUpon>View Recommendations.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
