@@ -204,11 +204,11 @@
     <Compile Include="Resources\View Payment Coach.Designer.cs">
       <DependentUpon>View Payment Coach.cs</DependentUpon>
     </Compile>
-    <Compile Include="Suggestion Form.cs">
+    <Compile Include="Suggestion Form Admin view.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Suggestion Form.Designer.cs">
-      <DependentUpon>Suggestion Form.cs</DependentUpon>
+    <Compile Include="Suggestion Form Admin view.Designer.cs">
+      <DependentUpon>Suggestion Form Admin view.cs</DependentUpon>
     </Compile>
     <Compile Include="update profile coach.cs">
       <SubType>Form</SubType>
@@ -313,8 +313,8 @@
     <EmbeddedResource Include="Send Suggestions.resx">
       <DependentUpon>Send Suggestions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Suggestion Form.resx">
-      <DependentUpon>Suggestion Form.cs</DependentUpon>
+    <EmbeddedResource Include="Suggestion Form Admin view.resx">
+      <DependentUpon>Suggestion Form Admin view.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="update profile coach.resx">
       <DependentUpon>update profile coach.cs</DependentUpon>
