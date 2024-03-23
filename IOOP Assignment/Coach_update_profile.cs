@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Coach_Form : Form
+    public partial class Coach_update_profile : Form
     {
-        public Coach_Form()
+        public Coach_update_profile()
         {
             InitializeComponent();
         }

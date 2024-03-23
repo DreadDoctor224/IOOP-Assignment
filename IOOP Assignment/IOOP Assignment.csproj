@@ -64,6 +64,12 @@
     <Compile Include="Coach_Login.Designer.cs">
       <DependentUpon>Coach_Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coach_update_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Coach_update_profile.Designer.cs">
+      <DependentUpon>Coach_update_profile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Competitions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,12 @@
     <Compile Include="Suggestion Form.Designer.cs">
       <DependentUpon>Suggestion Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="update profile coach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update profile coach.Designer.cs">
+      <DependentUpon>update profile coach.cs</DependentUpon>
+    </Compile>
     <Compile Include="Update Profile.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +245,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Coach_Login.resx">
       <DependentUpon>Coach_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Coach_update_profile.resx">
+      <DependentUpon>Coach_update_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Competitions.resx">
       <DependentUpon>Competitions.cs</DependentUpon>
@@ -309,6 +324,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Suggestion Form.resx">
       <DependentUpon>Suggestion Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update profile coach.resx">
+      <DependentUpon>update profile coach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Update Profile.resx">
       <DependentUpon>Update Profile.cs</DependentUpon>
