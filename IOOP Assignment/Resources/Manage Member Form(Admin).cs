@@ -17,37 +17,37 @@ namespace IOOP_Assignment.Resources
             InitializeComponent();
         }
 
-        private void btn_coatbl_Click(object sender, EventArgs e)
+        private void Btn_coatbl_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_hmpage001_Click(object sender, EventArgs e)
+        private void Btn_hmpage001_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_exit004_Click(object sender, EventArgs e)
+        private void Btn_exit004_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_del_coa_Click(object sender, EventArgs e)
+        private void Btn_del_coa_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_edit_coa_Click(object sender, EventArgs e)
+        private void Btn_edit_coa_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btn_add_coa_Click(object sender, EventArgs e)
+        private void Btn_add_coa_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void DataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

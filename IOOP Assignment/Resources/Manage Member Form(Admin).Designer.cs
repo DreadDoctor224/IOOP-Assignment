@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_hmpage001 = new System.Windows.Forms.Button();
-            this.btn_coatbl = new System.Windows.Forms.Label();
-            this.btn_exit004 = new System.Windows.Forms.Button();
+            this.Btn_hmpage001 = new System.Windows.Forms.Button();
+            this.Txt_table = new System.Windows.Forms.Label();
+            this.Btn_exit001 = new System.Windows.Forms.Button();
             this.btn_del_coa = new System.Windows.Forms.Button();
-            this.btn_edit_coa = new System.Windows.Forms.Button();
-            this.btn_add_coa = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.Btn_edit = new System.Windows.Forms.Button();
+            this.Btn_add = new System.Windows.Forms.Button();
+            this.Dtagridview_mem = new System.Windows.Forms.DataGridView();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,47 +43,47 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dtagridview_mem)).BeginInit();
             this.SuspendLayout();
             // 
-            // btn_hmpage001
+            // Btn_hmpage001
             // 
-            this.btn_hmpage001.BackColor = System.Drawing.Color.Teal;
-            this.btn_hmpage001.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_hmpage001.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_hmpage001.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_hmpage001.Location = new System.Drawing.Point(19, 687);
-            this.btn_hmpage001.Name = "btn_hmpage001";
-            this.btn_hmpage001.Size = new System.Drawing.Size(132, 73);
-            this.btn_hmpage001.TabIndex = 13;
-            this.btn_hmpage001.Text = "Home Page";
-            this.btn_hmpage001.UseVisualStyleBackColor = false;
-            this.btn_hmpage001.Click += new System.EventHandler(this.btn_hmpage001_Click);
+            this.Btn_hmpage001.BackColor = System.Drawing.Color.Teal;
+            this.Btn_hmpage001.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_hmpage001.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_hmpage001.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_hmpage001.Location = new System.Drawing.Point(19, 687);
+            this.Btn_hmpage001.Name = "Btn_hmpage001";
+            this.Btn_hmpage001.Size = new System.Drawing.Size(132, 73);
+            this.Btn_hmpage001.TabIndex = 13;
+            this.Btn_hmpage001.Text = "Home Page";
+            this.Btn_hmpage001.UseVisualStyleBackColor = false;
+            this.Btn_hmpage001.Click += new System.EventHandler(this.Btn_hmpage001_Click);
             // 
-            // btn_coatbl
+            // Txt_table
             // 
-            this.btn_coatbl.AutoSize = true;
-            this.btn_coatbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_coatbl.Location = new System.Drawing.Point(12, 10);
-            this.btn_coatbl.Name = "btn_coatbl";
-            this.btn_coatbl.Size = new System.Drawing.Size(239, 37);
-            this.btn_coatbl.TabIndex = 12;
-            this.btn_coatbl.Text = "Member Table";
-            this.btn_coatbl.Click += new System.EventHandler(this.btn_coatbl_Click);
+            this.Txt_table.AutoSize = true;
+            this.Txt_table.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_table.Location = new System.Drawing.Point(12, 10);
+            this.Txt_table.Name = "Txt_table";
+            this.Txt_table.Size = new System.Drawing.Size(104, 37);
+            this.Txt_table.TabIndex = 12;
+            this.Txt_table.Text = "Table";
+            this.Txt_table.Click += new System.EventHandler(this.Btn_coatbl_Click);
             // 
-            // btn_exit004
+            // Btn_exit001
             // 
-            this.btn_exit004.BackColor = System.Drawing.Color.Teal;
-            this.btn_exit004.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_exit004.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_exit004.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exit004.Location = new System.Drawing.Point(1156, 687);
-            this.btn_exit004.Name = "btn_exit004";
-            this.btn_exit004.Size = new System.Drawing.Size(143, 73);
-            this.btn_exit004.TabIndex = 11;
-            this.btn_exit004.Text = "Exit";
-            this.btn_exit004.UseVisualStyleBackColor = false;
-            this.btn_exit004.Click += new System.EventHandler(this.btn_exit004_Click);
+            this.Btn_exit001.BackColor = System.Drawing.Color.Teal;
+            this.Btn_exit001.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_exit001.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_exit001.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_exit001.Location = new System.Drawing.Point(1156, 687);
+            this.Btn_exit001.Name = "Btn_exit001";
+            this.Btn_exit001.Size = new System.Drawing.Size(143, 73);
+            this.Btn_exit001.TabIndex = 11;
+            this.Btn_exit001.Text = "Exit";
+            this.Btn_exit001.UseVisualStyleBackColor = false;
+            this.Btn_exit001.Click += new System.EventHandler(this.Btn_exit004_Click);
             // 
             // btn_del_coa
             // 
@@ -95,42 +95,42 @@
             this.btn_del_coa.Name = "btn_del_coa";
             this.btn_del_coa.Size = new System.Drawing.Size(143, 76);
             this.btn_del_coa.TabIndex = 10;
-            this.btn_del_coa.Text = "Delete Coach";
+            this.btn_del_coa.Text = "Delete";
             this.btn_del_coa.UseVisualStyleBackColor = false;
-            this.btn_del_coa.Click += new System.EventHandler(this.btn_del_coa_Click);
+            this.btn_del_coa.Click += new System.EventHandler(this.Btn_del_coa_Click);
             // 
-            // btn_edit_coa
+            // Btn_edit
             // 
-            this.btn_edit_coa.BackColor = System.Drawing.Color.Teal;
-            this.btn_edit_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_edit_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_edit_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_edit_coa.Location = new System.Drawing.Point(1156, 180);
-            this.btn_edit_coa.Name = "btn_edit_coa";
-            this.btn_edit_coa.Size = new System.Drawing.Size(143, 62);
-            this.btn_edit_coa.TabIndex = 9;
-            this.btn_edit_coa.Text = "Edit Coach";
-            this.btn_edit_coa.UseVisualStyleBackColor = false;
-            this.btn_edit_coa.Click += new System.EventHandler(this.btn_edit_coa_Click);
+            this.Btn_edit.BackColor = System.Drawing.Color.Teal;
+            this.Btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_edit.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_edit.Location = new System.Drawing.Point(1156, 180);
+            this.Btn_edit.Name = "Btn_edit";
+            this.Btn_edit.Size = new System.Drawing.Size(143, 62);
+            this.Btn_edit.TabIndex = 9;
+            this.Btn_edit.Text = "Edit ";
+            this.Btn_edit.UseVisualStyleBackColor = false;
+            this.Btn_edit.Click += new System.EventHandler(this.Btn_edit_coa_Click);
             // 
-            // btn_add_coa
+            // Btn_add
             // 
-            this.btn_add_coa.BackColor = System.Drawing.Color.Teal;
-            this.btn_add_coa.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_add_coa.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_add_coa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_add_coa.Location = new System.Drawing.Point(1156, 90);
-            this.btn_add_coa.Name = "btn_add_coa";
-            this.btn_add_coa.Size = new System.Drawing.Size(143, 57);
-            this.btn_add_coa.TabIndex = 8;
-            this.btn_add_coa.Text = "Add Coach";
-            this.btn_add_coa.UseVisualStyleBackColor = false;
-            this.btn_add_coa.Click += new System.EventHandler(this.btn_add_coa_Click);
+            this.Btn_add.BackColor = System.Drawing.Color.Teal;
+            this.Btn_add.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Btn_add.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_add.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_add.Location = new System.Drawing.Point(1156, 90);
+            this.Btn_add.Name = "Btn_add";
+            this.Btn_add.Size = new System.Drawing.Size(143, 57);
+            this.Btn_add.TabIndex = 8;
+            this.Btn_add.Text = "Add ";
+            this.Btn_add.UseVisualStyleBackColor = false;
+            this.Btn_add.Click += new System.EventHandler(this.Btn_add_coa_Click);
             // 
-            // dataGridView2
+            // Dtagridview_mem
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dtagridview_mem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dtagridview_mem.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Number,
             this.Column1,
             this.Column2,
@@ -139,13 +139,13 @@
             this.Column5,
             this.Column6,
             this.Column7});
-            this.dataGridView2.Location = new System.Drawing.Point(128, 90);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(992, 560);
-            this.dataGridView2.TabIndex = 7;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.Dtagridview_mem.Location = new System.Drawing.Point(128, 90);
+            this.Dtagridview_mem.Name = "Dtagridview_mem";
+            this.Dtagridview_mem.RowHeadersWidth = 62;
+            this.Dtagridview_mem.RowTemplate.Height = 28;
+            this.Dtagridview_mem.Size = new System.Drawing.Size(992, 560);
+            this.Dtagridview_mem.TabIndex = 7;
+            this.Dtagridview_mem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView2_CellContentClick);
             // 
             // Number
             // 
@@ -209,17 +209,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1311, 771);
-            this.Controls.Add(this.btn_hmpage001);
-            this.Controls.Add(this.btn_coatbl);
-            this.Controls.Add(this.btn_exit004);
+            this.Controls.Add(this.Btn_hmpage001);
+            this.Controls.Add(this.Txt_table);
+            this.Controls.Add(this.Btn_exit001);
             this.Controls.Add(this.btn_del_coa);
-            this.Controls.Add(this.btn_edit_coa);
-            this.Controls.Add(this.btn_add_coa);
-            this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.Btn_edit);
+            this.Controls.Add(this.Btn_add);
+            this.Controls.Add(this.Dtagridview_mem);
             this.Name = "Manage_Member_Form_Admin_";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Manage_Member_Form_Admin_";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dtagridview_mem)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,13 +227,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btn_hmpage001;
-        private System.Windows.Forms.Label btn_coatbl;
-        private System.Windows.Forms.Button btn_exit004;
+        private System.Windows.Forms.Button Btn_hmpage001;
+        private System.Windows.Forms.Label Txt_table;
+        private System.Windows.Forms.Button Btn_exit001;
         private System.Windows.Forms.Button btn_del_coa;
-        private System.Windows.Forms.Button btn_edit_coa;
-        private System.Windows.Forms.Button btn_add_coa;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button Btn_edit;
+        private System.Windows.Forms.Button Btn_add;
+        private System.Windows.Forms.DataGridView Dtagridview_mem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Number;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

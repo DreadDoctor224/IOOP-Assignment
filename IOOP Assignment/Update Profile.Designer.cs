@@ -55,7 +55,7 @@
             this.label1.Size = new System.Drawing.Size(313, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Edit Your Profile ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // textBox1
             // 
@@ -65,7 +65,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(231, 52);
             this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // button1
             // 
@@ -97,7 +97,7 @@
             this.label3.Size = new System.Drawing.Size(98, 25);
             this.label3.TabIndex = 14;
             this.label3.Text = "Password";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // textBox2
             // 
