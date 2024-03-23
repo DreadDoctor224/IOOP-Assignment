@@ -29,21 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Txtbox_name2 = new System.Windows.Forms.TextBox();
+            this.Btn_updatepfadmin = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Txtbox_pw2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Txtbox_email2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.Txtbox_ph2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -57,26 +51,27 @@
             this.label1.Text = "Edit Your Profile ";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // textBox1
+            // Txtbox_name2
             // 
-            this.textBox1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox1.Location = new System.Drawing.Point(148, 190);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 52);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            this.Txtbox_name2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txtbox_name2.Location = new System.Drawing.Point(148, 190);
+            this.Txtbox_name2.Multiline = true;
+            this.Txtbox_name2.Name = "Txtbox_name2";
+            this.Txtbox_name2.Size = new System.Drawing.Size(231, 52);
+            this.Txtbox_name2.TabIndex = 6;
+            this.Txtbox_name2.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
-            // button1
+            // Btn_updatepfadmin
             // 
-            this.button1.BackColor = System.Drawing.Color.Teal;
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(251, 614);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(461, 86);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Update Profile";
-            this.button1.UseVisualStyleBackColor = false;
+            this.Btn_updatepfadmin.BackColor = System.Drawing.Color.Teal;
+            this.Btn_updatepfadmin.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_updatepfadmin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_updatepfadmin.Location = new System.Drawing.Point(251, 614);
+            this.Btn_updatepfadmin.Name = "Btn_updatepfadmin";
+            this.Btn_updatepfadmin.Size = new System.Drawing.Size(461, 86);
+            this.Btn_updatepfadmin.TabIndex = 11;
+            this.Btn_updatepfadmin.Text = "Update Profile";
+            this.Btn_updatepfadmin.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -99,14 +94,14 @@
             this.label3.Text = "Password";
             this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
-            // textBox2
+            // Txtbox_pw2
             // 
-            this.textBox2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox2.Location = new System.Drawing.Point(550, 190);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 52);
-            this.textBox2.TabIndex = 13;
+            this.Txtbox_pw2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txtbox_pw2.Location = new System.Drawing.Point(550, 190);
+            this.Txtbox_pw2.Multiline = true;
+            this.Txtbox_pw2.Name = "Txtbox_pw2";
+            this.Txtbox_pw2.Size = new System.Drawing.Size(231, 52);
+            this.Txtbox_pw2.TabIndex = 13;
             // 
             // label4
             // 
@@ -118,14 +113,14 @@
             this.label4.TabIndex = 16;
             this.label4.Text = "Email ";
             // 
-            // textBox3
+            // Txtbox_email2
             // 
-            this.textBox3.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox3.Location = new System.Drawing.Point(148, 305);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(231, 52);
-            this.textBox3.TabIndex = 15;
+            this.Txtbox_email2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txtbox_email2.Location = new System.Drawing.Point(148, 305);
+            this.Txtbox_email2.Multiline = true;
+            this.Txtbox_email2.Name = "Txtbox_email2";
+            this.Txtbox_email2.Size = new System.Drawing.Size(231, 52);
+            this.Txtbox_email2.TabIndex = 15;
             // 
             // label5
             // 
@@ -137,71 +132,14 @@
             this.label5.TabIndex = 18;
             this.label5.Text = "Phone Number";
             // 
-            // textBox4
+            // Txtbox_ph2
             // 
-            this.textBox4.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox4.Location = new System.Drawing.Point(550, 305);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(231, 52);
-            this.textBox4.TabIndex = 17;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(143, 381);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(85, 25);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Address";
-            // 
-            // textBox5
-            // 
-            this.textBox5.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox5.Location = new System.Drawing.Point(148, 409);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(633, 52);
-            this.textBox5.TabIndex = 19;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(143, 480);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 25);
-            this.label7.TabIndex = 22;
-            this.label7.Text = "Zip Code";
-            // 
-            // textBox6
-            // 
-            this.textBox6.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox6.Location = new System.Drawing.Point(148, 508);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(231, 52);
-            this.textBox6.TabIndex = 21;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(545, 480);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 25);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Country";
-            // 
-            // textBox7
-            // 
-            this.textBox7.ForeColor = System.Drawing.SystemColors.InactiveCaption;
-            this.textBox7.Location = new System.Drawing.Point(550, 508);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(231, 52);
-            this.textBox7.TabIndex = 23;
+            this.Txtbox_ph2.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txtbox_ph2.Location = new System.Drawing.Point(550, 305);
+            this.Txtbox_ph2.Multiline = true;
+            this.Txtbox_ph2.Name = "Txtbox_ph2";
+            this.Txtbox_ph2.Size = new System.Drawing.Size(231, 52);
+            this.Txtbox_ph2.TabIndex = 17;
             // 
             // Update_Profile
             // 
@@ -209,21 +147,15 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(978, 771);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Txtbox_ph2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Txtbox_email2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Txtbox_pw2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Btn_updatepfadmin);
+            this.Controls.Add(this.Txtbox_name2);
             this.Controls.Add(this.label1);
             this.Name = "Update_Profile";
             this.Text = "Update_Profile_Admin";
@@ -235,20 +167,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox Txtbox_name2;
+        private System.Windows.Forms.Button Btn_updatepfadmin;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox Txtbox_pw2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox Txtbox_email2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox Txtbox_ph2;
     }
 }
