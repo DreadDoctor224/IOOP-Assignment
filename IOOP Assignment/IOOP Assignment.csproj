@@ -131,6 +131,12 @@
     <Compile Include="Record Result.Designer.cs">
       <DependentUpon>Record Result.cs</DependentUpon>
     </Compile>
+    <Compile Include="signUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signUpForm.Designer.cs">
+      <DependentUpon>signUpForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="training.cs" />
     <Compile Include="Users.cs" />
     <Compile Include="View Suggestions.cs">
@@ -324,6 +330,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Send Suggestions.resx">
       <DependentUpon>Send Suggestions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signUpForm.resx">
+      <DependentUpon>signUpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Suggestion Form Admin view.resx">
       <DependentUpon>Suggestion Form Admin view.cs</DependentUpon>
