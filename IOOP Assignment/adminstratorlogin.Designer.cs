@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.pnl_admin3 = new System.Windows.Forms.Panel();
-            this.btn_login1 = new System.Windows.Forms.Button();
+            this.Btn_login1 = new System.Windows.Forms.Button();
             this.pic_box2 = new System.Windows.Forms.PictureBox();
-            this.txt_pw1 = new System.Windows.Forms.TextBox();
+            this.Txt_pw1 = new System.Windows.Forms.TextBox();
             this.label_password1 = new System.Windows.Forms.Label();
-            this.txt_username1 = new System.Windows.Forms.TextBox();
+            this.Txt_username1 = new System.Windows.Forms.TextBox();
             this.label_username1 = new System.Windows.Forms.Label();
             this.pnl_admin1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -48,11 +48,11 @@
             // pnl_admin3
             // 
             this.pnl_admin3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl_admin3.Controls.Add(this.btn_login1);
+            this.pnl_admin3.Controls.Add(this.Btn_login1);
             this.pnl_admin3.Controls.Add(this.pic_box2);
-            this.pnl_admin3.Controls.Add(this.txt_pw1);
+            this.pnl_admin3.Controls.Add(this.Txt_pw1);
             this.pnl_admin3.Controls.Add(this.label_password1);
-            this.pnl_admin3.Controls.Add(this.txt_username1);
+            this.pnl_admin3.Controls.Add(this.Txt_username1);
             this.pnl_admin3.Controls.Add(this.label_username1);
             this.pnl_admin3.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnl_admin3.Location = new System.Drawing.Point(468, 0);
@@ -60,19 +60,19 @@
             this.pnl_admin3.Size = new System.Drawing.Size(503, 504);
             this.pnl_admin3.TabIndex = 1;
             // 
-            // btn_login1
+            // Btn_login1
             // 
-            this.btn_login1.BackColor = System.Drawing.Color.Teal;
-            this.btn_login1.FlatAppearance.BorderSize = 0;
-            this.btn_login1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_login1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_login1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_login1.Location = new System.Drawing.Point(36, 396);
-            this.btn_login1.Name = "btn_login1";
-            this.btn_login1.Size = new System.Drawing.Size(427, 43);
-            this.btn_login1.TabIndex = 8;
-            this.btn_login1.Text = "LOGIN";
-            this.btn_login1.UseVisualStyleBackColor = false;
+            this.Btn_login1.BackColor = System.Drawing.Color.Teal;
+            this.Btn_login1.FlatAppearance.BorderSize = 0;
+            this.Btn_login1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Btn_login1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_login1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_login1.Location = new System.Drawing.Point(36, 396);
+            this.Btn_login1.Name = "Btn_login1";
+            this.Btn_login1.Size = new System.Drawing.Size(427, 43);
+            this.Btn_login1.TabIndex = 8;
+            this.Btn_login1.Text = "LOGIN";
+            this.Btn_login1.UseVisualStyleBackColor = false;
             // 
             // pic_box2
             // 
@@ -85,13 +85,16 @@
             this.pic_box2.TabIndex = 5;
             this.pic_box2.TabStop = false;
             // 
-            // txt_pw1
+            // Txt_pw1
             // 
-            this.txt_pw1.Location = new System.Drawing.Point(36, 307);
-            this.txt_pw1.Multiline = true;
-            this.txt_pw1.Name = "txt_pw1";
-            this.txt_pw1.Size = new System.Drawing.Size(427, 43);
-            this.txt_pw1.TabIndex = 4;
+            this.Txt_pw1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_pw1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txt_pw1.Location = new System.Drawing.Point(36, 307);
+            this.Txt_pw1.Multiline = true;
+            this.Txt_pw1.Name = "Txt_pw1";
+            this.Txt_pw1.Size = new System.Drawing.Size(427, 43);
+            this.Txt_pw1.TabIndex = 4;
+            this.Txt_pw1.Text = "Enter password";
             // 
             // label_password1
             // 
@@ -104,13 +107,16 @@
             this.label_password1.TabIndex = 3;
             this.label_password1.Text = "Password";
             // 
-            // txt_username1
+            // Txt_username1
             // 
-            this.txt_username1.Location = new System.Drawing.Point(36, 225);
-            this.txt_username1.Multiline = true;
-            this.txt_username1.Name = "txt_username1";
-            this.txt_username1.Size = new System.Drawing.Size(427, 43);
-            this.txt_username1.TabIndex = 2;
+            this.Txt_username1.Font = new System.Drawing.Font("Franklin Gothic Book", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_username1.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.Txt_username1.Location = new System.Drawing.Point(36, 225);
+            this.Txt_username1.Multiline = true;
+            this.Txt_username1.Name = "Txt_username1";
+            this.Txt_username1.Size = new System.Drawing.Size(427, 43);
+            this.Txt_username1.TabIndex = 2;
+            this.Txt_username1.Text = "Enter username or email";
             // 
             // label_username1
             // 
@@ -182,12 +188,12 @@
         private System.Windows.Forms.Panel pnl_admin3;
         private System.Windows.Forms.Panel pnl_admin1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_username1;
+        private System.Windows.Forms.TextBox Txt_username1;
         private System.Windows.Forms.Label label_username1;
-        private System.Windows.Forms.TextBox txt_pw1;
+        private System.Windows.Forms.TextBox Txt_pw1;
         private System.Windows.Forms.Label label_password1;
         private System.Windows.Forms.PictureBox pic_box2;
-        private System.Windows.Forms.Button btn_login1;
+        private System.Windows.Forms.Button Btn_login1;
         private System.Windows.Forms.PictureBox pic_box1;
     }
 }

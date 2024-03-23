@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="adminstrator.cs">
+    <Compile Include="adminstratorlogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="adminstrator.Designer.cs">
-      <DependentUpon>adminstrator.cs</DependentUpon>
+    <Compile Include="adminstratorlogin.Designer.cs">
+      <DependentUpon>adminstratorlogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Coach Form.cs">
       <SubType>Form</SubType>
@@ -234,8 +234,8 @@
     <Compile Include="View Competition Form.Designer.cs">
       <DependentUpon>View Competition Form.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="adminstrator.resx">
-      <DependentUpon>adminstrator.cs</DependentUpon>
+    <EmbeddedResource Include="adminstratorlogin.resx">
+      <DependentUpon>adminstratorlogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Assign Members Form.resx">
       <DependentUpon>Assign Members Form.cs</DependentUpon>
