@@ -58,12 +58,6 @@
     <Compile Include="Coach Form.Designer.cs">
       <DependentUpon>Coach Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Coach_update_profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Coach_update_profile.Designer.cs">
-      <DependentUpon>Coach_update_profile.cs</DependentUpon>
-    </Compile>
     <Compile Include="Competitions admin view.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Coach Form.resx">
       <DependentUpon>Coach Form.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Coach_update_profile.resx">
-      <DependentUpon>Coach_update_profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Competitions admin view.resx">
       <DependentUpon>Competitions admin view.cs</DependentUpon>
