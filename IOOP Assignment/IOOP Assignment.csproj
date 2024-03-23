@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -79,6 +79,7 @@
     <Compile Include="Coach Form.Designer.cs">
       <DependentUpon>Coach Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Coach.cs" />
     <Compile Include="Competitions admin view.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +110,8 @@
     <Compile Include="Form13.Designer.cs">
       <DependentUpon>Form13.cs</DependentUpon>
     </Compile>
+    <Compile Include="manager.cs" />
+    <Compile Include="member.cs" />
     <Compile Include="Send Suggestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +130,8 @@
     <Compile Include="Record Result.Designer.cs">
       <DependentUpon>Record Result.cs</DependentUpon>
     </Compile>
+    <Compile Include="training.cs" />
+    <Compile Include="Users.cs" />
     <Compile Include="View Suggestions.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -408,15 +413,6 @@
     <None Include="Resources\pppayment.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ioopDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="ioopDB_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>ioopDB.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -427,6 +423,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ioopDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ioopDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>ioopDB.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
