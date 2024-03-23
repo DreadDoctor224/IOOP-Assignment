@@ -16,5 +16,25 @@ namespace IOOP_Assignment
         {
             InitializeComponent();
         }
+
+        private void txtUserNameSignUp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            string stat;
+            User obj1 = new User(txtUserNameSignUp.Text,txtRoleSignUp.Text,txtPassWordSignUp.Text);
+            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text);
+            if (stat != null ) 
+            {
+                MessageBox.Show(stat);
+            }
+            txtUserNameSignUp.Text = String.Empty;
+            txtPassWordSignUp.Text = String.Empty;
+            txtRoleSignUp.Text = String.Empty;
+
+        }
     }
 }

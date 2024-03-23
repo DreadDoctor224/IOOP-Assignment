@@ -29,12 +29,18 @@ namespace IOOP_Assignment
 
         }
 
+
         public User()
         {
 
         }
 
-
+        public User(string userName, string role, string password)
+        {
+            UserName = userName;
+            this.role = role;
+            Password = password;
+        }
 
         public String login(String un)
         {
@@ -88,6 +94,43 @@ namespace IOOP_Assignment
             return Status;
             //status = null if login success
             //status = "Incorrect username/password" if login fail.
+        }
+
+        public string signup(string UserName,string role, string Password)
+        {
+            string status = null;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT (*) from users where username=@username", con);
+            cmdCheck.Parameters.AddWithValue("@username", UserName);
+
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                status = "Username always exists";
+            }
+            else
+            {
+                SqlCommand cmdInsert = new SqlCommand("INSERT INTO users (username,password,role),VALUES (username = @a,password =@b, role = @r)", con);
+                cmdInsert.Parameters.AddWithValue("@a", UserName);
+                cmdInsert.Parameters.AddWithValue("@b", Password);
+                cmdInsert.Parameters.AddWithValue("@r", role);
+
+
+                int rowaffected = Convert.ToInt32(cmdInsert.ExecuteScalar());
+                if (rowaffected > 0) 
+                {
+                    status = "Sign up successful";
+                }
+                else 
+                {
+                    status = "Sign up failed";
+                }
+
+            }
+            con.Close();
+            return status;
         }
 
     }
