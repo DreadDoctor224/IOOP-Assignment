@@ -10,12 +10,21 @@ namespace IOOP_Assignment
 {
     public class admin : User
     {
+
        
-      public void addMembers(string name, string email, string phoneNumber)
+      public void addMembers(string name, string email, int phoneNumber, string role)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd =new SqlCommand("INSERT INTO Members (Name, Email, PhoneNumber) VALUES (@name, @email, @phonenumber)", con);
+            SqlCommand cmdAdd =new SqlCommand("INSERT INTO members (name, email, phonenumber, role) VALUES (@n, @e, @ph, @r)", con);
+            //cmdAdd.Parameters.AddWithValue("@ID", userID);
+            cmdAdd.Parameters.AddWithValue("@n", name);
+            cmdAdd.Parameters.AddWithValue("@e", email);
+            cmdAdd.Parameters.AddWithValue("@ph", phoneNumber);
+            cmdAdd.Parameters.AddWithValue("@r", role);
+
+            cmdAdd.ExecuteNonQuery();
+            con.Close();
         }
 
     }

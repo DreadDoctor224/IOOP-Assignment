@@ -57,5 +57,11 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void btnOpenManageMem_Click(object sender, EventArgs e)
+        {
+            add_edit_delete_members form = new add_edit_delete_members();
+            form.Show();
+        }
     }
 }
