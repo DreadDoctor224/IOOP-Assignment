@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data_gird_payment = new System.Windows.Forms.DataGridView();
             this.Member = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fine = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Overdue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OutstandingFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Paid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_gird_payment)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // data_gird_payment
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_gird_payment.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_gird_payment.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Member,
             this.Fine,
             this.Overdue,
             this.OutstandingFee,
             this.Paid});
-            this.dataGridView1.Location = new System.Drawing.Point(111, 93);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(641, 310);
-            this.dataGridView1.TabIndex = 0;
+            this.data_gird_payment.Location = new System.Drawing.Point(111, 93);
+            this.data_gird_payment.Name = "data_gird_payment";
+            this.data_gird_payment.RowHeadersWidth = 62;
+            this.data_gird_payment.Size = new System.Drawing.Size(641, 310);
+            this.data_gird_payment.TabIndex = 0;
             // 
             // Member
             // 
@@ -104,11 +104,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(911, 466);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.data_gird_payment);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
             this.Name = "Form4";
             this.Text = "Form4";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_gird_payment)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -116,7 +116,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_gird_payment;
         private System.Windows.Forms.DataGridViewTextBoxColumn Member;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fine;
         private System.Windows.Forms.DataGridViewTextBoxColumn Overdue;

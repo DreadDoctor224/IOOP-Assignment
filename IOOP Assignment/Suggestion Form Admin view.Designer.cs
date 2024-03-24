@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DataGridView6 = new System.Windows.Forms.DataGridView();
+            this.data_grid_suggestions = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -39,26 +39,26 @@
             this.Btn_hmpage05 = new System.Windows.Forms.Button();
             this.Btn_detailsug = new System.Windows.Forms.Button();
             this.Btn_exi8 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).BeginInit();
             this.SuspendLayout();
             // 
-            // DataGridView6
+            // data_grid_suggestions
             // 
-            this.DataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataGridView6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_grid_suggestions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_suggestions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
             this.Column6});
-            this.DataGridView6.Location = new System.Drawing.Point(19, 83);
-            this.DataGridView6.Name = "DataGridView6";
-            this.DataGridView6.RowHeadersWidth = 62;
-            this.DataGridView6.RowTemplate.Height = 28;
-            this.DataGridView6.Size = new System.Drawing.Size(966, 549);
-            this.DataGridView6.TabIndex = 0;
-            this.DataGridView6.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView6_CellContentClick);
+            this.data_grid_suggestions.Location = new System.Drawing.Point(19, 83);
+            this.data_grid_suggestions.Name = "data_grid_suggestions";
+            this.data_grid_suggestions.RowHeadersWidth = 62;
+            this.data_grid_suggestions.RowTemplate.Height = 28;
+            this.data_grid_suggestions.Size = new System.Drawing.Size(966, 549);
+            this.data_grid_suggestions.TabIndex = 0;
+            this.data_grid_suggestions.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView6_CellContentClick);
             // 
             // Column1
             // 
@@ -161,11 +161,11 @@
             this.Controls.Add(this.Btn_detailsug);
             this.Controls.Add(this.Btn_hmpage05);
             this.Controls.Add(this.lbl_suggest);
-            this.Controls.Add(this.DataGridView6);
+            this.Controls.Add(this.data_grid_suggestions);
             this.Name = "Suggestion_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suggestion_Form";
-            ((System.ComponentModel.ISupportInitialize)(this.DataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,7 +173,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView DataGridView6;
+        private System.Windows.Forms.DataGridView data_grid_suggestions;
         private System.Windows.Forms.Label lbl_suggest;
         private System.Windows.Forms.Button Btn_hmpage05;
         private System.Windows.Forms.Button Btn_detailsug;

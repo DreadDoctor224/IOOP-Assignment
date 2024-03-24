@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form9 : Form
+    public partial class Competition_Form : Form
     {
-        public Form9()
+        public Competition_Form()
         {
             InitializeComponent();
         }
