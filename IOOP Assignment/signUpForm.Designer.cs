@@ -74,6 +74,7 @@
             this.txtPassWordSignUp.Name = "txtPassWordSignUp";
             this.txtPassWordSignUp.Size = new System.Drawing.Size(148, 26);
             this.txtPassWordSignUp.TabIndex = 3;
+            this.txtPassWordSignUp.TextChanged += new System.EventHandler(this.txtPassWordSignUp_TextChanged);
             // 
             // txtEmailSignUp
             // 

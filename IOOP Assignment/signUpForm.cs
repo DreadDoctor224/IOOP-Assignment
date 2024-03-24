@@ -37,5 +37,10 @@ namespace IOOP_Assignment
             txtEmailSignUp.Text = String.Empty;
 
         }
+
+        private void txtPassWordSignUp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
