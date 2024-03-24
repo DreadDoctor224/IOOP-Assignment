@@ -33,23 +33,23 @@
             this.pnl_hmad2 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btn_view_income = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_manage_coaches = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
+            this.btn_view_competitions = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.btn_view_suggestions = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.button11 = new System.Windows.Forms.Button();
+            this.btn_update_profile = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.Pnl_hmad1.SuspendLayout();
@@ -120,26 +120,26 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button7);
+            this.panel1.Controls.Add(this.btn_view_income);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Location = new System.Drawing.Point(669, 127);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(397, 118);
             this.panel1.TabIndex = 3;
             // 
-            // button7
+            // btn_view_income
             // 
-            this.button7.BackColor = System.Drawing.Color.Teal;
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(114, 0);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(283, 118);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "View Income";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btn_view_income.BackColor = System.Drawing.Color.Teal;
+            this.btn_view_income.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_view_income.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_view_income.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_view_income.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_view_income.Location = new System.Drawing.Point(114, 0);
+            this.btn_view_income.Name = "btn_view_income";
+            this.btn_view_income.Size = new System.Drawing.Size(283, 118);
+            this.btn_view_income.TabIndex = 2;
+            this.btn_view_income.Text = "View Income";
+            this.btn_view_income.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -165,26 +165,26 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.button8);
+            this.panel3.Controls.Add(this.btn_manage_coaches);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(151, 299);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(397, 118);
             this.panel3.TabIndex = 3;
             // 
-            // button8
+            // btn_manage_coaches
             // 
-            this.button8.BackColor = System.Drawing.Color.Teal;
-            this.button8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button8.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(114, 0);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(283, 118);
-            this.button8.TabIndex = 2;
-            this.button8.Text = "Manage Coaches";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btn_manage_coaches.BackColor = System.Drawing.Color.Teal;
+            this.btn_manage_coaches.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_manage_coaches.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_manage_coaches.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_manage_coaches.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_manage_coaches.Location = new System.Drawing.Point(114, 0);
+            this.btn_manage_coaches.Name = "btn_manage_coaches";
+            this.btn_manage_coaches.Size = new System.Drawing.Size(283, 118);
+            this.btn_manage_coaches.TabIndex = 2;
+            this.btn_manage_coaches.Text = "Manage Coaches";
+            this.btn_manage_coaches.UseVisualStyleBackColor = false;
             // 
             // panel4
             // 
@@ -210,26 +210,26 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.White;
-            this.panel5.Controls.Add(this.button9);
+            this.panel5.Controls.Add(this.btn_view_competitions);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Location = new System.Drawing.Point(669, 299);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(397, 118);
             this.panel5.TabIndex = 3;
             // 
-            // button9
+            // btn_view_competitions
             // 
-            this.button9.BackColor = System.Drawing.Color.Teal;
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button9.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(114, 0);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(283, 118);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "Competitions Form";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btn_view_competitions.BackColor = System.Drawing.Color.Teal;
+            this.btn_view_competitions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_view_competitions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_view_competitions.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_view_competitions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_view_competitions.Location = new System.Drawing.Point(114, 0);
+            this.btn_view_competitions.Name = "btn_view_competitions";
+            this.btn_view_competitions.Size = new System.Drawing.Size(283, 118);
+            this.btn_view_competitions.TabIndex = 2;
+            this.btn_view_competitions.Text = "Competitions Form";
+            this.btn_view_competitions.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
@@ -255,26 +255,26 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.White;
-            this.panel7.Controls.Add(this.button10);
+            this.panel7.Controls.Add(this.btn_view_suggestions);
             this.panel7.Controls.Add(this.panel8);
             this.panel7.Location = new System.Drawing.Point(151, 467);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(397, 118);
             this.panel7.TabIndex = 3;
             // 
-            // button10
+            // btn_view_suggestions
             // 
-            this.button10.BackColor = System.Drawing.Color.Teal;
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(114, 0);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(283, 118);
-            this.button10.TabIndex = 2;
-            this.button10.Text = "View Suggestion Form";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btn_view_suggestions.BackColor = System.Drawing.Color.Teal;
+            this.btn_view_suggestions.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_view_suggestions.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_view_suggestions.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_view_suggestions.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_view_suggestions.Location = new System.Drawing.Point(114, 0);
+            this.btn_view_suggestions.Name = "btn_view_suggestions";
+            this.btn_view_suggestions.Size = new System.Drawing.Size(283, 118);
+            this.btn_view_suggestions.TabIndex = 2;
+            this.btn_view_suggestions.Text = "View Suggestion Form";
+            this.btn_view_suggestions.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
@@ -300,27 +300,27 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.White;
-            this.panel9.Controls.Add(this.button11);
+            this.panel9.Controls.Add(this.btn_update_profile);
             this.panel9.Controls.Add(this.panel10);
             this.panel9.Location = new System.Drawing.Point(669, 467);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(397, 118);
             this.panel9.TabIndex = 3;
             // 
-            // button11
+            // btn_update_profile
             // 
-            this.button11.BackColor = System.Drawing.Color.Teal;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button11.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button11.Location = new System.Drawing.Point(114, 0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(283, 118);
-            this.button11.TabIndex = 2;
-            this.button11.Text = "Update Profile";
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
+            this.btn_update_profile.BackColor = System.Drawing.Color.Teal;
+            this.btn_update_profile.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_update_profile.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_update_profile.Font = new System.Drawing.Font("Franklin Gothic Book", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update_profile.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_update_profile.Location = new System.Drawing.Point(114, 0);
+            this.btn_update_profile.Name = "btn_update_profile";
+            this.btn_update_profile.Size = new System.Drawing.Size(283, 118);
+            this.btn_update_profile.TabIndex = 2;
+            this.btn_update_profile.Text = "Update Profile";
+            this.btn_update_profile.UseVisualStyleBackColor = false;
+            this.btn_update_profile.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel10
             // 
@@ -391,23 +391,23 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_manage_mem1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btn_view_income;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btn_manage_coaches;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btn_view_competitions;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button btn_view_suggestions;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button btn_update_profile;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox6;
     }

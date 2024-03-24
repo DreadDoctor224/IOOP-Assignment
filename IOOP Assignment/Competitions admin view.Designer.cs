@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.Datagridview6 = new System.Windows.Forms.DataGridView();
+            this.data_grid_competitions = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,7 +38,7 @@
             this.Btn_dtl03 = new System.Windows.Forms.Button();
             this.Btn_ext06 = new System.Windows.Forms.Button();
             this.Btn_hmpage008 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Datagridview6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,21 +51,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Competitions Form";
             // 
-            // Datagridview6
+            // data_grid_competitions
             // 
-            this.Datagridview6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Datagridview6.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_grid_competitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_competitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.Datagridview6.Location = new System.Drawing.Point(19, 89);
-            this.Datagridview6.Name = "Datagridview6";
-            this.Datagridview6.RowHeadersWidth = 62;
-            this.Datagridview6.RowTemplate.Height = 28;
-            this.Datagridview6.Size = new System.Drawing.Size(750, 534);
-            this.Datagridview6.TabIndex = 1;
+            this.data_grid_competitions.Location = new System.Drawing.Point(19, 89);
+            this.data_grid_competitions.Name = "data_grid_competitions";
+            this.data_grid_competitions.RowHeadersWidth = 62;
+            this.data_grid_competitions.RowTemplate.Height = 28;
+            this.data_grid_competitions.Size = new System.Drawing.Size(750, 534);
+            this.data_grid_competitions.TabIndex = 1;
             // 
             // Column1
             // 
@@ -148,11 +148,11 @@
             this.Controls.Add(this.Btn_hmpage008);
             this.Controls.Add(this.Btn_ext06);
             this.Controls.Add(this.Btn_dtl03);
-            this.Controls.Add(this.Datagridview6);
+            this.Controls.Add(this.data_grid_competitions);
             this.Controls.Add(this.label1);
             this.Name = "Competitions";
             this.Text = "Competitions";
-            ((System.ComponentModel.ISupportInitialize)(this.Datagridview6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,7 +161,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView Datagridview6;
+        private System.Windows.Forms.DataGridView data_grid_competitions;
         private System.Windows.Forms.Button Btn_dtl03;
         private System.Windows.Forms.Button Btn_ext06;
         private System.Windows.Forms.Button Btn_hmpage008;

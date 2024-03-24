@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form13 : Form
+    public partial class Performance_Form : Form
     {
-        public Form13()
+        public Performance_Form()
         {
             InitializeComponent();
         }

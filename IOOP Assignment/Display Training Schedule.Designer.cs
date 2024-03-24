@@ -28,73 +28,84 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.data_grid_training = new System.Windows.Forms.DataGridView();
             this.Lesson = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.btn_exit = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_training)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // data_grid_training
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_grid_training.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_training.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Lesson,
             this.Date,
             this.Time});
-            this.dataGridView1.Location = new System.Drawing.Point(192, 147);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(415, 201);
-            this.dataGridView1.TabIndex = 0;
+            this.data_grid_training.Location = new System.Drawing.Point(288, 226);
+            this.data_grid_training.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_grid_training.Name = "data_grid_training";
+            this.data_grid_training.RowHeadersWidth = 62;
+            this.data_grid_training.Size = new System.Drawing.Size(622, 309);
+            this.data_grid_training.TabIndex = 0;
             // 
             // Lesson
             // 
             this.Lesson.HeaderText = "Lesson";
+            this.Lesson.MinimumWidth = 8;
             this.Lesson.Name = "Lesson";
+            this.Lesson.Width = 150;
             // 
             // Date
             // 
             this.Date.HeaderText = "Date";
+            this.Date.MinimumWidth = 8;
             this.Date.Name = "Date";
+            this.Date.Width = 150;
             // 
             // Time
             // 
             this.Time.HeaderText = "Time";
+            this.Time.MinimumWidth = 8;
             this.Time.Name = "Time";
+            this.Time.Width = 150;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 72);
+            this.label1.Location = new System.Drawing.Point(398, 111);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(249, 31);
+            this.label1.Size = new System.Drawing.Size(372, 47);
             this.label1.TabIndex = 1;
             this.label1.Text = "Training Schedule";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // button1
+            // btn_exit
             // 
-            this.button1.Location = new System.Drawing.Point(360, 376);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "EXIT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_exit.Location = new System.Drawing.Point(540, 578);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_exit.Name = "btn_exit";
+            this.btn_exit.Size = new System.Drawing.Size(112, 35);
+            this.btn_exit.TabIndex = 2;
+            this.btn_exit.Text = "EXIT";
+            this.btn_exit.UseVisualStyleBackColor = true;
             // 
             // Form5
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.data_grid_training);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form5";
             this.Text = "Form5";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_training)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,11 +113,11 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView data_grid_training;
         private System.Windows.Forms.DataGridViewTextBoxColumn Lesson;
         private System.Windows.Forms.DataGridViewTextBoxColumn Date;
         private System.Windows.Forms.DataGridViewTextBoxColumn Time;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_exit;
     }
 }
