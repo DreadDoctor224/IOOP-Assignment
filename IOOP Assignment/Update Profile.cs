@@ -31,5 +31,25 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void Update_Profile_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtbox_pw2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtbox_email2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtbox_ph2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
