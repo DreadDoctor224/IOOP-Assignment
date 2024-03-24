@@ -17,10 +17,10 @@ namespace IOOP_Assignment
         
 
         public int UserID { get; set; }
-            public string UserName { get; set; }
-            public string role { get; set; }
-            public string Password { get; set; }
-            public string Email { get; set; }
+        public string UserName { get; set; }
+        public string role { get; set; }
+        public string Password { get; set; }
+        public string Email { get; set; }
         public string name { get; set; }
         public int phonenumber { get; set; }
 
