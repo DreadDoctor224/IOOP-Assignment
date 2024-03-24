@@ -53,6 +53,16 @@ namespace IOOP_Assignment
             this.Password = password;
         }
 
+        public User(string userName, string role, string password, string email, string name, int phonenumber)
+        {
+            UserName = userName;
+            this.role = role;
+            Password = password;
+            Email = email;
+            this.name = name;
+            this.phonenumber = phonenumber;
+        }
+
         public String login(String un)
         {
             string Status = null;

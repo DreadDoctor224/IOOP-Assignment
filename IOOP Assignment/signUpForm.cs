@@ -17,7 +17,7 @@ namespace IOOP_Assignment
             InitializeComponent();
         }
 
-        private void txtUserNameSignUp_TextChanged(object sender, EventArgs e)
+        private void signUpForm_Load(object sender, EventArgs e)
         {
 
         }
@@ -25,9 +25,16 @@ namespace IOOP_Assignment
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             string stat;
-            User obj1 = new User(txtUserNameSignUp.Text,txtRoleSignUp.Text,txtPassWordSignUp.Text);
-            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text,txtNameSignUp.Text,int.Parse(txtPhNumberSignUp.Text));
-            if (stat != null ) 
+
+            if (!int.TryParse(txtPhNumberSignUp.Text, out int phoneNumber))
+            {
+                MessageBox.Show("Enter a valid phone number");
+
+                return;
+            }
+            User obj1 = new User(txtUserNameSignUp.Text, txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text, txtNameSignUp.Text, phoneNumber);
+            stat = obj1.signup(txtUserNameSignUp.Text, txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text, txtNameSignUp.Text, phoneNumber);
+            if (stat != null)
             {
                 MessageBox.Show(stat);
             }
@@ -36,17 +43,7 @@ namespace IOOP_Assignment
             txtPassWordSignUp.Text = String.Empty;
             txtEmailSignUp.Text = String.Empty;
             txtNameSignUp.Text = string.Empty;
-            txtPhNumberSignUp.Text= string.Empty;
-
-        }
-
-        private void txtPassWordSignUp_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+            txtPhNumberSignUp.Text = string.Empty;
 
         }
     }
