@@ -47,83 +47,93 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(268, 21);
+            this.label1.Location = new System.Drawing.Point(402, 32);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.Size = new System.Drawing.Size(107, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign Up Form";
             // 
             // txtUserNameSignUp
             // 
-            this.txtUserNameSignUp.Location = new System.Drawing.Point(271, 131);
+            this.txtUserNameSignUp.Location = new System.Drawing.Point(406, 202);
+            this.txtUserNameSignUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtUserNameSignUp.Name = "txtUserNameSignUp";
-            this.txtUserNameSignUp.Size = new System.Drawing.Size(100, 20);
+            this.txtUserNameSignUp.Size = new System.Drawing.Size(148, 26);
             this.txtUserNameSignUp.TabIndex = 1;
             this.txtUserNameSignUp.TextChanged += new System.EventHandler(this.txtUserNameSignUp_TextChanged);
             // 
             // txtRoleSignUp
             // 
-            this.txtRoleSignUp.Location = new System.Drawing.Point(271, 180);
+            this.txtRoleSignUp.Location = new System.Drawing.Point(406, 277);
+            this.txtRoleSignUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtRoleSignUp.Name = "txtRoleSignUp";
-            this.txtRoleSignUp.Size = new System.Drawing.Size(100, 20);
+            this.txtRoleSignUp.Size = new System.Drawing.Size(148, 26);
             this.txtRoleSignUp.TabIndex = 2;
             // 
             // txtPassWordSignUp
             // 
-            this.txtPassWordSignUp.Location = new System.Drawing.Point(271, 233);
+            this.txtPassWordSignUp.Location = new System.Drawing.Point(406, 358);
+            this.txtPassWordSignUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtPassWordSignUp.Name = "txtPassWordSignUp";
-            this.txtPassWordSignUp.Size = new System.Drawing.Size(100, 20);
+            this.txtPassWordSignUp.Size = new System.Drawing.Size(148, 26);
             this.txtPassWordSignUp.TabIndex = 3;
             this.txtPassWordSignUp.TextChanged += new System.EventHandler(this.txtPassWordSignUp_TextChanged);
             // 
             // txtEmailSignUp
             // 
-            this.txtEmailSignUp.Location = new System.Drawing.Point(271, 284);
+            this.txtEmailSignUp.Location = new System.Drawing.Point(406, 437);
+            this.txtEmailSignUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtEmailSignUp.Name = "txtEmailSignUp";
-            this.txtEmailSignUp.Size = new System.Drawing.Size(100, 20);
+            this.txtEmailSignUp.Size = new System.Drawing.Size(148, 26);
             this.txtEmailSignUp.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(148, 131);
+            this.label2.Location = new System.Drawing.Point(222, 202);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 13);
+            this.label2.Size = new System.Drawing.Size(85, 20);
             this.label2.TabIndex = 5;
             this.label2.Text = "UserName";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(148, 180);
+            this.label3.Location = new System.Drawing.Point(222, 277);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(29, 13);
+            this.label3.Size = new System.Drawing.Size(42, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Role";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(148, 233);
+            this.label4.Location = new System.Drawing.Point(222, 358);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
+            this.label4.Size = new System.Drawing.Size(78, 20);
             this.label4.TabIndex = 7;
             this.label4.Text = "Passwrod";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(148, 284);
+            this.label5.Location = new System.Drawing.Point(222, 437);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
+            this.label5.Size = new System.Drawing.Size(48, 20);
             this.label5.TabIndex = 8;
             this.label5.Text = "Email";
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(233, 339);
+            this.btnSignUp.Location = new System.Drawing.Point(350, 522);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(75, 23);
+            this.btnSignUp.Size = new System.Drawing.Size(112, 35);
             this.btnSignUp.TabIndex = 9;
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = true;
@@ -132,40 +142,46 @@
             // txtNameSignUp
             // 
             this.txtNameSignUp.AutoSize = true;
-            this.txtNameSignUp.Location = new System.Drawing.Point(148, 66);
+            this.txtNameSignUp.Location = new System.Drawing.Point(222, 102);
+            this.txtNameSignUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtNameSignUp.Name = "txtNameSignUp";
-            this.txtNameSignUp.Size = new System.Drawing.Size(33, 13);
+            this.txtNameSignUp.Size = new System.Drawing.Size(49, 20);
             this.txtNameSignUp.TabIndex = 10;
             this.txtNameSignUp.Text = "name";
             // 
             // txtPhNumberSignUp
             // 
             this.txtPhNumberSignUp.AutoSize = true;
-            this.txtPhNumberSignUp.Location = new System.Drawing.Point(148, 100);
+            this.txtPhNumberSignUp.Location = new System.Drawing.Point(222, 154);
+            this.txtPhNumberSignUp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.txtPhNumberSignUp.Name = "txtPhNumberSignUp";
-            this.txtPhNumberSignUp.Size = new System.Drawing.Size(78, 13);
+            this.txtPhNumberSignUp.Size = new System.Drawing.Size(115, 20);
             this.txtPhNumberSignUp.TabIndex = 11;
             this.txtPhNumberSignUp.Text = "Phone Number";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(271, 100);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(406, 154);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(148, 26);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(271, 66);
+            this.textBox2.Location = new System.Drawing.Point(406, 102);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(148, 26);
             this.textBox2.TabIndex = 13;
             // 
             // signUpForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtPhNumberSignUp);
@@ -180,6 +196,7 @@
             this.Controls.Add(this.txtRoleSignUp);
             this.Controls.Add(this.txtUserNameSignUp);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "signUpForm";
             this.Text = "signUpForm";
             this.ResumeLayout(false);

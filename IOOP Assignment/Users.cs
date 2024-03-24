@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Configuration;
+using System.Web;
 
 
 namespace IOOP_Assignment
@@ -20,6 +21,8 @@ namespace IOOP_Assignment
             public string role { get; set; }
             public string Password { get; set; }
             public string Email { get; set; }
+        public string name { get; set; }
+        public int phonenumber { get; set; }
 
         public User(string userName, string password)
         {
@@ -42,6 +45,14 @@ namespace IOOP_Assignment
             Password = password;
         }
 
+        public User(string email, string name, int phonenumber, string password)
+        {
+            Email = email;
+            this.name = name;
+            this.phonenumber = phonenumber;
+            this.Password = password;
+        }
+
         public String login(String un)
         {
             string Status = null;
@@ -49,17 +60,17 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("select count(*) from users where username=@a and password =@b", con);
+            SqlCommand cmd = new SqlCommand("select count(*) from users where username=@a and password =@p", con);
             cmd.Parameters.AddWithValue("@a", UserName);
-            cmd.Parameters.AddWithValue("@b", Password);
+            cmd.Parameters.AddWithValue("@p", Password);
 
             int count = Convert.ToInt32(cmd.ExecuteScalar());
 
             if (count > 0) //if login success
             {
-                SqlCommand cmd2 = new SqlCommand("select role from users where username =@a and password =@b", con);
+                SqlCommand cmd2 = new SqlCommand("select role from users where username =@a and password =@p", con);
                 cmd2.Parameters.AddWithValue("@a", UserName);
-                cmd2.Parameters.AddWithValue("@b", Password);
+                cmd2.Parameters.AddWithValue("@p", Password);
 
                 string userRole = cmd2.ExecuteScalar().ToString();
 
@@ -112,10 +123,10 @@ namespace IOOP_Assignment
             }
             else
             {
-                SqlCommand cmdInsert = new SqlCommand("INSERT INTO users (username, password, role, email, name, phonenumber) VALUES (@a, @b, @r, @em, @n, @ph)", con); 
+                SqlCommand cmdInsert = new SqlCommand("INSERT INTO users (username, password, role, email, name, phonenumber) VALUES (@a, @p, @r, @em, @n, @ph)", con); 
                 cmdInsert.Parameters.AddWithValue("@a", UserName);
                 cmdInsert.Parameters.AddWithValue("@r", role);
-                cmdInsert.Parameters.AddWithValue("@b", Password);
+                cmdInsert.Parameters.AddWithValue("@p", Password);
                 cmdInsert.Parameters.AddWithValue("@em", email);
                 cmdInsert.Parameters.AddWithValue("@n", name);
                 cmdInsert.Parameters.AddWithValue("@ph", phonenumber);
@@ -134,6 +145,32 @@ namespace IOOP_Assignment
             }
             con.Close();
             return status;
+
+
+        }
+
+        public static string Update(string email, string name, int phonenumber, string password) 
+        {
+            string status;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdUpdate = new SqlCommand("update students set email =@e,phoneNumber=@ph where name =@n, password =@p");
+            cmdUpdate.Parameters.AddWithValue("@e", email);
+            cmdUpdate.Parameters.AddWithValue("@ph", phonenumber);
+            cmdUpdate.Parameters.AddWithValue("@n", name);
+            cmdUpdate.Parameters.AddWithValue("@p", password);
+
+            int i = cmdUpdate.ExecuteNonQuery();
+            if (i != 0)
+            {
+                status = "Update Succesfully";
+            }
+            else
+                status = "Unable to update";
+            con.Close();
+            return status;
+
         }
 
     }

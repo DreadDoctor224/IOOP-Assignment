@@ -26,7 +26,7 @@ namespace IOOP_Assignment
         {
             string stat;
             User obj1 = new User(txtUserNameSignUp.Text,txtRoleSignUp.Text,txtPassWordSignUp.Text);
-            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text);
+            stat = obj1.signup(txtUserNameSignUp.Text,txtRoleSignUp.Text, txtPassWordSignUp.Text, txtEmailSignUp.Text,txtNameSignUp.Text,int.Parse(txtPhNumberSignUp.Text));
             if (stat != null ) 
             {
                 MessageBox.Show(stat);
@@ -39,6 +39,11 @@ namespace IOOP_Assignment
         }
 
         private void txtPassWordSignUp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }

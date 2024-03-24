@@ -72,6 +72,7 @@
             this.Btn_updatepfadmin.TabIndex = 11;
             this.Btn_updatepfadmin.Text = "Update Profile";
             this.Btn_updatepfadmin.UseVisualStyleBackColor = false;
+            this.Btn_updatepfadmin.Click += new System.EventHandler(this.Btn_updatepfadmin_Click);
             // 
             // label2
             // 
