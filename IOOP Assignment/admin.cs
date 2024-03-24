@@ -10,6 +10,7 @@ namespace IOOP_Assignment
 {
     public class admin : User
     {
+       
       public void addMembers(string name, string email, string phoneNumber)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());

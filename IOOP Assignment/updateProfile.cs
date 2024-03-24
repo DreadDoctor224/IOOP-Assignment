@@ -22,5 +22,10 @@ namespace IOOP_Assignment
             User obj1 = new User(txtEmailUpdate.Text,txtNameUpdate.Text,int.Parse(txtPhoneNumberUpdate.Text),txtPassWordUpdate.Text);
             MessageBox.Show(User.Update(txtEmailUpdate.Text, txtNameUpdate.Text, int.Parse(txtPhoneNumberUpdate.Text), txtPassWordUpdate.Text));
         }
+
+        private void updateProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

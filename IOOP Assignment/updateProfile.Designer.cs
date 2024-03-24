@@ -140,6 +140,7 @@
             this.Controls.Add(this.label1);
             this.Name = "updateProfile";
             this.Text = "updateProfile";
+            this.Load += new System.EventHandler(this.updateProfile_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
