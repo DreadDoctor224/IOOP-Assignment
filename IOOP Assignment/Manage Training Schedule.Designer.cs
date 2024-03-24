@@ -29,70 +29,76 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn_display = new System.Windows.Forms.Button();
+            this.btn_add = new System.Windows.Forms.Button();
+            this.btn_edit = new System.Windows.Forms.Button();
+            this.btn_delete = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(266, 76);
+            this.label1.Location = new System.Drawing.Point(399, 117);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 31);
+            this.label1.Size = new System.Drawing.Size(394, 47);
             this.label1.TabIndex = 0;
             this.label1.Text = "Training Schedules";
             // 
-            // button1
+            // btn_display
             // 
-            this.button1.Location = new System.Drawing.Point(320, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "DISPLAY";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_display.Location = new System.Drawing.Point(480, 271);
+            this.btn_display.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_display.Name = "btn_display";
+            this.btn_display.Size = new System.Drawing.Size(242, 35);
+            this.btn_display.TabIndex = 1;
+            this.btn_display.Text = "DISPLAY";
+            this.btn_display.UseVisualStyleBackColor = true;
+            this.btn_display.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btn_add
             // 
-            this.button2.Location = new System.Drawing.Point(320, 233);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(161, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "ADD";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_add.Location = new System.Drawing.Point(480, 358);
+            this.btn_add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_add.Name = "btn_add";
+            this.btn_add.Size = new System.Drawing.Size(242, 35);
+            this.btn_add.TabIndex = 2;
+            this.btn_add.Text = "ADD";
+            this.btn_add.UseVisualStyleBackColor = true;
+            this.btn_add.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btn_edit
             // 
-            this.button3.Location = new System.Drawing.Point(320, 292);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(161, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "EDIT";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_edit.Location = new System.Drawing.Point(480, 449);
+            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_edit.Name = "btn_edit";
+            this.btn_edit.Size = new System.Drawing.Size(242, 35);
+            this.btn_edit.TabIndex = 3;
+            this.btn_edit.Text = "EDIT";
+            this.btn_edit.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_delete
             // 
-            this.button4.Location = new System.Drawing.Point(320, 354);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(161, 23);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "DELETE";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_delete.Location = new System.Drawing.Point(480, 545);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_delete.Name = "btn_delete";
+            this.btn_delete.Size = new System.Drawing.Size(242, 35);
+            this.btn_delete.TabIndex = 4;
+            this.btn_delete.Text = "DELETE";
+            this.btn_delete.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.btn_delete);
+            this.Controls.Add(this.btn_edit);
+            this.Controls.Add(this.btn_add);
+            this.Controls.Add(this.btn_display);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);
@@ -103,9 +109,9 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn_display;
+        private System.Windows.Forms.Button btn_add;
+        private System.Windows.Forms.Button btn_edit;
+        private System.Windows.Forms.Button btn_delete;
     }
 }

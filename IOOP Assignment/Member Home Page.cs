@@ -11,15 +11,15 @@ using System.Windows.Forms;
 namespace IOOP_Assignment
 {
     
-    public partial class Form10 : Form
+    public partial class Member_Home_Page : Form
     {
         public static string name;
-        public Form10()
+        public Member_Home_Page()
         {
             InitializeComponent();
         }
 
-        public Form10(string n)
+        public Member_Home_Page(string n)
         {
             InitializeComponent();
             name = n;

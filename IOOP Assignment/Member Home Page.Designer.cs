@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment
 {
-    partial class Form10
+    partial class Member_Home_Page
     {
         /// <summary>
         /// Required designer variable.
@@ -28,64 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_send_suggestions = new System.Windows.Forms.Button();
+            this.btn_view_competitions = new System.Windows.Forms.Button();
+            this.btn_view_performance = new System.Windows.Forms.Button();
+            this.btn_view_training_schedule = new System.Windows.Forms.Button();
+            this.btn_enroll_training = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_update_profile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button5
+            // btn_send_suggestions
             // 
-            this.button5.Location = new System.Drawing.Point(681, 354);
-            this.button5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(195, 35);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Send Suggestions";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btn_send_suggestions.Location = new System.Drawing.Point(681, 354);
+            this.btn_send_suggestions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_send_suggestions.Name = "btn_send_suggestions";
+            this.btn_send_suggestions.Size = new System.Drawing.Size(195, 35);
+            this.btn_send_suggestions.TabIndex = 11;
+            this.btn_send_suggestions.Text = "Send Suggestions";
+            this.btn_send_suggestions.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btn_view_competitions
             // 
-            this.button4.Location = new System.Drawing.Point(681, 237);
-            this.button4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(195, 35);
-            this.button4.TabIndex = 10;
-            this.button4.Text = "View Competitions";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_view_competitions.Location = new System.Drawing.Point(681, 237);
+            this.btn_view_competitions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_view_competitions.Name = "btn_view_competitions";
+            this.btn_view_competitions.Size = new System.Drawing.Size(195, 35);
+            this.btn_view_competitions.TabIndex = 10;
+            this.btn_view_competitions.Text = "View Competitions";
+            this.btn_view_competitions.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btn_view_performance
             // 
-            this.button3.Location = new System.Drawing.Point(333, 474);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(195, 35);
-            this.button3.TabIndex = 9;
-            this.button3.Text = "View Performance";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_view_performance.Location = new System.Drawing.Point(333, 474);
+            this.btn_view_performance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_view_performance.Name = "btn_view_performance";
+            this.btn_view_performance.Size = new System.Drawing.Size(195, 35);
+            this.btn_view_performance.TabIndex = 9;
+            this.btn_view_performance.Text = "View Performance";
+            this.btn_view_performance.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_view_training_schedule
             // 
-            this.button2.Location = new System.Drawing.Point(333, 354);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(195, 35);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "View Training Schedule";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_view_training_schedule.Location = new System.Drawing.Point(333, 354);
+            this.btn_view_training_schedule.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_view_training_schedule.Name = "btn_view_training_schedule";
+            this.btn_view_training_schedule.Size = new System.Drawing.Size(195, 35);
+            this.btn_view_training_schedule.TabIndex = 8;
+            this.btn_view_training_schedule.Text = "View Training Schedule";
+            this.btn_view_training_schedule.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_enroll_training
             // 
-            this.button1.Location = new System.Drawing.Point(333, 237);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 35);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Enroll in Training";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_enroll_training.Location = new System.Drawing.Point(333, 237);
+            this.btn_enroll_training.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_enroll_training.Name = "btn_enroll_training";
+            this.btn_enroll_training.Size = new System.Drawing.Size(195, 35);
+            this.btn_enroll_training.TabIndex = 7;
+            this.btn_enroll_training.Text = "Enroll in Training";
+            this.btn_enroll_training.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -98,31 +98,31 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Member Home Page";
             // 
-            // button6
+            // btn_update_profile
             // 
-            this.button6.Location = new System.Drawing.Point(681, 474);
-            this.button6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(195, 35);
-            this.button6.TabIndex = 12;
-            this.button6.Text = "Update Profile";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_update_profile.Location = new System.Drawing.Point(681, 474);
+            this.btn_update_profile.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_update_profile.Name = "btn_update_profile";
+            this.btn_update_profile.Size = new System.Drawing.Size(195, 35);
+            this.btn_update_profile.TabIndex = 12;
+            this.btn_update_profile.Text = "Update Profile";
+            this.btn_update_profile.UseVisualStyleBackColor = true;
             // 
-            // Form10
+            // Member_Home_Page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_update_profile);
+            this.Controls.Add(this.btn_send_suggestions);
+            this.Controls.Add(this.btn_view_competitions);
+            this.Controls.Add(this.btn_view_performance);
+            this.Controls.Add(this.btn_view_training_schedule);
+            this.Controls.Add(this.btn_enroll_training);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form10";
-            this.Text = "Form10";
+            this.Name = "Member_Home_Page";
+            this.Text = "Member_Home_Page";
             this.Load += new System.EventHandler(this.Form10_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -131,12 +131,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_send_suggestions;
+        private System.Windows.Forms.Button btn_view_competitions;
+        private System.Windows.Forms.Button btn_view_performance;
+        private System.Windows.Forms.Button btn_view_training_schedule;
+        private System.Windows.Forms.Button btn_enroll_training;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_update_profile;
     }
 }

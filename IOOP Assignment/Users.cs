@@ -83,7 +83,7 @@ namespace IOOP_Assignment
                 else if (userRole == "member")
                 {
                     //member homepage
-                    Form10 m = new Form10(un);
+                    Member_Home_Page m = new Member_Home_Page(un);
                     m.ShowDialog();
                 }
                 else if (userRole == "manager")

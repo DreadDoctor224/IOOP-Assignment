@@ -32,14 +32,14 @@
             this.btn_detail = new System.Windows.Forms.Button();
             this.btn_hmpage003 = new System.Windows.Forms.Button();
             this.lbl_suggest = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.data_grid_competitions = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit004
@@ -48,10 +48,9 @@
             this.btn_exit004.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_exit004.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit004.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_exit004.Location = new System.Drawing.Point(792, 457);
-            this.btn_exit004.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_exit004.Location = new System.Drawing.Point(1188, 703);
             this.btn_exit004.Name = "btn_exit004";
-            this.btn_exit004.Size = new System.Drawing.Size(69, 33);
+            this.btn_exit004.Size = new System.Drawing.Size(104, 51);
             this.btn_exit004.TabIndex = 9;
             this.btn_exit004.Text = "Exit";
             this.btn_exit004.UseVisualStyleBackColor = false;
@@ -62,10 +61,9 @@
             this.btn_detail.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_detail.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_detail.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_detail.Location = new System.Drawing.Point(400, 452);
-            this.btn_detail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_detail.Location = new System.Drawing.Point(600, 695);
             this.btn_detail.Name = "btn_detail";
-            this.btn_detail.Size = new System.Drawing.Size(75, 38);
+            this.btn_detail.Size = new System.Drawing.Size(112, 58);
             this.btn_detail.TabIndex = 8;
             this.btn_detail.Text = "Details";
             this.btn_detail.UseVisualStyleBackColor = false;
@@ -76,10 +74,9 @@
             this.btn_hmpage003.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_hmpage003.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_hmpage003.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_hmpage003.Location = new System.Drawing.Point(18, 452);
-            this.btn_hmpage003.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_hmpage003.Location = new System.Drawing.Point(27, 695);
             this.btn_hmpage003.Name = "btn_hmpage003";
-            this.btn_hmpage003.Size = new System.Drawing.Size(93, 38);
+            this.btn_hmpage003.Size = new System.Drawing.Size(140, 58);
             this.btn_hmpage003.TabIndex = 7;
             this.btn_hmpage003.Text = "Home Page";
             this.btn_hmpage003.UseVisualStyleBackColor = false;
@@ -88,31 +85,29 @@
             // 
             this.lbl_suggest.AutoSize = true;
             this.lbl_suggest.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_suggest.Location = new System.Drawing.Point(13, 10);
-            this.lbl_suggest.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_suggest.Location = new System.Drawing.Point(20, 15);
             this.lbl_suggest.Name = "lbl_suggest";
-            this.lbl_suggest.Size = new System.Drawing.Size(214, 26);
+            this.lbl_suggest.Size = new System.Drawing.Size(310, 37);
             this.lbl_suggest.TabIndex = 6;
             this.lbl_suggest.Text = "Competitions Form";
             // 
-            // dataGridView3
+            // data_grid_competitions
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.data_grid_competitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.data_grid_competitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
             this.Column6});
-            this.dataGridView3.Location = new System.Drawing.Point(125, 62);
-            this.dataGridView3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.RowHeadersWidth = 62;
-            this.dataGridView3.RowTemplate.Height = 28;
-            this.dataGridView3.Size = new System.Drawing.Size(644, 357);
-            this.dataGridView3.TabIndex = 5;
-            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
+            this.data_grid_competitions.Location = new System.Drawing.Point(203, 86);
+            this.data_grid_competitions.Name = "data_grid_competitions";
+            this.data_grid_competitions.RowHeadersWidth = 62;
+            this.data_grid_competitions.RowTemplate.Height = 28;
+            this.data_grid_competitions.Size = new System.Drawing.Size(966, 549);
+            this.data_grid_competitions.TabIndex = 5;
+            this.data_grid_competitions.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // Column1
             // 
@@ -158,19 +153,18 @@
             // 
             // View_Competition_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(874, 501);
+            this.ClientSize = new System.Drawing.Size(1311, 771);
             this.Controls.Add(this.btn_exit004);
             this.Controls.Add(this.btn_detail);
             this.Controls.Add(this.btn_hmpage003);
             this.Controls.Add(this.lbl_suggest);
-            this.Controls.Add(this.dataGridView3);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Controls.Add(this.data_grid_competitions);
             this.Name = "View_Competition_Form";
             this.Text = "View_Competition_Form";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,7 +176,7 @@
         private System.Windows.Forms.Button btn_detail;
         private System.Windows.Forms.Button btn_hmpage003;
         private System.Windows.Forms.Label lbl_suggest;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView data_grid_competitions;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
