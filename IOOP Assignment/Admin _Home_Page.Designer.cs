@@ -320,6 +320,7 @@
             this.button11.TabIndex = 2;
             this.button11.Text = "Update Profile";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // panel10
             // 

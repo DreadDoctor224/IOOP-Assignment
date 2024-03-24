@@ -155,7 +155,7 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdUpdate = new SqlCommand("update students set email =@e,phoneNumber=@ph where name =@n, password =@p");
+            SqlCommand cmdUpdate = new SqlCommand("UPDATE users SET email = @e, phoneNumber = @ph WHERE name = @n AND password = @p", con);
             cmdUpdate.Parameters.AddWithValue("@e", email);
             cmdUpdate.Parameters.AddWithValue("@ph", phonenumber);
             cmdUpdate.Parameters.AddWithValue("@n", name);

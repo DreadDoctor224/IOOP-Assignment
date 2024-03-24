@@ -68,6 +68,7 @@
     <Compile Include="Admin income view.Designer.cs">
       <DependentUpon>Admin income view.cs</DependentUpon>
     </Compile>
+    <Compile Include="admin.cs" />
     <Compile Include="adminstratorlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +139,12 @@
       <DependentUpon>signUpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="training.cs" />
+    <Compile Include="updateProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateProfile.Designer.cs">
+      <DependentUpon>updateProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users.cs" />
     <Compile Include="View Suggestions.cs">
       <SubType>Form</SubType>
@@ -230,18 +237,6 @@
     </Compile>
     <Compile Include="Suggestion Form Admin view.Designer.cs">
       <DependentUpon>Suggestion Form Admin view.cs</DependentUpon>
-    </Compile>
-    <Compile Include="update profile coach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="update profile coach.Designer.cs">
-      <DependentUpon>update profile coach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Update Profile.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Update Profile.Designer.cs">
-      <DependentUpon>Update Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="View Competition Form.cs">
       <SubType>Form</SubType>
@@ -337,11 +332,8 @@
     <EmbeddedResource Include="Suggestion Form Admin view.resx">
       <DependentUpon>Suggestion Form Admin view.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="update profile coach.resx">
-      <DependentUpon>update profile coach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Update Profile.resx">
-      <DependentUpon>Update Profile.cs</DependentUpon>
+    <EmbeddedResource Include="updateProfile.resx">
+      <DependentUpon>updateProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View Competition Form.resx">
       <DependentUpon>View Competition Form.cs</DependentUpon>
