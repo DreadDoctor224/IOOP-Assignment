@@ -63,6 +63,7 @@
             this.btnEditMem.TabIndex = 1;
             this.btnEditMem.Text = "Edit";
             this.btnEditMem.UseVisualStyleBackColor = true;
+            this.btnEditMem.Click += new System.EventHandler(this.btnEditMem_Click);
             // 
             // btnDeleteMem
             // 
@@ -154,6 +155,7 @@
             this.btncls.TabIndex = 12;
             this.btncls.Text = "Close";
             this.btncls.UseVisualStyleBackColor = true;
+            this.btncls.Click += new System.EventHandler(this.btncls_Click);
             // 
             // txtUserIDmem
             // 
