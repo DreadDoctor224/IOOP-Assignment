@@ -44,5 +44,10 @@ namespace IOOP_Assignment
             return "Member edited successfully.";
         }
 
+        public void deleteMembers(string name, string email, int phoneNumber, string role)
+        {
+
+        }
+
     }
 }
