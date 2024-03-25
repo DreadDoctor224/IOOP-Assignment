@@ -62,6 +62,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add Training Schedule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Training Schedule.Designer.cs">
+      <DependentUpon>Add Training Schedule.cs</DependentUpon>
+    </Compile>
     <Compile Include="add_edit_delete_members.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +250,9 @@
     <Compile Include="View Competition Form.Designer.cs">
       <DependentUpon>View Competition Form.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Add Training Schedule.resx">
+      <DependentUpon>Add Training Schedule.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add_edit_delete_members.resx">
       <DependentUpon>add_edit_delete_members.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,9 +359,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\administrator.jpg" />
