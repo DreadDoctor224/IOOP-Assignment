@@ -19,10 +19,7 @@ namespace IOOP_Assignment
 
         public string phonenumber { get; set; }
 
-        public Coach()
-        {
-            
-        }
+        
 
 
         public void AddTraining(int coachID, string name, string description, string level, decimal price, string schedule)

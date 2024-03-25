@@ -17,27 +17,25 @@ namespace IOOP_Assignment
         public string Name { get; set; }
         public string Description { get; set; }
         public string Level { get; set; }
-        public decimal Price { get; set; }
+        
         public string Schedule { get; set; }
 
-        public Training()
-        {      
-        }
+        
 
 
-        public string Edit_Schedule(int TrainingID, int coachID, string name, string description, string level, decimal price, string schedule)
+        public string Edit_Schedule(int TrainingID, int coachID, string name, string description, string level, string schedule)
         {
             string status;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdUpdate = new SqlCommand("UPDATE trainings SET coachID = @c, name = @n, description = @d, level = @l, price = @p, schedule = @s WHERE trainingID = @t ", con);
+            SqlCommand cmdUpdate = new SqlCommand("UPDATE trainings SET coachID = @c, name = @n, description = @d, level = @l, schedule = @s WHERE trainingID = @t ", con);
             cmdUpdate.Parameters.AddWithValue("@t", TrainingID);
             cmdUpdate.Parameters.AddWithValue("@c", coachID);
             cmdUpdate.Parameters.AddWithValue("@n", name);
             cmdUpdate.Parameters.AddWithValue("@d", description);
             cmdUpdate.Parameters.AddWithValue("@l", level);
-            cmdUpdate.Parameters.AddWithValue("@p", price);
+            
 
 
             int i = cmdUpdate.ExecuteNonQuery();

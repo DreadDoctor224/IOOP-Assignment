@@ -51,14 +51,9 @@ namespace IOOP_Assignment
                 return;
             }
 
-            if (!decimal.TryParse(txtPrice.Text, out decimal price))
-            {
-                MessageBox.Show("Add a valid price");
-                return;
-            }
 
             Training training = new Training();
-            training.Edit_Schedule(trainingID, coachID, txtName.Text, txtDescription.Text, txtLevel.Text, price, txtSchedule.Text);
+            training.Edit_Schedule(trainingID, coachID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
 
             txtTrainingID.Clear();
             txtCoachID.Clear();
