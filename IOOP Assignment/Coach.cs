@@ -29,13 +29,15 @@ namespace IOOP_Assignment
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (coachID, name, description, level, price, schedule) VALUES (@c, @n, @d, @l,@p)", con);
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (coachID, name, description, level, price, schedule) VALUES (@c, @n, @d, @l,@p,@s)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
             cmdAdd.Parameters.AddWithValue("@c", coachID);
             cmdAdd.Parameters.AddWithValue("@n", name);
             cmdAdd.Parameters.AddWithValue("@d", description);
             cmdAdd.Parameters.AddWithValue("@l", level);
             cmdAdd.Parameters.AddWithValue("@p", price);
+            cmdAdd.Parameters.AddWithValue("s", schedule);
+
 
             cmdAdd.ExecuteNonQuery();
             con.Close();
