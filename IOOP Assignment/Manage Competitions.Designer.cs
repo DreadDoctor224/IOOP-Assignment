@@ -34,45 +34,46 @@
             this.btn_delete = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_exit = new System.Windows.Forms.Button();
+            this.Competition = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             this.SuspendLayout();
             // 
             // data_grid_competitions
             // 
             this.data_grid_competitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_competitions.Location = new System.Drawing.Point(18, 18);
-            this.data_grid_competitions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_grid_competitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Competition,
+            this.Date});
+            this.data_grid_competitions.Location = new System.Drawing.Point(12, 12);
             this.data_grid_competitions.Name = "data_grid_competitions";
             this.data_grid_competitions.RowHeadersWidth = 62;
-            this.data_grid_competitions.Size = new System.Drawing.Size(854, 655);
+            this.data_grid_competitions.Size = new System.Drawing.Size(569, 426);
             this.data_grid_competitions.TabIndex = 0;
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(981, 234);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_add.Location = new System.Drawing.Point(654, 152);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(112, 35);
+            this.btn_add.Size = new System.Drawing.Size(75, 23);
             this.btn_add.TabIndex = 1;
             this.btn_add.Text = "ADD";
             this.btn_add.UseVisualStyleBackColor = true;
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(981, 349);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_edit.Location = new System.Drawing.Point(654, 227);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(112, 35);
+            this.btn_edit.Size = new System.Drawing.Size(75, 23);
             this.btn_edit.TabIndex = 2;
             this.btn_edit.Text = "EDIT";
             this.btn_edit.UseVisualStyleBackColor = true;
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(981, 465);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_delete.Location = new System.Drawing.Point(654, 302);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(112, 35);
+            this.btn_delete.Size = new System.Drawing.Size(75, 23);
             this.btn_delete.TabIndex = 3;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.UseVisualStyleBackColor = true;
@@ -81,35 +82,43 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(880, 131);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(587, 85);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 33);
+            this.label1.Size = new System.Drawing.Size(212, 24);
             this.label1.TabIndex = 4;
             this.label1.Text = "Manage Competitions";
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(981, 571);
-            this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_exit.Location = new System.Drawing.Point(654, 371);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(112, 35);
+            this.btn_exit.Size = new System.Drawing.Size(75, 23);
             this.btn_exit.TabIndex = 5;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = true;
             // 
+            // Competition
+            // 
+            this.Competition.HeaderText = "Competition";
+            this.Competition.Name = "Competition";
+            // 
+            // Date
+            // 
+            this.Date.HeaderText = "Date";
+            this.Date.Name = "Date";
+            // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.data_grid_competitions);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
@@ -127,5 +136,7 @@
         private System.Windows.Forms.Button btn_delete;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Competition;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
     }
 }

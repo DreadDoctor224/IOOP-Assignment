@@ -39,19 +39,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(399, 117);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(266, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(394, 47);
+            this.label1.Size = new System.Drawing.Size(264, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Training Schedules";
             // 
             // btn_display
             // 
-            this.btn_display.Location = new System.Drawing.Point(480, 271);
-            this.btn_display.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_display.Location = new System.Drawing.Point(321, 176);
             this.btn_display.Name = "btn_display";
-            this.btn_display.Size = new System.Drawing.Size(242, 35);
+            this.btn_display.Size = new System.Drawing.Size(161, 23);
             this.btn_display.TabIndex = 1;
             this.btn_display.Text = "DISPLAY";
             this.btn_display.UseVisualStyleBackColor = true;
@@ -59,10 +57,9 @@
             // 
             // btn_add
             // 
-            this.btn_add.Location = new System.Drawing.Point(480, 358);
-            this.btn_add.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_add.Location = new System.Drawing.Point(320, 233);
             this.btn_add.Name = "btn_add";
-            this.btn_add.Size = new System.Drawing.Size(242, 35);
+            this.btn_add.Size = new System.Drawing.Size(161, 23);
             this.btn_add.TabIndex = 2;
             this.btn_add.Text = "ADD";
             this.btn_add.UseVisualStyleBackColor = true;
@@ -70,35 +67,33 @@
             // 
             // btn_edit
             // 
-            this.btn_edit.Location = new System.Drawing.Point(480, 449);
-            this.btn_edit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_edit.Location = new System.Drawing.Point(320, 292);
             this.btn_edit.Name = "btn_edit";
-            this.btn_edit.Size = new System.Drawing.Size(242, 35);
+            this.btn_edit.Size = new System.Drawing.Size(161, 23);
             this.btn_edit.TabIndex = 3;
             this.btn_edit.Text = "EDIT";
             this.btn_edit.UseVisualStyleBackColor = true;
             // 
             // btn_delete
             // 
-            this.btn_delete.Location = new System.Drawing.Point(480, 545);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_delete.Location = new System.Drawing.Point(320, 354);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(242, 35);
+            this.btn_delete.Size = new System.Drawing.Size(161, 23);
             this.btn_delete.TabIndex = 4;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.UseVisualStyleBackColor = true;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_delete);
             this.Controls.Add(this.btn_edit);
             this.Controls.Add(this.btn_add);
             this.Controls.Add(this.btn_display);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form3";
             this.Text = "Form3";
             this.ResumeLayout(false);

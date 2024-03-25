@@ -112,11 +112,11 @@
     <Compile Include="Enroll in Training.Designer.cs">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form13.cs">
+    <Compile Include="View Performance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form13.Designer.cs">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <Compile Include="View Performance.Designer.cs">
+      <DependentUpon>View Performance.cs</DependentUpon>
     </Compile>
     <Compile Include="manager.cs" />
     <Compile Include="member.cs" />
@@ -164,11 +164,11 @@
     <Compile Include="Manager Home Page.Designer.cs">
       <DependentUpon>Manager Home Page.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="Record Performance.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.Designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="Record Performance.Designer.cs">
+      <DependentUpon>Record Performance.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin _Home_Page.cs">
       <SubType>Form</SubType>
@@ -268,8 +268,8 @@
     <EmbeddedResource Include="Enroll in Training.resx">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form13.resx">
-      <DependentUpon>Form13.cs</DependentUpon>
+    <EmbeddedResource Include="View Performance.resx">
+      <DependentUpon>View Performance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Member Home Page.resx">
       <DependentUpon>Member Home Page.cs</DependentUpon>
@@ -280,8 +280,8 @@
     <EmbeddedResource Include="Manager Home Page.resx">
       <DependentUpon>Manager Home Page.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="Record Performance.resx">
+      <DependentUpon>Record Performance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin _Home_Page.resx">
       <DependentUpon>Admin _Home_Page.cs</DependentUpon>
@@ -434,6 +434,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ioopDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\163-1634991_fitness-free-icon-fitness-icon.png" />
+    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design1.jpg" />
+    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

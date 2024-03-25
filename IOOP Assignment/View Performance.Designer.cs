@@ -38,42 +38,39 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(33, 29);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(22, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 47);
+            this.label1.Size = new System.Drawing.Size(180, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Performance";
             // 
             // data_grid_performance
             // 
             this.data_grid_performance.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_performance.Location = new System.Drawing.Point(42, 98);
-            this.data_grid_performance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_grid_performance.Location = new System.Drawing.Point(28, 64);
             this.data_grid_performance.Name = "data_grid_performance";
             this.data_grid_performance.RowHeadersWidth = 62;
-            this.data_grid_performance.Size = new System.Drawing.Size(1112, 511);
+            this.data_grid_performance.Size = new System.Drawing.Size(741, 332);
             this.data_grid_performance.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1041, 638);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Location = new System.Drawing.Point(694, 415);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 2;
             this.button1.Text = "EXIT";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Performance_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.data_grid_performance);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Performance_Form";
             this.Text = "Performance Form";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).EndInit();

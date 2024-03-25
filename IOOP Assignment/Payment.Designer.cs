@@ -35,6 +35,7 @@
             this.OutstandingFee = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Paid = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_gird_payment)).BeginInit();
             this.SuspendLayout();
             // 
@@ -94,15 +95,26 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(334, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 47);
+            this.label1.Size = new System.Drawing.Size(128, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Payment";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(677, 431);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // Form4
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(911, 466);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.data_gird_payment);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
@@ -123,5 +135,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn OutstandingFee;
         private System.Windows.Forms.DataGridViewTextBoxColumn Paid;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

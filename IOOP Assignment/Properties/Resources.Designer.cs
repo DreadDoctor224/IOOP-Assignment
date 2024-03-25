@@ -63,6 +63,16 @@ namespace IOOP_Assignment.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _163_1634991_fitness_free_icon_fitness_icon {
+            get {
+                object obj = ResourceManager.GetObject("163-1634991_fitness-free-icon-fitness-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap administrator {
             get {
                 object obj = ResourceManager.GetObject("administrator", resourceCulture);
@@ -256,6 +266,26 @@ namespace IOOP_Assignment.Properties {
         internal static System.Drawing.Bitmap suggest {
             get {
                 object obj = ResourceManager.GetObject("suggest", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vector_object_and_icons_for_sport_label_gym_badge_fitness_logo_design {
+            get {
+                object obj = ResourceManager.GetObject("vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vector_object_and_icons_for_sport_label_gym_badge_fitness_logo_design1 {
+            get {
+                object obj = ResourceManager.GetObject("vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
