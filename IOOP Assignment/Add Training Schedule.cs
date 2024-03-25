@@ -60,7 +60,6 @@ namespace IOOP_Assignment
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
-            txtPrice.Clear();
             txtSchedule.Clear();
 
             MessageBox.Show("Edit Successful");
@@ -79,20 +78,15 @@ namespace IOOP_Assignment
                 return;
             }
 
-            if (!decimal.TryParse(txtPrice.Text, out decimal price))
-            {
-                MessageBox.Show("Add a valid price");
-                return;
-            }
+           
 
             Coach coach = new Coach();
-            coach.AddTraining(coachID, txtName.Text, txtDescription.Text, txtLevel.Text, price, txtSchedule.Text);
+            coach.AddTraining(coachID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
 
             txtCoachID.Clear();
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
-            txtPrice.Clear();
             txtSchedule.Clear();
 
             MessageBox.Show("Traning Scheule Added Successfully!.");
@@ -114,7 +108,6 @@ namespace IOOP_Assignment
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
-            txtPrice.Clear();
             txtSchedule.Clear();
 
             MessageBox.Show("Traning Scheule Deleted.");

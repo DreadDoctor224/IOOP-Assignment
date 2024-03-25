@@ -22,17 +22,16 @@ namespace IOOP_Assignment
 
 
 
-        public void AddTraining(int coachID, string name, string description, string level, decimal price, string schedule)
+        public void AddTraining(int coachID, string name, string description, string level, string schedule)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (coachID, name, description, level, price, schedule) VALUES (@c, @n, @d, @l,@p,@s)", con);
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (coachID, name, description, level, schedule) VALUES (@c, @n, @d, @l, @s)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
             cmdAdd.Parameters.AddWithValue("@c", coachID);
             cmdAdd.Parameters.AddWithValue("@n", name);
             cmdAdd.Parameters.AddWithValue("@d", description);
             cmdAdd.Parameters.AddWithValue("@l", level);
-            cmdAdd.Parameters.AddWithValue("@p", price);
             cmdAdd.Parameters.AddWithValue("s", schedule);
 
 
