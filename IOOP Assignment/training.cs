@@ -11,16 +11,16 @@ namespace IOOP_Assignment
 {
     public class Training
     {
-        
+
         public int TrainingID { get; set; }
         public int CoachID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Level { get; set; }
-        
+
         public string Schedule { get; set; }
 
-        
+
 
 
         public string Edit_Schedule(int TrainingID, int coachID, string name, string description, string level, string schedule)
@@ -35,7 +35,7 @@ namespace IOOP_Assignment
             cmdUpdate.Parameters.AddWithValue("@n", name);
             cmdUpdate.Parameters.AddWithValue("@d", description);
             cmdUpdate.Parameters.AddWithValue("@l", level);
-            
+
 
 
             int i = cmdUpdate.ExecuteNonQuery();
@@ -50,7 +50,7 @@ namespace IOOP_Assignment
         }
 
 
-    
+
 
     }
 }

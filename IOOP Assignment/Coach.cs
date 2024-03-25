@@ -10,7 +10,7 @@ namespace IOOP_Assignment
 {
     public class Coach : User
     {
-        
+
 
         public int CoachID { get; set; }
         public string name { get; set; }
@@ -19,7 +19,7 @@ namespace IOOP_Assignment
 
         public string phonenumber { get; set; }
 
-        
+
 
 
         public void AddTraining(int coachID, string name, string description, string level, decimal price, string schedule)

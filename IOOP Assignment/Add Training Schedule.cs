@@ -85,7 +85,7 @@ namespace IOOP_Assignment
                 return;
             }
 
-            Coach coach= new Coach();
+            Coach coach = new Coach();
             coach.AddTraining(coachID, txtName.Text, txtDescription.Text, txtLevel.Text, price, txtSchedule.Text);
 
             txtCoachID.Clear();
