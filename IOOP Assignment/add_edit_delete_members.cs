@@ -34,5 +34,10 @@ namespace IOOP_Assignment
 
             MessageBox.Show("Member Added Successfully!.");
         }
+
+        private void btncls_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
