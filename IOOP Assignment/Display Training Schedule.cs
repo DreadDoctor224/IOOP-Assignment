@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form5 : Form
+    public partial class member_display_training_schedule : Form
     {
-        public Form5()
+        public member_display_training_schedule()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace IOOP_Assignment
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

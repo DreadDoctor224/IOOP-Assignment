@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form11 : Form
+    public partial class Member_enroll_in_training : Form
     {
-        public Form11()
+        public Member_enroll_in_training()
         {
             InitializeComponent();
         }

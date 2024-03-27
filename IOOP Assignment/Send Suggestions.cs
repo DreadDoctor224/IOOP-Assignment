@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form12 : Form
+    public partial class Send_Suggestions : Form
     {
-        public Form12()
+        public Send_Suggestions()
         {
             InitializeComponent();
         }

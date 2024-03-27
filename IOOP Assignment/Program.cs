@@ -16,7 +16,7 @@ namespace IOOP_Assignment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Home_Page_Admin());
+            Application.Run(new Manager_home_page());
         }
     }
 }

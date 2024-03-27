@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment
 {
-    partial class Performance_Form
+    partial class Member_Performance_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -119,7 +119,7 @@
             // 
             this.memberCompetitionsTableAdapter.ClearBeforeFill = true;
             // 
-            // Performance_Form
+            // Member_Performance_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -129,7 +129,7 @@
             this.Controls.Add(this.data_grid_performance);
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Performance_Form";
+            this.Name = "Member_Performance_Form";
             this.Text = "Performance Form";
             this.Load += new System.EventHandler(this.Performance_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).EndInit();

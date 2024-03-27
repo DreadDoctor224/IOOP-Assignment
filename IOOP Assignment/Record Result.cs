@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Competition_Form : Form
+    public partial class Manager_view_results : Form
     {
-        public Competition_Form()
+        public Manager_view_results()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace IOOP_Assignment
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

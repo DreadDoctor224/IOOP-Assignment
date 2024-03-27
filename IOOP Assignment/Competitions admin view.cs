@@ -28,5 +28,10 @@ namespace IOOP_Assignment
             this.competitionsTableAdapter.Fill(this.ioopDBDataSet4.competitions);
 
         }
+
+        private void Btn_ext06_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

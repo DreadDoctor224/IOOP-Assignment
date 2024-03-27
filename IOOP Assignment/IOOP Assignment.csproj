@@ -118,17 +118,23 @@
     <Compile Include="Enroll in Training.Designer.cs">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="Coach_Add_Recommendations.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.Designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="Coach_Add_Recommendations.Designer.cs">
+      <DependentUpon>Coach_Add_Recommendations.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form9.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form9.Designer.cs">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager_View_Recommendations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager_View_Recommendations.Designer.cs">
+      <DependentUpon>Manager_View_Recommendations.cs</DependentUpon>
     </Compile>
     <Compile Include="ioopDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -324,11 +330,14 @@
     <EmbeddedResource Include="Enroll in Training.resx">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="Coach_Add_Recommendations.resx">
+      <DependentUpon>Coach_Add_Recommendations.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form9.resx">
-      <DependentUpon>Form9.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager_View_Recommendations.resx">
+      <DependentUpon>Manager_View_Recommendations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View Performance.resx">
       <DependentUpon>View Performance.cs</DependentUpon>

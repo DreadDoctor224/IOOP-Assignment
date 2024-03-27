@@ -36,19 +36,19 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Btn_dtl03 = new System.Windows.Forms.Button();
-            this.Btn_ext06 = new System.Windows.Forms.Button();
-            this.Btn_hmpage008 = new System.Windows.Forms.Button();
-            this.ioopDBDataSet4 = new IOOP_Assignment.ioopDBDataSet4();
-            this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet4TableAdapters.competitionsTableAdapter();
             this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ioopDBDataSet4 = new IOOP_Assignment.ioopDBDataSet4();
+            this.Btn_dtl03 = new System.Windows.Forms.Button();
+            this.Btn_ext06 = new System.Windows.Forms.Button();
+            this.Btn_hmpage008 = new System.Windows.Forms.Button();
+            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet4TableAdapters.competitionsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -118,57 +118,6 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 150;
             // 
-            // Btn_dtl03
-            // 
-            this.Btn_dtl03.BackColor = System.Drawing.Color.Teal;
-            this.Btn_dtl03.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_dtl03.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_dtl03.Location = new System.Drawing.Point(362, 703);
-            this.Btn_dtl03.Name = "Btn_dtl03";
-            this.Btn_dtl03.Size = new System.Drawing.Size(154, 61);
-            this.Btn_dtl03.TabIndex = 2;
-            this.Btn_dtl03.Text = "Details";
-            this.Btn_dtl03.UseVisualStyleBackColor = false;
-            this.Btn_dtl03.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // Btn_ext06
-            // 
-            this.Btn_ext06.BackColor = System.Drawing.Color.Teal;
-            this.Btn_ext06.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_ext06.ForeColor = System.Drawing.Color.White;
-            this.Btn_ext06.Location = new System.Drawing.Point(695, 703);
-            this.Btn_ext06.Name = "Btn_ext06";
-            this.Btn_ext06.Size = new System.Drawing.Size(159, 61);
-            this.Btn_ext06.TabIndex = 3;
-            this.Btn_ext06.Text = "Exit";
-            this.Btn_ext06.UseVisualStyleBackColor = false;
-            // 
-            // Btn_hmpage008
-            // 
-            this.Btn_hmpage008.BackColor = System.Drawing.Color.Teal;
-            this.Btn_hmpage008.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_hmpage008.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_hmpage008.Location = new System.Drawing.Point(12, 703);
-            this.Btn_hmpage008.Name = "Btn_hmpage008";
-            this.Btn_hmpage008.Size = new System.Drawing.Size(148, 61);
-            this.Btn_hmpage008.TabIndex = 4;
-            this.Btn_hmpage008.Text = "Home Page";
-            this.Btn_hmpage008.UseVisualStyleBackColor = false;
-            // 
-            // ioopDBDataSet4
-            // 
-            this.ioopDBDataSet4.DataSetName = "ioopDBDataSet4";
-            this.ioopDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // competitionsBindingSource
-            // 
-            this.competitionsBindingSource.DataMember = "competitions";
-            this.competitionsBindingSource.DataSource = this.ioopDBDataSet4;
-            // 
-            // competitionsTableAdapter
-            // 
-            this.competitionsTableAdapter.ClearBeforeFill = true;
-            // 
             // competitionIDDataGridViewTextBoxColumn
             // 
             this.competitionIDDataGridViewTextBoxColumn.DataPropertyName = "competitionID";
@@ -201,6 +150,58 @@
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.Width = 150;
             // 
+            // competitionsBindingSource
+            // 
+            this.competitionsBindingSource.DataMember = "competitions";
+            this.competitionsBindingSource.DataSource = this.ioopDBDataSet4;
+            // 
+            // ioopDBDataSet4
+            // 
+            this.ioopDBDataSet4.DataSetName = "ioopDBDataSet4";
+            this.ioopDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // Btn_dtl03
+            // 
+            this.Btn_dtl03.BackColor = System.Drawing.Color.Teal;
+            this.Btn_dtl03.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_dtl03.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_dtl03.Location = new System.Drawing.Point(362, 703);
+            this.Btn_dtl03.Name = "Btn_dtl03";
+            this.Btn_dtl03.Size = new System.Drawing.Size(154, 61);
+            this.Btn_dtl03.TabIndex = 2;
+            this.Btn_dtl03.Text = "Details";
+            this.Btn_dtl03.UseVisualStyleBackColor = false;
+            this.Btn_dtl03.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // Btn_ext06
+            // 
+            this.Btn_ext06.BackColor = System.Drawing.Color.Teal;
+            this.Btn_ext06.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ext06.ForeColor = System.Drawing.Color.White;
+            this.Btn_ext06.Location = new System.Drawing.Point(695, 703);
+            this.Btn_ext06.Name = "Btn_ext06";
+            this.Btn_ext06.Size = new System.Drawing.Size(159, 61);
+            this.Btn_ext06.TabIndex = 3;
+            this.Btn_ext06.Text = "Exit";
+            this.Btn_ext06.UseVisualStyleBackColor = false;
+            this.Btn_ext06.Click += new System.EventHandler(this.Btn_ext06_Click);
+            // 
+            // Btn_hmpage008
+            // 
+            this.Btn_hmpage008.BackColor = System.Drawing.Color.Teal;
+            this.Btn_hmpage008.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_hmpage008.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_hmpage008.Location = new System.Drawing.Point(12, 703);
+            this.Btn_hmpage008.Name = "Btn_hmpage008";
+            this.Btn_hmpage008.Size = new System.Drawing.Size(148, 61);
+            this.Btn_hmpage008.TabIndex = 4;
+            this.Btn_hmpage008.Text = "Home Page";
+            this.Btn_hmpage008.UseVisualStyleBackColor = false;
+            // 
+            // competitionsTableAdapter
+            // 
+            this.competitionsTableAdapter.ClearBeforeFill = true;
+            // 
             // Competitions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -216,8 +217,8 @@
             this.Text = "Competitions";
             this.Load += new System.EventHandler(this.Competitions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

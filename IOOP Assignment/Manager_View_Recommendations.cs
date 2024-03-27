@@ -28,5 +28,10 @@ namespace IOOP_Assignment
             this.recommendationsTableAdapter.Fill(this.ioopDBDataSet.Recommendations);
 
         }
+
+        private void btn_exit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

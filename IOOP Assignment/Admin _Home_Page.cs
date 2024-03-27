@@ -55,7 +55,8 @@ namespace IOOP_Assignment
 
         private void button11_Click(object sender, EventArgs e)
         {
-
+            updateProfile form = new updateProfile();
+            form.Show();
         }
 
         private void btnOpenManageMem_Click(object sender, EventArgs e)
@@ -84,7 +85,8 @@ namespace IOOP_Assignment
 
         private void btn_manage_coaches_Click(object sender, EventArgs e)
         {
-
+            Admin_Add_Coach form = new Admin_Add_Coach();
+            form.Show();
         }
     }
 }

@@ -44,7 +44,19 @@ namespace IOOP_Assignment
 
         private void btn_recommendations_Click(object sender, EventArgs e)
         {
-            Suggestion_Form form = new Suggestion_Form();
+            Coach_Add_Recomendations form = new Coach_Add_Recomendations();
+            form.Show();
+        }
+
+        private void btn_viewpayments_Click(object sender, EventArgs e)
+        {
+            Coach_view_payments form = new Coach_view_payments();
+            form.Show();
+        }
+
+        private void btn_updatepf2_Click(object sender, EventArgs e)
+        {
+            updateProfile form = new updateProfile();
             form.Show();
         }
     }

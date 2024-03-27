@@ -1,6 +1,6 @@
 ﻿namespace IOOP_Assignment
 {
-    partial class Form8
+    partial class Manager_assign_members
     {
         /// <summary>
         /// Required designer variable.
@@ -28,49 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.data_grid_members = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_select = new System.Windows.Forms.Button();
             this.btn_assign = new System.Windows.Forms.Button();
             this.btn_exit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_members)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtMemberID = new System.Windows.Forms.TextBox();
+            this.txtCompetitionID = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // data_grid_members
-            // 
-            this.data_grid_members.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.data_grid_members.Location = new System.Drawing.Point(18, 105);
-            this.data_grid_members.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.data_grid_members.Name = "data_grid_members";
-            this.data_grid_members.RowHeadersWidth = 62;
-            this.data_grid_members.Size = new System.Drawing.Size(914, 569);
-            this.data_grid_members.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(18, 32);
+            this.label1.Location = new System.Drawing.Point(439, 117);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(199, 47);
+            this.label1.Size = new System.Drawing.Size(342, 47);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Members";
-            // 
-            // btn_select
-            // 
-            this.btn_select.Location = new System.Drawing.Point(994, 263);
-            this.btn_select.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btn_select.Name = "btn_select";
-            this.btn_select.Size = new System.Drawing.Size(112, 35);
-            this.btn_select.TabIndex = 2;
-            this.btn_select.Text = "SELECT";
-            this.btn_select.UseVisualStyleBackColor = true;
-            this.btn_select.Click += new System.EventHandler(this.button1_Click);
+            this.label1.Text = "Assign Members";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btn_assign
             // 
-            this.btn_assign.Location = new System.Drawing.Point(994, 371);
+            this.btn_assign.Location = new System.Drawing.Point(458, 533);
             this.btn_assign.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_assign.Name = "btn_assign";
             this.btn_assign.Size = new System.Drawing.Size(112, 35);
@@ -80,7 +61,7 @@
             // 
             // btn_exit
             // 
-            this.btn_exit.Location = new System.Drawing.Point(994, 483);
+            this.btn_exit.Location = new System.Drawing.Point(699, 533);
             this.btn_exit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_exit.Name = "btn_exit";
             this.btn_exit.Size = new System.Drawing.Size(112, 35);
@@ -89,32 +70,66 @@
             this.btn_exit.UseVisualStyleBackColor = true;
             this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
-            // Form8
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(414, 271);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Member ID";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(387, 366);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(115, 20);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Competition ID";
+            // 
+            // txtMemberID
+            // 
+            this.txtMemberID.Location = new System.Drawing.Point(578, 264);
+            this.txtMemberID.Name = "txtMemberID";
+            this.txtMemberID.Size = new System.Drawing.Size(203, 26);
+            this.txtMemberID.TabIndex = 7;
+            // 
+            // txtCompetitionID
+            // 
+            this.txtCompetitionID.Location = new System.Drawing.Point(578, 360);
+            this.txtCompetitionID.Name = "txtCompetitionID";
+            this.txtCompetitionID.Size = new System.Drawing.Size(203, 26);
+            this.txtCompetitionID.TabIndex = 8;
+            // 
+            // Manager_assign_members
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.txtCompetitionID);
+            this.Controls.Add(this.txtMemberID);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.btn_assign);
-            this.Controls.Add(this.btn_select);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.data_grid_members);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form8";
+            this.Name = "Manager_assign_members";
             this.Text = "Form8";
-            ((System.ComponentModel.ISupportInitialize)(this.data_grid_members)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView data_grid_members;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btn_select;
         private System.Windows.Forms.Button btn_assign;
         private System.Windows.Forms.Button btn_exit;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtMemberID;
+        private System.Windows.Forms.TextBox txtCompetitionID;
     }
 }

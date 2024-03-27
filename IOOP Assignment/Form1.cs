@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Manager_manage_competitions : Form
+    public partial class Coach_view_payments : Form
     {
-        public Manager_manage_competitions()
+        public Coach_view_payments()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_exit_Click(object sender, EventArgs e)
+        private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

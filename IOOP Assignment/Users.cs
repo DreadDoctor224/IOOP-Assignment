@@ -99,7 +99,7 @@ namespace IOOP_Assignment
                 else if (userRole == "manager")
                 {  
                     //manager homepage
-                    Form1 ma = new Form1(un);
+                    Manager_home_page ma = new Manager_home_page(un);
                     ma.ShowDialog();
                 }
                 else if (userRole == "coach")

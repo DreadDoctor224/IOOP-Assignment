@@ -30,17 +30,17 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ioopDBDataSet = new IOOP_Assignment.ioopDBDataSet();
-            this.recommendationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.recommendationsTableAdapter = new IOOP_Assignment.ioopDBDataSetTableAdapters.RecommendationsTableAdapter();
             this.recommendationIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coachIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.memberIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.recommendationsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ioopDBDataSet = new IOOP_Assignment.ioopDBDataSet();
+            this.recommendationsTableAdapter = new IOOP_Assignment.ioopDBDataSetTableAdapters.RecommendationsTableAdapter();
             this.btn_exit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recommendationsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -60,20 +60,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(669, 451);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ioopDBDataSet
-            // 
-            this.ioopDBDataSet.DataSetName = "ioopDBDataSet";
-            this.ioopDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // recommendationsBindingSource
-            // 
-            this.recommendationsBindingSource.DataMember = "Recommendations";
-            this.recommendationsBindingSource.DataSource = this.ioopDBDataSet;
-            // 
-            // recommendationsTableAdapter
-            // 
-            this.recommendationsTableAdapter.ClearBeforeFill = true;
             // 
             // recommendationIDDataGridViewTextBoxColumn
             // 
@@ -108,6 +94,20 @@
             this.competitionIDDataGridViewTextBoxColumn.Name = "competitionIDDataGridViewTextBoxColumn";
             this.competitionIDDataGridViewTextBoxColumn.Width = 150;
             // 
+            // recommendationsBindingSource
+            // 
+            this.recommendationsBindingSource.DataMember = "Recommendations";
+            this.recommendationsBindingSource.DataSource = this.ioopDBDataSet;
+            // 
+            // ioopDBDataSet
+            // 
+            this.ioopDBDataSet.DataSetName = "ioopDBDataSet";
+            this.ioopDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // recommendationsTableAdapter
+            // 
+            this.recommendationsTableAdapter.ClearBeforeFill = true;
+            // 
             // btn_exit
             // 
             this.btn_exit.Location = new System.Drawing.Point(447, 604);
@@ -117,6 +117,7 @@
             this.btn_exit.TabIndex = 8;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // manager_view_recommendations
             // 
@@ -130,8 +131,8 @@
             this.Text = "manager_view_recommendations";
             this.Load += new System.EventHandler(this.Form9_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recommendationsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }

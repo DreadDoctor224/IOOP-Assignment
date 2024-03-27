@@ -28,5 +28,51 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void btn_view_suggestion_Click(object sender, EventArgs e)
+        {
+            Send_Suggestions form = new Send_Suggestions();
+            form.Show();
+        }
+
+        private void btn_manage_mem1_Click(object sender, EventArgs e)
+        {
+            member_display_training_schedule form = new member_display_training_schedule();
+            form.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Competitions form = new Competitions();
+            form.Show();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_update_profile_Click(object sender, EventArgs e)
+        {
+            updateProfile form = new updateProfile();
+            form.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Member_Performance_Form form = new Member_Performance_Form();
+            form.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Member_enroll_in_training form = new Member_enroll_in_training();
+            form.Show();
+        }
     }
 }

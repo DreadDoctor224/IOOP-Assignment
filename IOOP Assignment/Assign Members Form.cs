@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
-    public partial class Form8 : Form
+    public partial class Manager_assign_members : Form
     {
-        public Form8()
+        public Manager_assign_members()
         {
             InitializeComponent();
         }
@@ -25,6 +25,11 @@ namespace IOOP_Assignment
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
