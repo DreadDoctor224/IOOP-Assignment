@@ -58,6 +58,7 @@
             this.btn_assign.TabIndex = 3;
             this.btn_assign.Text = "ASSIGN";
             this.btn_assign.UseVisualStyleBackColor = true;
+            this.btn_assign.Click += new System.EventHandler(this.btn_assign_Click);
             // 
             // btn_exit
             // 

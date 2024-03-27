@@ -31,5 +31,28 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void btn_assign_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtMemberID.Text, out int MemberID))
+            {
+                MessageBox.Show("Add a valid Member ID");
+                return;
+            }
+
+            if (!int.TryParse(txtCompetitionID.Text, out int CompetitionID))
+            {
+                MessageBox.Show("Add a valid Competition ID");
+                return;
+            }
+
+            Manager admin = new Manager();
+            admin.assignMembers(MemberID, CompetitionID);
+
+            txtCompetitionID.Clear();
+            txtMemberID.Clear();
+
+            MessageBox.Show("Member Assigned Successfully!.");
+        }
     }
 }
