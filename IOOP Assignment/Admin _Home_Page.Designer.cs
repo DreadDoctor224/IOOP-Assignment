@@ -228,6 +228,7 @@
             this.btn_view_suggestions.TabIndex = 2;
             this.btn_view_suggestions.Text = "View Suggestion Form";
             this.btn_view_suggestions.UseVisualStyleBackColor = false;
+            this.btn_view_suggestions.Click += new System.EventHandler(this.btn_view_suggestions_Click);
             // 
             // panel8
             // 

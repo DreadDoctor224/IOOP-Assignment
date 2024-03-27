@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn_exit004 = new System.Windows.Forms.Button();
             this.btn_detail = new System.Windows.Forms.Button();
             this.btn_hmpage003 = new System.Windows.Forms.Button();
@@ -39,7 +40,16 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ioopDBDataSet3 = new IOOP_Assignment.ioopDBDataSet3();
+            this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet3TableAdapters.competitionsTableAdapter();
+            this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit004
@@ -93,6 +103,7 @@
             // 
             // data_grid_competitions
             // 
+            this.data_grid_competitions.AutoGenerateColumns = false;
             this.data_grid_competitions.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_competitions.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -100,7 +111,12 @@
             this.Column3,
             this.Column4,
             this.Column5,
-            this.Column6});
+            this.Column6,
+            this.competitionIDDataGridViewTextBoxColumn,
+            this.managerIDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.dateDataGridViewTextBoxColumn});
+            this.data_grid_competitions.DataSource = this.competitionsBindingSource;
             this.data_grid_competitions.Location = new System.Drawing.Point(203, 86);
             this.data_grid_competitions.Name = "data_grid_competitions";
             this.data_grid_competitions.RowHeadersWidth = 62;
@@ -151,6 +167,52 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 150;
             // 
+            // ioopDBDataSet3
+            // 
+            this.ioopDBDataSet3.DataSetName = "ioopDBDataSet3";
+            this.ioopDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // competitionsBindingSource
+            // 
+            this.competitionsBindingSource.DataMember = "competitions";
+            this.competitionsBindingSource.DataSource = this.ioopDBDataSet3;
+            // 
+            // competitionsTableAdapter
+            // 
+            this.competitionsTableAdapter.ClearBeforeFill = true;
+            // 
+            // competitionIDDataGridViewTextBoxColumn
+            // 
+            this.competitionIDDataGridViewTextBoxColumn.DataPropertyName = "competitionID";
+            this.competitionIDDataGridViewTextBoxColumn.HeaderText = "competitionID";
+            this.competitionIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.competitionIDDataGridViewTextBoxColumn.Name = "competitionIDDataGridViewTextBoxColumn";
+            this.competitionIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // managerIDDataGridViewTextBoxColumn
+            // 
+            this.managerIDDataGridViewTextBoxColumn.DataPropertyName = "managerID";
+            this.managerIDDataGridViewTextBoxColumn.HeaderText = "managerID";
+            this.managerIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.managerIDDataGridViewTextBoxColumn.Name = "managerIDDataGridViewTextBoxColumn";
+            this.managerIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
+            this.dateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.Width = 150;
+            // 
             // View_Competition_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -164,7 +226,10 @@
             this.Controls.Add(this.data_grid_competitions);
             this.Name = "View_Competition_Form";
             this.Text = "View_Competition_Form";
+            this.Load += new System.EventHandler(this.View_Competition_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +248,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private ioopDBDataSet3 ioopDBDataSet3;
+        private System.Windows.Forms.BindingSource competitionsBindingSource;
+        private ioopDBDataSet3TableAdapters.competitionsTableAdapter competitionsTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn competitionIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn managerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateDataGridViewTextBoxColumn;
     }
 }

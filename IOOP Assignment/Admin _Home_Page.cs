@@ -63,5 +63,11 @@ namespace IOOP_Assignment
             add_edit_delete_members form = new add_edit_delete_members();
             form.Show();
         }
+
+        private void btn_view_suggestions_Click(object sender, EventArgs e)
+        {
+            Suggestion_Form form = new Suggestion_Form();
+            form.Show();
+        }
     }
 }
