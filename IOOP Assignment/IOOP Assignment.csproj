@@ -118,6 +118,23 @@
     <Compile Include="Enroll in Training.Designer.cs">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7.Designer.cs">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form9.Designer.cs">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ioopDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ioopDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View Performance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -277,6 +294,12 @@
     <EmbeddedResource Include="Enroll in Training.resx">
       <DependentUpon>Enroll in Training.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form7.resx">
+      <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form9.resx">
+      <DependentUpon>Form9.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View Performance.resx">
       <DependentUpon>View Performance.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +373,18 @@
     <EmbeddedResource Include="View Competition Form.resx">
       <DependentUpon>View Competition Form.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="ioopDBDataSet.xsc">
+      <DependentUpon>ioopDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ioopDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ioopDBDataSet.xss">
+      <DependentUpon>ioopDBDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

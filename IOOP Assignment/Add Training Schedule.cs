@@ -112,5 +112,10 @@ namespace IOOP_Assignment
 
             MessageBox.Show("Traning Scheule Deleted.");
         }
+
+        private void txtTrainingID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
