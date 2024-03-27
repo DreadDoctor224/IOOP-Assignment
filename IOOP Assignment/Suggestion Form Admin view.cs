@@ -21,5 +21,10 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void Btn_exi8_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

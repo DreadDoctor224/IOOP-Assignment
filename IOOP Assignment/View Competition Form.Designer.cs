@@ -40,16 +40,16 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ioopDBDataSet3 = new IOOP_Assignment.ioopDBDataSet3();
-            this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet3TableAdapters.competitionsTableAdapter();
             this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ioopDBDataSet3 = new IOOP_Assignment.ioopDBDataSet3();
+            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet3TableAdapters.competitionsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_exit004
@@ -64,6 +64,7 @@
             this.btn_exit004.TabIndex = 9;
             this.btn_exit004.Text = "Exit";
             this.btn_exit004.UseVisualStyleBackColor = false;
+            this.btn_exit004.Click += new System.EventHandler(this.btn_exit004_Click);
             // 
             // btn_detail
             // 
@@ -167,20 +168,6 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 150;
             // 
-            // ioopDBDataSet3
-            // 
-            this.ioopDBDataSet3.DataSetName = "ioopDBDataSet3";
-            this.ioopDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // competitionsBindingSource
-            // 
-            this.competitionsBindingSource.DataMember = "competitions";
-            this.competitionsBindingSource.DataSource = this.ioopDBDataSet3;
-            // 
-            // competitionsTableAdapter
-            // 
-            this.competitionsTableAdapter.ClearBeforeFill = true;
-            // 
             // competitionIDDataGridViewTextBoxColumn
             // 
             this.competitionIDDataGridViewTextBoxColumn.DataPropertyName = "competitionID";
@@ -213,6 +200,20 @@
             this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
             this.dateDataGridViewTextBoxColumn.Width = 150;
             // 
+            // competitionsBindingSource
+            // 
+            this.competitionsBindingSource.DataMember = "competitions";
+            this.competitionsBindingSource.DataSource = this.ioopDBDataSet3;
+            // 
+            // ioopDBDataSet3
+            // 
+            this.ioopDBDataSet3.DataSetName = "ioopDBDataSet3";
+            this.ioopDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // competitionsTableAdapter
+            // 
+            this.competitionsTableAdapter.ClearBeforeFill = true;
+            // 
             // View_Competition_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -228,8 +229,8 @@
             this.Text = "View_Competition_Form";
             this.Load += new System.EventHandler(this.View_Competition_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

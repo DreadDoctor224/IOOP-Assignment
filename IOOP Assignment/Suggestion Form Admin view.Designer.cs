@@ -36,15 +36,15 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ioopDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ioopDBDataSet1 = new IOOP_Assignment.ioopDBDataSet1();
             this.lbl_suggest = new System.Windows.Forms.Label();
             this.Btn_hmpage05 = new System.Windows.Forms.Button();
             this.Btn_detailsug = new System.Windows.Forms.Button();
             this.Btn_exi8 = new System.Windows.Forms.Button();
-            this.ioopDBDataSet1 = new IOOP_Assignment.ioopDBDataSet1();
-            this.ioopDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // data_grid_suggestions
@@ -109,6 +109,16 @@
             this.Column6.Name = "Column6";
             this.Column6.Width = 150;
             // 
+            // ioopDBDataSet1BindingSource
+            // 
+            this.ioopDBDataSet1BindingSource.DataSource = this.ioopDBDataSet1;
+            this.ioopDBDataSet1BindingSource.Position = 0;
+            // 
+            // ioopDBDataSet1
+            // 
+            this.ioopDBDataSet1.DataSetName = "ioopDBDataSet1";
+            this.ioopDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lbl_suggest
             // 
             this.lbl_suggest.AutoSize = true;
@@ -157,16 +167,7 @@
             this.Btn_exi8.TabIndex = 4;
             this.Btn_exi8.Text = "Exit";
             this.Btn_exi8.UseVisualStyleBackColor = false;
-            // 
-            // ioopDBDataSet1
-            // 
-            this.ioopDBDataSet1.DataSetName = "ioopDBDataSet1";
-            this.ioopDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // ioopDBDataSet1BindingSource
-            // 
-            this.ioopDBDataSet1BindingSource.DataSource = this.ioopDBDataSet1;
-            this.ioopDBDataSet1BindingSource.Position = 0;
+            this.Btn_exi8.Click += new System.EventHandler(this.Btn_exi8_Click);
             // 
             // Suggestion_Form
             // 
@@ -183,8 +184,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Suggestion_Form";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.data_grid_performance = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.ioopDBDataSet2 = new IOOP_Assignment.ioopDBDataSet2();
-            this.memberCompetitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.memberCompetitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet2TableAdapters.memberCompetitionsTableAdapter();
             this.memberIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.resultDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.memberCompetitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ioopDBDataSet2 = new IOOP_Assignment.ioopDBDataSet2();
+            this.button1 = new System.Windows.Forms.Button();
+            this.memberCompetitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet2TableAdapters.memberCompetitionsTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCompetitionsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,30 +70,6 @@
             this.data_grid_performance.Size = new System.Drawing.Size(1112, 511);
             this.data_grid_performance.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(1041, 638);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 35);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "EXIT";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // ioopDBDataSet2
-            // 
-            this.ioopDBDataSet2.DataSetName = "ioopDBDataSet2";
-            this.ioopDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // memberCompetitionsBindingSource
-            // 
-            this.memberCompetitionsBindingSource.DataMember = "memberCompetitions";
-            this.memberCompetitionsBindingSource.DataSource = this.ioopDBDataSet2;
-            // 
-            // memberCompetitionsTableAdapter
-            // 
-            this.memberCompetitionsTableAdapter.ClearBeforeFill = true;
-            // 
             // memberIDDataGridViewTextBoxColumn
             // 
             this.memberIDDataGridViewTextBoxColumn.DataPropertyName = "memberID";
@@ -118,6 +94,31 @@
             this.resultDataGridViewTextBoxColumn.Name = "resultDataGridViewTextBoxColumn";
             this.resultDataGridViewTextBoxColumn.Width = 150;
             // 
+            // memberCompetitionsBindingSource
+            // 
+            this.memberCompetitionsBindingSource.DataMember = "memberCompetitions";
+            this.memberCompetitionsBindingSource.DataSource = this.ioopDBDataSet2;
+            // 
+            // ioopDBDataSet2
+            // 
+            this.ioopDBDataSet2.DataSetName = "ioopDBDataSet2";
+            this.ioopDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(1041, 638);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(112, 35);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "EXIT";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // memberCompetitionsTableAdapter
+            // 
+            this.memberCompetitionsTableAdapter.ClearBeforeFill = true;
+            // 
             // Performance_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -132,8 +133,8 @@
             this.Text = "Performance Form";
             this.Load += new System.EventHandler(this.Performance_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCompetitionsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

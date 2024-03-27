@@ -87,6 +87,7 @@
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "EXIT";
             this.btn_exit.UseVisualStyleBackColor = true;
+            this.btn_exit.Click += new System.EventHandler(this.btn_exit_Click);
             // 
             // Form8
             // 

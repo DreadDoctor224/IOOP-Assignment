@@ -16,5 +16,22 @@ namespace IOOP_Assignment
         {
             InitializeComponent();
         }
+
+        private void btn_exit004_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Coach_Form_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'ioopDBDataSet6.coaches' table. You can move, or remove it, as needed.
+            this.coachesTableAdapter.Fill(this.ioopDBDataSet6.coaches);
+
+        }
+
+        private void data_grid_coach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

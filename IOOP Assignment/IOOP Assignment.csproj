@@ -150,6 +150,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ioopDBDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ioopDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ioopDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ioopDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ioopDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ioopDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ioopDBDataSet6.xsd</DependentUpon>
+    </Compile>
     <Compile Include="View Performance.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -432,6 +447,39 @@
     </None>
     <None Include="ioopDBDataSet3.xss">
       <DependentUpon>ioopDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet4.xsc">
+      <DependentUpon>ioopDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ioopDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ioopDBDataSet4.xss">
+      <DependentUpon>ioopDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet5.xsc">
+      <DependentUpon>ioopDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ioopDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ioopDBDataSet5.xss">
+      <DependentUpon>ioopDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet6.xsc">
+      <DependentUpon>ioopDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ioopDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ioopDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ioopDBDataSet6.xss">
+      <DependentUpon>ioopDBDataSet6.xsd</DependentUpon>
     </None>
     <None Include="Properties\App.config" />
     <None Include="Properties\Settings.settings">

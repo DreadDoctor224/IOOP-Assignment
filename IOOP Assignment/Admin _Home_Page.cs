@@ -69,5 +69,17 @@ namespace IOOP_Assignment
             Suggestion_Form form = new Suggestion_Form();
             form.Show();
         }
+
+        private void btn_view_competitions_Click(object sender, EventArgs e)
+        {
+            Competitions form = new Competitions();
+            form.Show();
+        }
+
+        private void btn_view_income_Click(object sender, EventArgs e)
+        {
+            Admin_income_view form = new Admin_income_view();
+            form.Show();
+        }
     }
 }

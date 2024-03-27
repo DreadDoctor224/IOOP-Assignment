@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.data_grid_coach = new System.Windows.Forms.DataGridView();
             this.Number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,11 +44,23 @@
             this.btn_exit004 = new System.Windows.Forms.Button();
             this.btn_coatbl = new System.Windows.Forms.Label();
             this.btn_hmpage001 = new System.Windows.Forms.Button();
+            this.ioopDBDataSet6 = new IOOP_Assignment.ioopDBDataSet6();
+            this.coachesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.coachesTableAdapter = new IOOP_Assignment.ioopDBDataSet6TableAdapters.coachesTableAdapter();
+            this.coachIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.incomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_coach)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // data_grid_coach
             // 
+            this.data_grid_coach.AutoGenerateColumns = false;
             this.data_grid_coach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.data_grid_coach.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Number,
@@ -57,13 +70,21 @@
             this.Column4,
             this.Column5,
             this.Column6,
-            this.Column7});
+            this.Column7,
+            this.coachIDDataGridViewTextBoxColumn,
+            this.userIDDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.emailDataGridViewTextBoxColumn,
+            this.phonenumberDataGridViewTextBoxColumn,
+            this.incomeDataGridViewTextBoxColumn});
+            this.data_grid_coach.DataSource = this.coachesBindingSource;
             this.data_grid_coach.Location = new System.Drawing.Point(128, 89);
             this.data_grid_coach.Name = "data_grid_coach";
             this.data_grid_coach.RowHeadersWidth = 62;
             this.data_grid_coach.RowTemplate.Height = 28;
-            this.data_grid_coach.Size = new System.Drawing.Size(992, 560);
+            this.data_grid_coach.Size = new System.Drawing.Size(992, 531);
             this.data_grid_coach.TabIndex = 0;
+            this.data_grid_coach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_coach_CellContentClick);
             // 
             // Number
             // 
@@ -172,6 +193,7 @@
             this.btn_exit004.TabIndex = 4;
             this.btn_exit004.Text = "Exit";
             this.btn_exit004.UseVisualStyleBackColor = false;
+            this.btn_exit004.Click += new System.EventHandler(this.btn_exit004_Click);
             // 
             // btn_coatbl
             // 
@@ -196,6 +218,68 @@
             this.btn_hmpage001.Text = "Home Page";
             this.btn_hmpage001.UseVisualStyleBackColor = false;
             // 
+            // ioopDBDataSet6
+            // 
+            this.ioopDBDataSet6.DataSetName = "ioopDBDataSet6";
+            this.ioopDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // coachesBindingSource
+            // 
+            this.coachesBindingSource.DataMember = "coaches";
+            this.coachesBindingSource.DataSource = this.ioopDBDataSet6;
+            // 
+            // coachesTableAdapter
+            // 
+            this.coachesTableAdapter.ClearBeforeFill = true;
+            // 
+            // coachIDDataGridViewTextBoxColumn
+            // 
+            this.coachIDDataGridViewTextBoxColumn.DataPropertyName = "coachID";
+            this.coachIDDataGridViewTextBoxColumn.HeaderText = "coachID";
+            this.coachIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.coachIDDataGridViewTextBoxColumn.Name = "coachIDDataGridViewTextBoxColumn";
+            this.coachIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // userIDDataGridViewTextBoxColumn
+            // 
+            this.userIDDataGridViewTextBoxColumn.DataPropertyName = "userID";
+            this.userIDDataGridViewTextBoxColumn.HeaderText = "userID";
+            this.userIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.userIDDataGridViewTextBoxColumn.Name = "userIDDataGridViewTextBoxColumn";
+            this.userIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // emailDataGridViewTextBoxColumn
+            // 
+            this.emailDataGridViewTextBoxColumn.DataPropertyName = "email";
+            this.emailDataGridViewTextBoxColumn.HeaderText = "email";
+            this.emailDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.emailDataGridViewTextBoxColumn.Name = "emailDataGridViewTextBoxColumn";
+            this.emailDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // phonenumberDataGridViewTextBoxColumn
+            // 
+            this.phonenumberDataGridViewTextBoxColumn.DataPropertyName = "phonenumber";
+            this.phonenumberDataGridViewTextBoxColumn.HeaderText = "phonenumber";
+            this.phonenumberDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.phonenumberDataGridViewTextBoxColumn.Name = "phonenumberDataGridViewTextBoxColumn";
+            this.phonenumberDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // incomeDataGridViewTextBoxColumn
+            // 
+            this.incomeDataGridViewTextBoxColumn.DataPropertyName = "income";
+            this.incomeDataGridViewTextBoxColumn.HeaderText = "income";
+            this.incomeDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.incomeDataGridViewTextBoxColumn.Name = "incomeDataGridViewTextBoxColumn";
+            this.incomeDataGridViewTextBoxColumn.Width = 150;
+            // 
             // Coach_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -211,7 +295,10 @@
             this.Controls.Add(this.data_grid_coach);
             this.Name = "Coach_Form";
             this.Text = "Coach_Form";
+            this.Load += new System.EventHandler(this.Coach_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_coach)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,5 +321,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
+        private ioopDBDataSet6 ioopDBDataSet6;
+        private System.Windows.Forms.BindingSource coachesBindingSource;
+        private ioopDBDataSet6TableAdapters.coachesTableAdapter coachesTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coachIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonenumberDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn incomeDataGridViewTextBoxColumn;
     }
 }

@@ -23,5 +23,10 @@ namespace IOOP_Assignment
             this.memberCompetitionsTableAdapter.Fill(this.ioopDBDataSet2.memberCompetitions);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
