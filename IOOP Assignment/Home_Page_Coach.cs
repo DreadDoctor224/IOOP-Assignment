@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IOOP_Assignment.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -27,6 +28,24 @@ namespace IOOP_Assignment
         private void Home_Page_Coach_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_manage_mem1_Click(object sender, EventArgs e)
+        {
+            Add_Training_Schedule form = new Add_Training_Schedule();
+            form.Show();
+        }
+
+        private void btn_recordperformance_Click(object sender, EventArgs e)
+        {
+            Record_Performance_Form_Coach form = new Record_Performance_Form_Coach();
+            form.Show();
+        }
+
+        private void btn_recommendations_Click(object sender, EventArgs e)
+        {
+            Suggestion_Form form = new Suggestion_Form();
+            form.Show();
         }
     }
 }

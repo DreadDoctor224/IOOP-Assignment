@@ -88,6 +88,7 @@
             this.btn_manage_mem1.TabIndex = 2;
             this.btn_manage_mem1.Text = "Manage Training Schedule";
             this.btn_manage_mem1.UseVisualStyleBackColor = false;
+            this.btn_manage_mem1.Click += new System.EventHandler(this.btn_manage_mem1_Click);
             // 
             // pnl_hmad2
             // 
@@ -133,6 +134,7 @@
             this.btn_recordperformance.TabIndex = 2;
             this.btn_recordperformance.Text = "Record Performance ";
             this.btn_recordperformance.UseVisualStyleBackColor = false;
+            this.btn_recordperformance.Click += new System.EventHandler(this.btn_recordperformance_Click);
             // 
             // panel2
             // 
@@ -268,6 +270,7 @@
             this.btn_recommendations.TabIndex = 2;
             this.btn_recommendations.Text = "Send Recommendations ";
             this.btn_recommendations.UseVisualStyleBackColor = false;
+            this.btn_recommendations.Click += new System.EventHandler(this.btn_recommendations_Click);
             // 
             // panel8
             // 

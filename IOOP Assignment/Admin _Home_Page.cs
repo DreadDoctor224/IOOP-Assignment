@@ -81,5 +81,10 @@ namespace IOOP_Assignment
             Admin_income_view form = new Admin_income_view();
             form.Show();
         }
+
+        private void btn_manage_coaches_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

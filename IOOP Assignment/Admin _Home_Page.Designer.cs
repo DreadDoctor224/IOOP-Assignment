@@ -187,6 +187,7 @@
             this.btn_manage_coaches.TabIndex = 2;
             this.btn_manage_coaches.Text = "Manage Coaches";
             this.btn_manage_coaches.UseVisualStyleBackColor = false;
+            this.btn_manage_coaches.Click += new System.EventHandler(this.btn_manage_coaches_Click);
             // 
             // panel4
             // 
