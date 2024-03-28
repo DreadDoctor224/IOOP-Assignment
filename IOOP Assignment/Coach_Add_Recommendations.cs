@@ -21,5 +21,89 @@ namespace IOOP_Assignment
         {
 
         }
+
+        private void btAddd_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtCoachID.Text, out int coachID))
+            {
+                MessageBox.Show("Add a Coach ID");
+                return;
+            }
+
+            if (!int.TryParse(txtMembersID.Text, out int memberID))
+            {
+                MessageBox.Show("Add a valid Member ID");
+                return;
+            }
+
+            if (!int.TryParse(txCompetitionsID.Text, out int competitionID ))
+            {
+                MessageBox.Show("Add a valid Competition ID");
+                return;
+            }
+            Coach Coach= new Coach();
+            Coach.AddRecommendations(coachID, memberID, competitionID);
+
+            txtCoachID.Clear();
+            txtMembersID.Clear();
+            txCompetitionsID.Clear();
+
+            MessageBox.Show("Recomendation Added Successfully!.");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtRecommendations.Text, out int recomendationID))
+            {
+                MessageBox.Show("Add a Coach ID");
+                return;
+            }
+
+            if (!int.TryParse(txtCoachID.Text, out int coachID))
+            {
+                MessageBox.Show("Add a Coach ID");
+                return;
+            }
+
+            if (!int.TryParse(txtMembersID.Text, out int memberID))
+            {
+                MessageBox.Show("Add a valid Member ID");
+                return;
+            }
+
+            if (!int.TryParse(txCompetitionsID.Text, out int competitionID))
+            {
+                MessageBox.Show("Add a valid Competition ID");
+                return;
+            }
+            Coach Coach = new Coach();
+            Coach.EditRecomendations(recomendationID,coachID, memberID, competitionID);
+
+            txtRecommendations.Clear();
+            txtCoachID.Clear();
+            txtMembersID.Clear();
+            txCompetitionsID.Clear();
+
+            MessageBox.Show("Recomendation Edit Successfully!.");
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtRecommendations.Text, out int recomendationID))
+            {
+                MessageBox.Show("Add a Coach ID");
+                return;
+            }
+            Coach Coach = new Coach();
+            Coach.DeleteRecomendations(recomendationID);
+
+            txtRecommendations.Clear();
+            txtCoachID.Clear();
+            txtMembersID.Clear();
+            txCompetitionsID.Clear();
+
+            MessageBox.Show("Recomendation Added Successfully!.");
+        }
     }
 }
