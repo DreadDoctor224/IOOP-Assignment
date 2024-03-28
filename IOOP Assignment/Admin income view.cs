@@ -24,7 +24,7 @@ namespace IOOP_Assignment
             // TODO: This line of code loads data into the 'ioopDBDataSet5.coaches' table. You can move, or remove it, as needed.
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-
+            //sql  query issue
             SqlDataAdapter view_income = new SqlDataAdapter("SELECT coachID, name, income FROM coaches", con);
             DataTable dt = new DataTable();
             view_income.Fill(dt);
