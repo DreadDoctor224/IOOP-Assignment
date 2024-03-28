@@ -118,7 +118,7 @@
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Manager_assign_members";
-            this.Text = "Form8";
+            this.Text = "Assign members";
             this.ResumeLayout(false);
             this.PerformLayout();
 
