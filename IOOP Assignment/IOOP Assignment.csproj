@@ -87,11 +87,11 @@
     <Compile Include="adminstratorlogin.Designer.cs">
       <DependentUpon>adminstratorlogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Coach Form.cs">
+    <Compile Include="Admin_Coach Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Coach Form.Designer.cs">
-      <DependentUpon>Coach Form.cs</DependentUpon>
+    <Compile Include="Admin_Coach Form.Designer.cs">
+      <DependentUpon>Admin_Coach Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Coach.cs" />
     <Compile Include="Competitions admin view.cs">
@@ -318,8 +318,8 @@
     <EmbeddedResource Include="Assign Members Form.resx">
       <DependentUpon>Assign Members Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Coach Form.resx">
-      <DependentUpon>Coach Form.cs</DependentUpon>
+    <EmbeddedResource Include="Admin_Coach Form.resx">
+      <DependentUpon>Admin_Coach Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Competitions admin view.resx">
       <DependentUpon>Competitions admin view.cs</DependentUpon>

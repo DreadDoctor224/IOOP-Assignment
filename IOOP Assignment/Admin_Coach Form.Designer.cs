@@ -42,11 +42,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCoachID = new System.Windows.Forms.TextBox();
+            this.txtUserID = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
-            this.txtRole = new System.Windows.Forms.TextBox();
+            this.txtIncome = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet6)).BeginInit();
             this.SuspendLayout();
@@ -73,6 +73,7 @@
             this.btn_add_coach.TabIndex = 1;
             this.btn_add_coach.Text = "Add Coach";
             this.btn_add_coach.UseVisualStyleBackColor = false;
+            this.btn_add_coach.Click += new System.EventHandler(this.btn_add_coach_Click);
             // 
             // btn_edit_coach
             // 
@@ -86,6 +87,7 @@
             this.btn_edit_coach.TabIndex = 2;
             this.btn_edit_coach.Text = "Edit Coach";
             this.btn_edit_coach.UseVisualStyleBackColor = false;
+            this.btn_edit_coach.Click += new System.EventHandler(this.btn_edit_coach_Click);
             // 
             // btn_del_coach
             // 
@@ -99,6 +101,7 @@
             this.btn_del_coach.TabIndex = 3;
             this.btn_del_coach.Text = "Delete Coach";
             this.btn_del_coach.UseVisualStyleBackColor = false;
+            this.btn_del_coach.Click += new System.EventHandler(this.btn_del_coach_Click);
             // 
             // btn_exit004
             // 
@@ -120,9 +123,9 @@
             this.btn_coatbl.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_coatbl.Location = new System.Drawing.Point(510, 82);
             this.btn_coatbl.Name = "btn_coatbl";
-            this.btn_coatbl.Size = new System.Drawing.Size(212, 37);
+            this.btn_coatbl.Size = new System.Drawing.Size(284, 37);
             this.btn_coatbl.TabIndex = 5;
-            this.btn_coatbl.Text = "Coach Table";
+            this.btn_coatbl.Text = "Manage Coaches";
             // 
             // coachesTableAdapter
             // 
@@ -131,11 +134,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(377, 201);
+            this.label1.Location = new System.Drawing.Point(389, 197);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(64, 20);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Coach ID";
+            this.label1.Text = "User ID";
             // 
             // label2
             // 
@@ -167,18 +170,18 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(411, 442);
+            this.label5.Location = new System.Drawing.Point(391, 442);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(42, 20);
+            this.label5.Size = new System.Drawing.Size(62, 20);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Role";
+            this.label5.Text = "Income";
             // 
-            // txtCoachID
+            // txtUserID
             // 
-            this.txtCoachID.Location = new System.Drawing.Point(517, 194);
-            this.txtCoachID.Name = "txtCoachID";
-            this.txtCoachID.Size = new System.Drawing.Size(232, 26);
-            this.txtCoachID.TabIndex = 11;
+            this.txtUserID.Location = new System.Drawing.Point(517, 194);
+            this.txtUserID.Name = "txtUserID";
+            this.txtUserID.Size = new System.Drawing.Size(232, 26);
+            this.txtUserID.TabIndex = 11;
             // 
             // txtName
             // 
@@ -201,12 +204,12 @@
             this.txtPhoneNumber.Size = new System.Drawing.Size(232, 26);
             this.txtPhoneNumber.TabIndex = 14;
             // 
-            // txtRole
+            // txtIncome
             // 
-            this.txtRole.Location = new System.Drawing.Point(517, 436);
-            this.txtRole.Name = "txtRole";
-            this.txtRole.Size = new System.Drawing.Size(232, 26);
-            this.txtRole.TabIndex = 15;
+            this.txtIncome.Location = new System.Drawing.Point(517, 436);
+            this.txtIncome.Name = "txtIncome";
+            this.txtIncome.Size = new System.Drawing.Size(232, 26);
+            this.txtIncome.TabIndex = 15;
             // 
             // Admin_Add_Coach
             // 
@@ -214,11 +217,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1311, 771);
-            this.Controls.Add(this.txtRole);
+            this.Controls.Add(this.txtIncome);
             this.Controls.Add(this.txtPhoneNumber);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.txtCoachID);
+            this.Controls.Add(this.txtUserID);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -253,10 +256,10 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtCoachID;
+        private System.Windows.Forms.TextBox txtUserID;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhoneNumber;
-        private System.Windows.Forms.TextBox txtRole;
+        private System.Windows.Forms.TextBox txtIncome;
     }
 }

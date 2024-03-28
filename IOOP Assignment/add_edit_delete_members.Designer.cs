@@ -76,6 +76,7 @@
             this.btnDeleteMem.TabIndex = 2;
             this.btnDeleteMem.Text = "Delete";
             this.btnDeleteMem.UseVisualStyleBackColor = true;
+            this.btnDeleteMem.Click += new System.EventHandler(this.btnDeleteMem_Click);
             // 
             // label1
             // 

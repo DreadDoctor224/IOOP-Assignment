@@ -26,7 +26,7 @@ namespace IOOP_Assignment
         }
 
         private void btnAddMem_Click(object sender, EventArgs e)
-        {
+        { 
             if (!int.TryParse(txtPhMem.Text,out int phoneNumber))
             {
                 MessageBox.Show("Add a valid Phone Number");
@@ -57,6 +57,17 @@ namespace IOOP_Assignment
             }
             admin obj1 =  new admin();
             MessageBox.Show(obj1.editMembers(txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text));
+        }
+
+        private void btnDeleteMem_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtUserIDmem.Text, out int UserIDmem))
+            {
+                MessageBox.Show("Add a valid User ID.");
+                return;
+            }
+            admin obj1 = new admin();
+            MessageBox.Show(obj1.deleteMembers(UserIDmem));
         }
     }
 }
