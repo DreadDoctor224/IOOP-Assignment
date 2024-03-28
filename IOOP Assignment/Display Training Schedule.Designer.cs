@@ -108,7 +108,7 @@
             this.Controls.Add(this.data_grid_training);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "member_display_training_schedule";
-            this.Text = "Form5";
+            this.Text = "Training schedule ";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_training)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
