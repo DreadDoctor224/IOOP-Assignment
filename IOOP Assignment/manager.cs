@@ -18,22 +18,43 @@ namespace IOOP_Assignment
         public string phonenumber { get; set; }
 
 
+        public bool managerCheck(int managerID)
+        {
+            bool check = false;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+            SqlCommand cmdCheck = new SqlCommand("SELECT COUNT(*) FROM managers WHERE managerID = @managerID", con);
+            cmdCheck.Parameters.AddWithValue("@managerID", managerID);
+            int count = Convert.ToInt32(cmdCheck.ExecuteScalar());
+            if (count > 0)
+            {
+                check = true;
+            }
+            con.Close();
+            return check;
+        }
+
+        // Adjusted AddCompetition method to check if manager exists
         public void AddCompetition(int managerID, string competitionName, string date)
         {
+            if (!managerCheck(managerID))
+            {
+                throw new Exception("Manager does not exist.");
+            }
+
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
             SqlCommand cmdAdd = new SqlCommand("INSERT INTO competitions (managerID, competitionName, date) VALUES (@mID, @cn, @d)", con);
-            //cmdAdd.Parameters.AddWithValue("@ID", userID);
             cmdAdd.Parameters.AddWithValue("@mID", managerID);
             cmdAdd.Parameters.AddWithValue("@cn", competitionName);
             cmdAdd.Parameters.AddWithValue("@d", date);
 
-
             cmdAdd.ExecuteNonQuery();
             con.Close();
         }
+    
 
-        public void DeleteCompetition(int competitionID)
+    public void DeleteCompetition(int competitionID)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();

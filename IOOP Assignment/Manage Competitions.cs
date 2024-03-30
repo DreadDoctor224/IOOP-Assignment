@@ -36,9 +36,15 @@ namespace IOOP_Assignment
             }
 
             Manager manager = new Manager();
-            manager.AddCompetition(managerID, txtCompName.Text,txtDate.Text);
-
-            MessageBox.Show("added Competition successfuly");
+            try
+            {
+                manager.AddCompetition(managerID, txtCompName.Text, txtDate.Text);
+                MessageBox.Show("Competition added successfully.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
 
             txtManID.Clear();
             txtDate.Clear();
