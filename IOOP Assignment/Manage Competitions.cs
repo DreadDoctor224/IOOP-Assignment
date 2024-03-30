@@ -26,5 +26,60 @@ namespace IOOP_Assignment
         {
             this.Close();
         }
+
+        private void btn_add_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtManID.Text, out int managerID))
+            {
+                MessageBox.Show("Add a managerID");
+                return;
+            }
+
+            Manager manager = new Manager();
+            manager.AddCompetition(managerID, txtCompName.Text,txtDate.Text);
+
+            MessageBox.Show("added Competition successfuly");
+
+            txtManID.Clear();
+            txtDate.Clear();
+            txtCompName.Clear();
+        }
+
+        private void btn_edit_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtManID.Text, out int managerID))
+            {
+                MessageBox.Show("Add a managerID");
+                return;
+            }
+
+            if (!int.TryParse(txtCompID.Text, out int competitionID))
+            {
+                MessageBox.Show("Add a managerID");
+                return;
+            }
+            Manager manager = new Manager();    
+            manager.EditCompetition(competitionID,managerID,txtCompName.Text,txtDate.Text);
+
+            MessageBox.Show("Competition Edited");
+            txtManID.Clear();
+            txtDate.Clear();
+            txtCompName.Clear();
+            txtCompID.Clear();
+        }
+
+        private void btn_delete_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtCompID.Text, out int competitionID))
+            {
+                MessageBox.Show("Add a managerID");
+                return;
+            }
+
+            Manager manager = new Manager();    
+            manager.DeleteCompetition(competitionID);
+            MessageBox.Show("Competition Deleted!");
+
+        }
     }
 }

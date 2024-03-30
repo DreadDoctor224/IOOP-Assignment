@@ -13,37 +13,25 @@ namespace IOOP_Assignment
     {
 
 
-        public void addMembers(int userID, string name, string email, int phoneNumber, string role)
+        public void addMembers(string name, string email, int phoneNumber, string role)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
             con.Open();
 
-            // Check if the user exists
-            SqlCommand cmdCheckUser = new SqlCommand("SELECT COUNT(*) FROM users WHERE userID = @UserID", con);
-
-            cmdCheckUser.Parameters.AddWithValue("@UserID", userID);
-            int userCount = (int)cmdCheckUser.ExecuteScalar();
-
-            if (userCount > 0)
-            {
-                // User exists, proceed to add the member
-                using (SqlCommand cmdAdd = new SqlCommand("INSERT INTO members (userID, name, email, phonenumber, role) VALUES (@UserID, @Name, @Email, @PhoneNumber, @Role)", con))
-                {
-                    cmdAdd.Parameters.AddWithValue("@UserID", userID);
+                using (SqlCommand cmdAdd = new SqlCommand("INSERT INTO members (name, email, phonenumber, role) VALUES (@Name, @Email, @PhoneNumber, @Role)", con))
+                { 
                     cmdAdd.Parameters.AddWithValue("@Name", name);
                     cmdAdd.Parameters.AddWithValue("@Email", email);
                     cmdAdd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
                     cmdAdd.Parameters.AddWithValue("@Role", role);
 
                     cmdAdd.ExecuteNonQuery();
+                    con.Close();
+
                 }
-            }
-            else
-            {
-                throw new Exception("User not found.");
-            }
-            con.Close();
+            
+           
 
 
         }
@@ -87,12 +75,6 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdCheckUser = new SqlCommand("SELECT COUNT(*) FROM users WHERE userID =@ID", con);
-            cmdCheckUser.Parameters.AddWithValue("@ID", userID);
-            int userCount = (int)cmdCheckUser.ExecuteScalar();
-            if (userCount > 0)
-            {
-
                 SqlCommand cmdAdd = new SqlCommand("INSERT INTO coaches (userID, name, email, phonenumber, income, level, salary) VALUES (@ID, @n, @e, @ph, @i, @l, @s)", con);
                 cmdAdd.Parameters.AddWithValue("@ID", userID);
                 cmdAdd.Parameters.AddWithValue("@n", name);
@@ -103,14 +85,8 @@ namespace IOOP_Assignment
                 cmdAdd.Parameters.AddWithValue("@s", salary);
 
                 cmdAdd.ExecuteNonQuery();
-            }
-
-            else
-            {
-                throw new Exception("The userID does not exist in the users table.");
-            }
-
-            con.Close();
+                con.Close();
+            MessageBox.Show("Coach successfully added");
         }
 
         public string editCoaches(int coachID, int income, string level, int salary)

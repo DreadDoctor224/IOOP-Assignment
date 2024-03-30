@@ -32,26 +32,7 @@ namespace IOOP_Assignment
 
         }
 
-        private (string name, string email, string phoneNumber) GetUserDetails(int userID)
-        {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString()))
-            {
-                con.Open();
-                using (SqlCommand cmd = new SqlCommand("SELECT name, email, phonenumber FROM users WHERE userID = @ID", con))
-                {
-                    cmd.Parameters.AddWithValue("@ID", userID);
-                    using (SqlDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return (reader["name"].ToString(), reader["email"].ToString(), reader["phonenumber"].ToString());
-                        }
-                    }
-                }
-            }
-            return (null, null, null); // Return null values if user not found
-        }
-
+      
         private void data_grid_coach_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -91,9 +72,9 @@ namespace IOOP_Assignment
                 return;
             }
 
-            
+
             admin obj1 = new admin();
-            MessageBox.Show(obj1.editCoaches(coachID,income, txtLvlCoach.Text,salary));
+            MessageBox.Show(obj1.editCoaches(coachID, income, txtLvlCoach.Text, salary));
 
             txtCoachID.Clear();
             txtName.Clear();
@@ -113,10 +94,6 @@ namespace IOOP_Assignment
                 return;
             }
 
-            var userDetails = GetUserDetails(userID);
-            txtName.Text = userDetails.name;
-            txtEmail.Text = userDetails.email;
-            txtPhoneNumber.Text = userDetails.phoneNumber;
 
             if (!int.TryParse(txtPhoneNumber.Text, out int phoneNumber))
             {
@@ -136,32 +113,29 @@ namespace IOOP_Assignment
                 return;
             }
 
-            
 
-            
 
-            try
-            {
-                admin admin = new admin();
-                admin.addCoach(userID, txtName.Text, txtEmail.Text, phoneNumber, income, txtLvlCoach.Text, salary);
 
-                txtUserID.Clear();
-                txtName.Clear();
-                txtEmail.Clear();
-                txtPhoneNumber.Clear();
-                txtIncome.Clear();
-                txtLvlCoach.Clear();
-                txtSalaryCoach.Clear();
 
-                MessageBox.Show("Coach Added Successfully!");
 
-                // Assuming you have a method to refresh the coaches list or data grid
-                //RefreshCoachesList();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"An error occurred: {ex.Message}");
-            }
+            admin admin = new admin();
+            admin.addCoach(userID, txtName.Text, txtEmail.Text, phoneNumber, income, txtLvlCoach.Text, salary);
+
+
+
+            MessageBox.Show("Coach Added Successfully!");
+
+            txtUserID.Clear();
+            txtName.Clear();
+            txtEmail.Clear();
+            txtPhoneNumber.Clear();
+            txtIncome.Clear();
+            txtLvlCoach.Clear();
+            txtSalaryCoach.Clear();
+
+            // Assuming you have a method to refresh the coaches list or data grid
+            //RefreshCoachesList();
+
         }
     }
 }

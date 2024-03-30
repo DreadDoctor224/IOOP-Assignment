@@ -72,7 +72,7 @@ namespace IOOP_Assignment
 
             
 
-            MessageBox.Show("Recomendation Added Successfully!.");
+            MessageBox.Show("Recomendation Deleted Successfully!.");
             txtRecommendations.Clear();
             txtCoachName.Clear();
             txtMembersName.Clear();
