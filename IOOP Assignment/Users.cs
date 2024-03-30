@@ -101,7 +101,7 @@ namespace IOOP_Assignment
                     //manager homepage
                     Manager_home_page ma = new Manager_home_page(un);
                     ma.ShowDialog();
-                }
+                }   //coach homepage
                 else if (userRole == "coach")
                 {
                     Home_Page_Coach c = new Home_Page_Coach(un);
@@ -159,13 +159,14 @@ namespace IOOP_Assignment
 
         }
 
-        public static string Update(string email, string name, int phonenumber, string password) 
+        public static string Update(int userID, string email, string name, int phonenumber, string password) 
         {
             string status;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdUpdate = new SqlCommand("UPDATE users SET email = @e, phoneNumber = @ph WHERE name = @n AND password = @p", con);
+            SqlCommand cmdUpdate = new SqlCommand("UPDATE users SET email = @e, phoneNumber = @ph, name = @n, password = @p WHERE userID =@ID", con);
+            cmdUpdate.Parameters.AddWithValue("@ID", userID);
             cmdUpdate.Parameters.AddWithValue("@e", email);
             cmdUpdate.Parameters.AddWithValue("@ph", phonenumber);
             cmdUpdate.Parameters.AddWithValue("@n", name);

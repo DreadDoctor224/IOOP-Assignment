@@ -22,13 +22,13 @@ namespace IOOP_Assignment
 
 
 
-        public void AddTraining(int coachID, string name, string description, string level, string schedule)
+        public void AddTraining(int trainingID, string name, string description, string level, string schedule)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (coachID, name, description, level, schedule) VALUES (@c, @n, @d, @l, @s)", con);
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (trainingID, name, description, level, schedule) VALUES (@TID, @n, @d, @l, @s)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
-            cmdAdd.Parameters.AddWithValue("@c", coachID);
+            cmdAdd.Parameters.AddWithValue("@TID", trainingID);
             cmdAdd.Parameters.AddWithValue("@n", name);
             cmdAdd.Parameters.AddWithValue("@d", description);
             cmdAdd.Parameters.AddWithValue("@l", level);
@@ -50,6 +50,33 @@ namespace IOOP_Assignment
             cmdDelete.ExecuteNonQuery();
             con.Close();
         }
+
+        public string Edit_Training(int TrainingID, string name, string description, string level, string schedule)
+        {
+            string status;
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdUpdate = new SqlCommand("UPDATE trainings SET name= @n, description = @d, level = @l, schedule = @s WHERE trainingID = @t ", con);
+            cmdUpdate.Parameters.AddWithValue("@t",TrainingID);
+            cmdUpdate.Parameters.AddWithValue("@n", name);
+            cmdUpdate.Parameters.AddWithValue("@d", description);
+            cmdUpdate.Parameters.AddWithValue("@l", level);
+            cmdUpdate.Parameters.AddWithValue("@s", schedule);
+
+
+
+            int i = cmdUpdate.ExecuteNonQuery();
+            if (i != 0)
+            {
+                status = "Edit Succesfully";
+            }
+            else
+                status = "Unable to Edit";
+            con.Close();
+            return status;
+        }
+
 
         public void AddRecommendations(int coachID, int memberID, int competitionID)
         {
@@ -103,6 +130,7 @@ namespace IOOP_Assignment
             con.Close();
             return status;
         }
+
 
     }
 

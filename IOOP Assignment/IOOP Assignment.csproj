@@ -130,6 +130,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ioopDBDataSet2.cs">
+      <DependentUpon>ioopDBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Manager_View_Recommendations.cs">
       <SubType>Form</SubType>
     </Compile>

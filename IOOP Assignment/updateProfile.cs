@@ -19,8 +19,19 @@ namespace IOOP_Assignment
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            User obj1 = new User(txtEmailUpdate.Text,txtNameUpdate.Text,int.Parse(txtPhoneNumberUpdate.Text),txtPassWordUpdate.Text);
-            MessageBox.Show(User.Update(txtEmailUpdate.Text, txtNameUpdate.Text, int.Parse(txtPhoneNumberUpdate.Text), txtPassWordUpdate.Text));
+            if (!int.TryParse(txtPhoneNumberUpdate.Text, out int phoneNumber))
+            {
+                MessageBox.Show("Add a valid Phone Number.");
+                return;
+            }
+
+            if (!int.TryParse(txtUserIDUpdate.Text, out int userID))
+            {
+                MessageBox.Show("Add a valid Phone Number.");
+                return;
+            }
+            User obj1 = new User(txtEmailUpdate.Text,txtNameUpdate.Text,phoneNumber,txtPassWordUpdate.Text);
+            MessageBox.Show(User.Update(userID,txtEmailUpdate.Text, txtNameUpdate.Text, phoneNumber, txtPassWordUpdate.Text));
         }
 
         private void updateProfile_Load(object sender, EventArgs e)

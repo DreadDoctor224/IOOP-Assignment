@@ -45,24 +45,21 @@ namespace IOOP_Assignment
                 return;
             }
 
-            if (!int.TryParse(txtCoachID.Text, out int coachID))
-            {
-                MessageBox.Show("Add a valid Coach ID");
-                return;
-            }
+            
 
 
-            Training training = new Training();
-            training.Edit_Schedule(trainingID, coachID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
+            Coach training = new Coach();
+            training.Edit_Training(trainingID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
 
+           
+
+            MessageBox.Show("Edit Successful");
+           
             txtTrainingID.Clear();
-            txtCoachID.Clear();
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
             txtSchedule.Clear();
-
-            MessageBox.Show("Edit Successful");
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -72,24 +69,26 @@ namespace IOOP_Assignment
 
         private void btnAddTrainingSchedule_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtCoachID.Text, out int coachID))
+            if (!int.TryParse(txtTrainingID.Text, out int trainingID))
             {
-                MessageBox.Show("Add a valid Coach ID");
+                MessageBox.Show("Add a valid training ID");
                 return;
             }
 
            
 
             Coach coach = new Coach();
-            coach.AddTraining(coachID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
+            coach.AddTraining(trainingID, txtName.Text, txtDescription.Text, txtLevel.Text, txtSchedule.Text);
 
-            txtCoachID.Clear();
+           
+
+            MessageBox.Show("Traning Scheule Added Successfully!.");
+
+            txtTrainingID.Clear();
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
             txtSchedule.Clear();
-
-            MessageBox.Show("Traning Scheule Added Successfully!.");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -104,7 +103,6 @@ namespace IOOP_Assignment
             coach.DeleteTraining(trainingID);
 
             txtTrainingID.Clear();
-            txtCoachID.Clear();
             txtName.Clear();
             txtDescription.Clear();
             txtLevel.Clear();
