@@ -30,7 +30,6 @@ namespace IOOP_Assignment
             con.Open();
 
             SqlCommand cmdUpdate = new SqlCommand("UPDATE trainings SET coachID = @c, name = @n, description = @d, level = @l, schedule = @s WHERE trainingID = @t ", con);
-            cmdUpdate.Parameters.AddWithValue("@t", TrainingID);
             cmdUpdate.Parameters.AddWithValue("@c", coachID);
             cmdUpdate.Parameters.AddWithValue("@n", name);
             cmdUpdate.Parameters.AddWithValue("@d", description);

@@ -29,6 +29,7 @@ namespace IOOP_Assignment
 
         public string editMembers(string name, string email, int phoneNumber, string role)
         {
+            string status;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
             SqlCommand cmdEdit =new SqlCommand("UPDATE members SET name = @n, email = @e, phonenumber = @ph, role = @r", con);
@@ -38,10 +39,16 @@ namespace IOOP_Assignment
             cmdEdit.Parameters.AddWithValue("@ph", phoneNumber);
             cmdEdit.Parameters.AddWithValue("@r", role);
 
-            cmdEdit.ExecuteNonQuery();
+            int i = cmdEdit.ExecuteNonQuery();
+            if (i != 0)
+            {
+                status = "updated succesfully";
+            }
+            else
+                status = "Unabale to update";
             con.Close();
 
-            return "Member edited successfully.";
+            return status;
         }
 
         public string deleteMembers(int UserIDmem)
@@ -58,31 +65,47 @@ namespace IOOP_Assignment
             return "Member Deleted Succesfully";
         }
 
-        public void addCoach(string name, string email, int phoneNumber, int income)
+        public void addCoach(int userID, string name, string email, int phoneNumber, int income, string level, int salary)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO coaches (name, email, phonenumber, income) VALUES (@n, @e, @ph, @i)", con);
-            //cmdAdd.Parameters.AddWithValue("@ID", userID);
-            cmdAdd.Parameters.AddWithValue("@n", name);
-            cmdAdd.Parameters.AddWithValue("@e", email);
-            cmdAdd.Parameters.AddWithValue("@ph", phoneNumber);
-            cmdAdd.Parameters.AddWithValue("@i", income);
 
-            cmdAdd.ExecuteNonQuery();
+            SqlCommand cmdCheckUser = new SqlCommand("SELECT COUNT(*) FROM users WHERE userID =@ID", con);
+            cmdCheckUser.Parameters.AddWithValue("@ID", userID);
+            int userCount = (int)cmdCheckUser.ExecuteScalar();
+            if (userCount > 0)
+            {
+
+                SqlCommand cmdAdd = new SqlCommand("INSERT INTO coaches (userID, name, email, phonenumber, income, level, salary) VALUES (@ID, @n, @e, @ph, @i, @l, @s)", con);
+                cmdAdd.Parameters.AddWithValue("@ID", userID);
+                cmdAdd.Parameters.AddWithValue("@n", name);
+                cmdAdd.Parameters.AddWithValue("@e", email);
+                cmdAdd.Parameters.AddWithValue("@ph", phoneNumber);
+                cmdAdd.Parameters.AddWithValue("@i", income);
+                cmdAdd.Parameters.AddWithValue("@l", level);
+                cmdAdd.Parameters.AddWithValue("@s", salary);
+
+                cmdAdd.ExecuteNonQuery();
+            }
+
+            else
+            {
+                throw new Exception("The userID does not exist in the users table.");
+            }
+
             con.Close();
         }
 
-        public string editCoaches(string name, string email, int phoneNumber, int income)
+        public string editCoaches(int coachID,int income, string level, int salary)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdEdit = new SqlCommand("UPDATE coaches SET name = @n, email = @e, phonenumber = @ph, income = @i", con);
+            SqlCommand cmdEdit = new SqlCommand("UPDATE coaches SET income = @i, level =@l, salary=@s WHERE coachID =@c", con);
 
-            cmdEdit.Parameters.AddWithValue("@n", name);
-            cmdEdit.Parameters.AddWithValue("@e", email);
-            cmdEdit.Parameters.AddWithValue("@ph", phoneNumber);
+            cmdEdit.Parameters.AddWithValue("@c", coachID);
             cmdEdit.Parameters.AddWithValue("@i", income);
+            cmdEdit.Parameters.AddWithValue("@l", level);
+            cmdEdit.Parameters.AddWithValue("@s", salary);
 
             cmdEdit.ExecuteNonQuery();
             con.Close();
