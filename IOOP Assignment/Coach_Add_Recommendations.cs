@@ -44,11 +44,13 @@ namespace IOOP_Assignment
             Coach Coach= new Coach();
             Coach.AddRecommendations(coachID, memberID, competitionID);
 
+            
+
+            MessageBox.Show("Recomendation Added Successfully!.");
+           
             txtCoachID.Clear();
             txtMembersID.Clear();
             txCompetitionsID.Clear();
-
-            MessageBox.Show("Recomendation Added Successfully!.");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,12 +81,14 @@ namespace IOOP_Assignment
             Coach Coach = new Coach();
             Coach.EditRecomendations(recomendationID,coachID, memberID, competitionID);
 
+            
+
+            MessageBox.Show("Recomendation Edit Successfully!.");
+
             txtRecommendations.Clear();
             txtCoachID.Clear();
             txtMembersID.Clear();
             txCompetitionsID.Clear();
-
-            MessageBox.Show("Recomendation Edit Successfully!.");
 
         }
 
@@ -98,12 +102,13 @@ namespace IOOP_Assignment
             Coach Coach = new Coach();
             Coach.DeleteRecomendations(recomendationID);
 
+            
+
+            MessageBox.Show("Recomendation Added Successfully!.");
             txtRecommendations.Clear();
             txtCoachID.Clear();
             txtMembersID.Clear();
             txCompetitionsID.Clear();
-
-            MessageBox.Show("Recomendation Added Successfully!.");
         }
     }
 }

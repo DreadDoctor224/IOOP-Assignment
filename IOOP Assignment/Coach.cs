@@ -82,7 +82,7 @@ namespace IOOP_Assignment
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO Recommendations (coachID, memberID, competitionID) VALUES (@c, @m, @c)", con);
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO recommendations(coachID, memberID, competitionID) VALUES (@c, @m, @c)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
             cmdAdd.Parameters.AddWithValue("@c", coachID);
             cmdAdd.Parameters.AddWithValue("@m", memberID);

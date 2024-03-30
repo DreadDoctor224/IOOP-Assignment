@@ -29,7 +29,7 @@ namespace IOOP_Assignment
             DataTable dt = new DataTable();
             view_income.Fill(dt);
 
-            DataGridViewadmincome.DataSource = view_income;
+            DataGridViewadmincome.DataSource = dt;
 
             con.Close();
         }
