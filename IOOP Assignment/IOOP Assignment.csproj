@@ -584,6 +584,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ioopDB.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\manager2.png" />
     <None Include="Resources\163-1634991_fitness-free-icon-fitness-icon.png" />
     <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design1.jpg" />
     <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg" />
