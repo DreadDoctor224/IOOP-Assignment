@@ -64,7 +64,7 @@ namespace IOOP_Assignment
         {
             if (!int.TryParse(txtRecommendations.Text, out int recomendationID))
             {
-                MessageBox.Show("Add a Coach ID");
+                MessageBox.Show("Add the recommendation ID");
                 return;
             }
             Coach Coach = new Coach();
