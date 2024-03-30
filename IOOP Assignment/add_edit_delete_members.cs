@@ -32,15 +32,28 @@ namespace IOOP_Assignment
                 MessageBox.Show("Add a valid Phone Number");
                 return;
             }
-            admin admin = new admin();
-            admin.addMembers(txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text);
+            if (!int.TryParse(txtUserIDmem.Text, out int userID))
+            {
+                MessageBox.Show("Add a valid Phone Number");
+                return;
+            }
 
-            txtNameMem.Clear();
-            txtEmailMem.Clear();
-            txtPhMem.Clear();
-            txtRoleMem.Clear();
+            try
+            {
+                admin admin = new admin();
+                admin.addMembers(userID, txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text);
 
-            MessageBox.Show("Member Added Successfully!.");
+                txtNameMem.Clear();
+                txtEmailMem.Clear();
+                txtPhMem.Clear();
+                txtRoleMem.Clear();
+                MessageBox.Show("Member Added Successfully!.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}");
+            }
+            
         }
 
         private void btncls_Click(object sender, EventArgs e)
@@ -55,8 +68,15 @@ namespace IOOP_Assignment
                 MessageBox.Show("Add a valid Phone Number.");
                 return;
             }
+
+            if (!int.TryParse(txtUserIDmem.Text, out int userID))
+            {
+                MessageBox.Show("Add a valid Phone Number.");
+                return;
+            }
             admin obj1 =  new admin();
-            MessageBox.Show(obj1.editMembers(txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text));
+            string result = obj1.editMembers(userID,txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text);
+            MessageBox.Show(result);
         }
 
         private void btnDeleteMem_Click(object sender, EventArgs e)
@@ -68,6 +88,11 @@ namespace IOOP_Assignment
             }
             admin obj1 = new admin();
             MessageBox.Show(obj1.deleteMembers(UserIDmem));
+        }
+
+        private void add_edit_delete_members_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

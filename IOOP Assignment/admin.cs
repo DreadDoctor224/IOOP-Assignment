@@ -5,51 +5,68 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace IOOP_Assignment
 {
     public class admin : User
     {
 
-       
-      public void addMembers(string name, string email, int phoneNumber, string role)
+
+        public void addMembers(int userID, string name, string email, int phoneNumber, string role)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
-            con.Open();
-            SqlCommand cmdAdd =new SqlCommand("INSERT INTO members (name, email, phonenumber, role) VALUES (@n, @e, @ph, @r)", con);
-            //cmdAdd.Parameters.AddWithValue("@ID", userID);
-            cmdAdd.Parameters.AddWithValue("@n", name);
-            cmdAdd.Parameters.AddWithValue("@e", email);
-            cmdAdd.Parameters.AddWithValue("@ph", phoneNumber);
-            cmdAdd.Parameters.AddWithValue("@r", role);
 
-            cmdAdd.ExecuteNonQuery();
+            con.Open();
+
+            // Check if the user exists
+            SqlCommand cmdCheckUser = new SqlCommand("SELECT COUNT(*) FROM users WHERE userID = @UserID", con);
+
+            cmdCheckUser.Parameters.AddWithValue("@UserID", userID);
+            int userCount = (int)cmdCheckUser.ExecuteScalar();
+
+            if (userCount > 0)
+            {
+                // User exists, proceed to add the member
+                using (SqlCommand cmdAdd = new SqlCommand("INSERT INTO members (userID, name, email, phonenumber, role) VALUES (@UserID, @Name, @Email, @PhoneNumber, @Role)", con))
+                {
+                    cmdAdd.Parameters.AddWithValue("@UserID", userID);
+                    cmdAdd.Parameters.AddWithValue("@Name", name);
+                    cmdAdd.Parameters.AddWithValue("@Email", email);
+                    cmdAdd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);
+                    cmdAdd.Parameters.AddWithValue("@Role", role);
+
+                    cmdAdd.ExecuteNonQuery();
+                }
+            }
+            else
+            {
+                throw new Exception("User not found.");
+            }
             con.Close();
+
+
         }
 
-        public string editMembers(string name, string email, int phoneNumber, string role)
+        public string editMembers(int userID, string name, string email, int phoneNumber, string role)
         {
-            string status;
+
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdEdit =new SqlCommand("UPDATE members SET name = @n, email = @e, phonenumber = @ph, role = @r", con);
+            SqlCommand cmdEdit = new SqlCommand("UPDATE members SET name = @n, email = @e, phonenumber = @ph, role = @r WHERE userID = @ID", con);
 
+            cmdEdit.Parameters.AddWithValue("@ID", userID);
             cmdEdit.Parameters.AddWithValue("@n", name);
             cmdEdit.Parameters.AddWithValue("@e", email);
             cmdEdit.Parameters.AddWithValue("@ph", phoneNumber);
             cmdEdit.Parameters.AddWithValue("@r", role);
 
-            int i = cmdEdit.ExecuteNonQuery();
-            if (i != 0)
-            {
-                status = "updated succesfully";
-            }
-            else
-                status = "Unabale to update";
+            cmdEdit.ExecuteNonQuery();
             con.Close();
 
-            return status;
+            return "Member edited succesfully!";
         }
+
 
         public string deleteMembers(int UserIDmem)
         {
@@ -96,7 +113,7 @@ namespace IOOP_Assignment
             con.Close();
         }
 
-        public string editCoaches(int coachID,int income, string level, int salary)
+        public string editCoaches(int coachID, int income, string level, int salary)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
