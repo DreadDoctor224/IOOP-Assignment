@@ -52,6 +52,7 @@
             this.btn_update_profile = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
             this.Pnl_hmad1.SuspendLayout();
             this.pnl_hmad2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -348,10 +349,21 @@
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(151, 613);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(87, 23);
+            this.button7.TabIndex = 4;
+            this.button7.Text = "Manage Mangers";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Home_Page_Admin
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1311, 771);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.panel9);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
@@ -415,5 +427,6 @@
         private System.Windows.Forms.Button btn_update_profile;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Button button7;
     }
 }

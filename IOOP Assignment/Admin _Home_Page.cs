@@ -88,5 +88,11 @@ namespace IOOP_Assignment
             Admin_Add_Coach form = new Admin_Add_Coach();
             form.Show();
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Manage_Mangers manage_Mangers = new Manage_Mangers();
+            manage_Mangers.Show();
+        }
     }
 }

@@ -60,9 +60,9 @@ namespace IOOP_Assignment
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmddeleteMembers = new SqlCommand("DELETE FROM members WHERE userID = @u", con);
+            SqlCommand cmddeleteMembers = new SqlCommand("DELETE FROM members WHERE memberID = @mID", con);
 
-            cmddeleteMembers.Parameters.AddWithValue("u", UserIDmem);
+            cmddeleteMembers.Parameters.AddWithValue("@mID", UserIDmem);
 
             cmddeleteMembers.ExecuteNonQuery();
             con.Close();
@@ -119,6 +119,54 @@ namespace IOOP_Assignment
 
             return "Coach Deleted Succesfully";
         }
+
+        public void addManager(int userID, string name, string email, int phoneNumber)
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO managers (userID, name, email, phonenumber) VALUES (@ID, @n, @e, @ph)", con);
+            cmdAdd.Parameters.AddWithValue("@ID", userID);
+            cmdAdd.Parameters.AddWithValue("@n", name);
+            cmdAdd.Parameters.AddWithValue("@e", email);
+            cmdAdd.Parameters.AddWithValue("@ph", phoneNumber);
+
+            cmdAdd.ExecuteNonQuery();
+            con.Close();
+            MessageBox.Show("Manager successfully added");
+        }
+
+        public string editManager(int managerID, string name, string email, int phoneNumber)
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+            SqlCommand cmdEdit = new SqlCommand("UPDATE managers SET name=@n, email=@e, phoneNumber=@ph WHERE managerID =@mID", con);
+
+            cmdEdit.Parameters.AddWithValue("@mID", managerID);
+            cmdEdit.Parameters.AddWithValue("@n", name);
+            cmdEdit.Parameters.AddWithValue("@e", email);
+            cmdEdit.Parameters.AddWithValue("@ph", phoneNumber);
+
+            cmdEdit.ExecuteNonQuery();
+            con.Close();
+
+            return "Manager edited successfully.";
+        }
+
+        public string deleteManager(int managerID)
+        {
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+            SqlCommand cmddeleteMembers = new SqlCommand("DELETE FROM managers WHERE managerID = @mID", con);
+
+            cmddeleteMembers.Parameters.AddWithValue("mID", managerID);
+
+            cmddeleteMembers.ExecuteNonQuery();
+            con.Close();
+
+            return "Manager Deleted Succesfully";
+        }
+
 
     }
 }
