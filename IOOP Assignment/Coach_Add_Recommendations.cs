@@ -24,71 +24,39 @@ namespace IOOP_Assignment
 
         private void btAddd_Click(object sender, EventArgs e)
         {
-            if (!int.TryParse(txtCoachID.Text, out int coachID))
-            {
-                MessageBox.Show("Add a Coach ID");
-                return;
-            }
-
-            if (!int.TryParse(txtMembersID.Text, out int memberID))
-            {
-                MessageBox.Show("Add a valid Member ID");
-                return;
-            }
-
-            if (!int.TryParse(txCompetitionsID.Text, out int competitionID ))
-            {
-                MessageBox.Show("Add a valid Competition ID");
-                return;
-            }
+            
             Coach Coach= new Coach();
-            Coach.AddRecommendations(coachID, memberID, competitionID);
+            Coach.AddRecommendations(txtCoachName.Text, txtMembersName.Text, txtCompetitionName.Text);
 
             
 
             MessageBox.Show("Recomendation Added Successfully!.");
            
-            txtCoachID.Clear();
-            txtMembersID.Clear();
-            txCompetitionsID.Clear();
+            txtCoachName.Clear();
+            txtMembersName.Clear();
+            txtCompetitionName.Clear();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (!int.TryParse(txtRecommendations.Text, out int recomendationID))
             {
-                MessageBox.Show("Add a Coach ID");
+                MessageBox.Show("Add a recommendation ID");
                 return;
             }
 
-            if (!int.TryParse(txtCoachID.Text, out int coachID))
-            {
-                MessageBox.Show("Add a Coach ID");
-                return;
-            }
-
-            if (!int.TryParse(txtMembersID.Text, out int memberID))
-            {
-                MessageBox.Show("Add a valid Member ID");
-                return;
-            }
-
-            if (!int.TryParse(txCompetitionsID.Text, out int competitionID))
-            {
-                MessageBox.Show("Add a valid Competition ID");
-                return;
-            }
+           
             Coach Coach = new Coach();
-            Coach.EditRecomendations(recomendationID,coachID, memberID, competitionID);
+            Coach.EditRecomendations(recomendationID,txtCoachName.Text, txtMembersName.Text, txtCompetitionName.Text);
 
             
 
             MessageBox.Show("Recomendation Edit Successfully!.");
 
             txtRecommendations.Clear();
-            txtCoachID.Clear();
-            txtMembersID.Clear();
-            txCompetitionsID.Clear();
+            txtCoachName.Clear();
+            txtMembersName.Clear();
+            txtCompetitionName.Clear();
 
         }
 
@@ -106,9 +74,24 @@ namespace IOOP_Assignment
 
             MessageBox.Show("Recomendation Added Successfully!.");
             txtRecommendations.Clear();
-            txtCoachID.Clear();
-            txtMembersID.Clear();
-            txCompetitionsID.Clear();
+            txtCoachName.Clear();
+            txtMembersName.Clear();
+            txtCompetitionName.Clear();
+        }
+
+        private void Coach_Add_Recomendations_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtRecommendations_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -78,15 +78,15 @@ namespace IOOP_Assignment
         }
 
 
-        public void AddRecommendations(int coachID, int memberID, int competitionID)
+        public void AddRecommendations(string coachName, string memberName, string competitionName)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO recommendations(coachID, memberID, competitionID) VALUES (@c, @m, @c)", con);
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO recommendations (coachName, memberName, competitionName) VALUES (@cN, @mN, @c)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
-            cmdAdd.Parameters.AddWithValue("@c", coachID);
-            cmdAdd.Parameters.AddWithValue("@m", memberID);
-            cmdAdd.Parameters.AddWithValue("@c", competitionID);
+            cmdAdd.Parameters.AddWithValue("@cN", coachName);
+            cmdAdd.Parameters.AddWithValue("@mN", memberName);
+            cmdAdd.Parameters.AddWithValue("@c", competitionName);
           
 
             cmdAdd.ExecuteNonQuery();
@@ -97,7 +97,7 @@ namespace IOOP_Assignment
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdDelete = new SqlCommand("DELETE FROM trainings WHERE recomandationsID = @r", con);
+            SqlCommand cmdDelete = new SqlCommand("DELETE FROM recommendations WHERE recommendationID = @r", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
             cmdDelete.Parameters.AddWithValue("@r", RecomendationsID);
             
@@ -106,16 +106,16 @@ namespace IOOP_Assignment
             con.Close();
         }
 
-        public string EditRecomendations(int RecomendationsID, int coachID, int memberID, int competitionID)
+        public string EditRecomendations(int RecomendationsID, string coachName, string memberName, string competitionName)
         {
             string status;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
 
-            SqlCommand cmdUpdate = new SqlCommand("UPDATE trainings SET coachID = @c, memberID = @m, competitionID = @c WHERE recomendationID = @r ", con);
-            cmdUpdate.Parameters.AddWithValue("@c", coachID);
-            cmdUpdate.Parameters.AddWithValue("@m", memberID);
-            cmdUpdate.Parameters.AddWithValue("@c", competitionID);
+            SqlCommand cmdUpdate = new SqlCommand("UPDATE recommendations SET coachName = @cN, memberName = @mN, competitionName = @c WHERE recommendationID = @r ", con);
+            cmdUpdate.Parameters.AddWithValue("@cN", coachName);
+            cmdUpdate.Parameters.AddWithValue("@mN", memberName);
+            cmdUpdate.Parameters.AddWithValue("@c", competitionName);
             cmdUpdate.Parameters.AddWithValue("@r", RecomendationsID);
             
 
