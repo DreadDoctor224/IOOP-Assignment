@@ -44,11 +44,11 @@
             this.Lesson,
             this.Date,
             this.Time});
-            this.data_grid_training.Location = new System.Drawing.Point(288, 226);
+            this.data_grid_training.Location = new System.Drawing.Point(346, 226);
             this.data_grid_training.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.data_grid_training.Name = "data_grid_training";
             this.data_grid_training.RowHeadersWidth = 62;
-            this.data_grid_training.Size = new System.Drawing.Size(622, 309);
+            this.data_grid_training.Size = new System.Drawing.Size(515, 309);
             this.data_grid_training.TabIndex = 0;
             // 
             // Lesson

@@ -31,21 +31,20 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.data_grid_competitions = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.ioopDBDataSet4 = new IOOP_Assignment.ioopDBDataSet4();
             this.Btn_dtl03 = new System.Windows.Forms.Button();
             this.Btn_ext06 = new System.Windows.Forms.Button();
             this.Btn_hmpage008 = new System.Windows.Forms.Button();
             this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet4TableAdapters.competitionsTableAdapter();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.managerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).BeginInit();
@@ -70,7 +69,6 @@
             this.Column2,
             this.Column3,
             this.Column4,
-            this.Column5,
             this.competitionIDDataGridViewTextBoxColumn,
             this.managerIDDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn,
@@ -80,75 +78,8 @@
             this.data_grid_competitions.Name = "data_grid_competitions";
             this.data_grid_competitions.RowHeadersWidth = 62;
             this.data_grid_competitions.RowTemplate.Height = 28;
-            this.data_grid_competitions.Size = new System.Drawing.Size(750, 534);
+            this.data_grid_competitions.Size = new System.Drawing.Size(1261, 534);
             this.data_grid_competitions.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 150;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 150;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 150;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 150;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 150;
-            // 
-            // competitionIDDataGridViewTextBoxColumn
-            // 
-            this.competitionIDDataGridViewTextBoxColumn.DataPropertyName = "competitionID";
-            this.competitionIDDataGridViewTextBoxColumn.HeaderText = "competitionID";
-            this.competitionIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.competitionIDDataGridViewTextBoxColumn.Name = "competitionIDDataGridViewTextBoxColumn";
-            this.competitionIDDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // managerIDDataGridViewTextBoxColumn
-            // 
-            this.managerIDDataGridViewTextBoxColumn.DataPropertyName = "managerID";
-            this.managerIDDataGridViewTextBoxColumn.HeaderText = "managerID";
-            this.managerIDDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.managerIDDataGridViewTextBoxColumn.Name = "managerIDDataGridViewTextBoxColumn";
-            this.managerIDDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // nameDataGridViewTextBoxColumn
-            // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "name";
-            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // dateDataGridViewTextBoxColumn
-            // 
-            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
-            this.dateDataGridViewTextBoxColumn.HeaderText = "date";
-            this.dateDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
-            this.dateDataGridViewTextBoxColumn.Width = 150;
             // 
             // competitionsBindingSource
             // 
@@ -165,7 +96,7 @@
             this.Btn_dtl03.BackColor = System.Drawing.Color.Teal;
             this.Btn_dtl03.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_dtl03.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Btn_dtl03.Location = new System.Drawing.Point(362, 703);
+            this.Btn_dtl03.Location = new System.Drawing.Point(551, 698);
             this.Btn_dtl03.Name = "Btn_dtl03";
             this.Btn_dtl03.Size = new System.Drawing.Size(154, 61);
             this.Btn_dtl03.TabIndex = 2;
@@ -178,7 +109,7 @@
             this.Btn_ext06.BackColor = System.Drawing.Color.Teal;
             this.Btn_ext06.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ext06.ForeColor = System.Drawing.Color.White;
-            this.Btn_ext06.Location = new System.Drawing.Point(695, 703);
+            this.Btn_ext06.Location = new System.Drawing.Point(1121, 698);
             this.Btn_ext06.Name = "Btn_ext06";
             this.Btn_ext06.Size = new System.Drawing.Size(159, 61);
             this.Btn_ext06.TabIndex = 3;
@@ -202,12 +133,72 @@
             // 
             this.competitionsTableAdapter.ClearBeforeFill = true;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Member ID ";
+            this.Column1.MinimumWidth = 8;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 150;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Member_Name ";
+            this.Column2.MinimumWidth = 8;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 150;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Win";
+            this.Column3.MinimumWidth = 8;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 150;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Lost";
+            this.Column4.MinimumWidth = 8;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 150;
+            // 
+            // competitionIDDataGridViewTextBoxColumn
+            // 
+            this.competitionIDDataGridViewTextBoxColumn.DataPropertyName = "competitionID";
+            this.competitionIDDataGridViewTextBoxColumn.HeaderText = "CompetitionID";
+            this.competitionIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.competitionIDDataGridViewTextBoxColumn.Name = "competitionIDDataGridViewTextBoxColumn";
+            this.competitionIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // managerIDDataGridViewTextBoxColumn
+            // 
+            this.managerIDDataGridViewTextBoxColumn.DataPropertyName = "managerID";
+            this.managerIDDataGridViewTextBoxColumn.HeaderText = "ManagerID";
+            this.managerIDDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.managerIDDataGridViewTextBoxColumn.Name = "managerIDDataGridViewTextBoxColumn";
+            this.managerIDDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.Width = 150;
+            // 
+            // dateDataGridViewTextBoxColumn
+            // 
+            this.dateDataGridViewTextBoxColumn.DataPropertyName = "date";
+            this.dateDataGridViewTextBoxColumn.HeaderText = "Date";
+            this.dateDataGridViewTextBoxColumn.MinimumWidth = 8;
+            this.dateDataGridViewTextBoxColumn.Name = "dateDataGridViewTextBoxColumn";
+            this.dateDataGridViewTextBoxColumn.Width = 150;
+            // 
             // Competitions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(883, 771);
+            this.ClientSize = new System.Drawing.Size(1301, 771);
             this.Controls.Add(this.Btn_hmpage008);
             this.Controls.Add(this.Btn_ext06);
             this.Controls.Add(this.Btn_dtl03);
@@ -231,14 +222,13 @@
         private System.Windows.Forms.Button Btn_dtl03;
         private System.Windows.Forms.Button Btn_ext06;
         private System.Windows.Forms.Button Btn_hmpage008;
+        private ioopDBDataSet4 ioopDBDataSet4;
+        private System.Windows.Forms.BindingSource competitionsBindingSource;
+        private ioopDBDataSet4TableAdapters.competitionsTableAdapter competitionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private ioopDBDataSet4 ioopDBDataSet4;
-        private System.Windows.Forms.BindingSource competitionsBindingSource;
-        private ioopDBDataSet4TableAdapters.competitionsTableAdapter competitionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn competitionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn managerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
