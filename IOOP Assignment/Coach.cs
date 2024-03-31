@@ -27,7 +27,7 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
             SqlCommand cmdAdd = new SqlCommand("INSERT INTO trainings (trainingID, name, description, level, schedule) VALUES (@TID, @n, @d, @l, @s)", con);
-            //cmdAdd.Parameters.AddWithValue("@ID", userID);
+            
             cmdAdd.Parameters.AddWithValue("@TID", trainingID);
             cmdAdd.Parameters.AddWithValue("@n", name);
             cmdAdd.Parameters.AddWithValue("@d", description);
@@ -44,7 +44,7 @@ namespace IOOP_Assignment
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
             SqlCommand cmdDelete = new SqlCommand("DELETE FROM trainings WHERE trainingID = @t", con);
-            //cmdAdd.Parameters.AddWithValue("@ID", userID);
+            
             cmdDelete.Parameters.AddWithValue("@t", trainingID);
 
             cmdDelete.ExecuteNonQuery();

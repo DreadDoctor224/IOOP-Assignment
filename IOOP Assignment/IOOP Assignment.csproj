@@ -386,7 +386,6 @@
     <EmbeddedResource Include="View Competition Form.resx">
       <DependentUpon>View Competition Form.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="app.config" />
     <None Include="Properties\App.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -471,6 +470,12 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\manager2.png" />
+    <None Include="Resources\163-1634991_fitness-free-icon-fitness-icon.png" />
+    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design1.jpg" />
+    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="ioopDB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -478,10 +483,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>ioopDB.mdf</DependentUpon>
     </Content>
-    <None Include="Resources\manager2.png" />
-    <None Include="Resources\163-1634991_fitness-free-icon-fitness-icon.png" />
-    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design1.jpg" />
-    <None Include="Resources\vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
