@@ -32,12 +32,18 @@ namespace IOOP_Assignment
                 MessageBox.Show("Add a valid Phone Number");
                 return;
             }
-           
+
+            if (!int.TryParse(txtUserIDmem.Text, out int userID))
+            {
+                MessageBox.Show("Add a valid Phone Number");
+                return;
+            }
+
 
             try
             {
                 admin admin = new admin();
-                admin.addMembers(txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text);
+                admin.addMembers(userID,txtNameMem.Text, txtEmailMem.Text, phoneNumber, txtRoleMem.Text);
 
                
                 MessageBox.Show("Member Added Successfully!.");

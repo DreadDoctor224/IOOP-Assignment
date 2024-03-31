@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.coachesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ioopDBDataSet6 = new IOOP_Assignment.ioopDBDataSet6();
             this.btn_add_coach = new System.Windows.Forms.Button();
             this.btn_edit_coach = new System.Windows.Forms.Button();
             this.btn_del_coach = new System.Windows.Forms.Button();
@@ -46,7 +45,6 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.txtIncome = new System.Windows.Forms.TextBox();
-            this.coachesTableAdapter = new IOOP_Assignment.ioopDBDataSet6TableAdapters.coachesTableAdapter();
             this.label6 = new System.Windows.Forms.Label();
             this.txtLvlCoach = new System.Windows.Forms.TextBox();
             this.Salary = new System.Windows.Forms.Label();
@@ -54,18 +52,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtCoachID = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet6)).BeginInit();
+
             this.SuspendLayout();
             // 
             // coachesBindingSource
             // 
             this.coachesBindingSource.DataMember = "coaches";
-            this.coachesBindingSource.DataSource = this.ioopDBDataSet6;
             // 
             // ioopDBDataSet6
             // 
-            this.ioopDBDataSet6.DataSetName = "ioopDBDataSet6";
-            this.ioopDBDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // btn_add_coach
             // 
@@ -230,7 +226,7 @@
             // 
             // coachesTableAdapter
             // 
-            this.coachesTableAdapter.ClearBeforeFill = true;
+            
             // 
             // label6
             // 
@@ -312,7 +308,7 @@
             this.Text = "Coach_Form";
             this.Load += new System.EventHandler(this.Coach_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet6)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,7 +320,6 @@
         private System.Windows.Forms.Button btn_del_coach;
         private System.Windows.Forms.Button btn_exit004;
         private System.Windows.Forms.Label btn_coatbl;
-        private ioopDBDataSet6 ioopDBDataSet6;
         private System.Windows.Forms.BindingSource coachesBindingSource;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -336,7 +331,6 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.TextBox txtIncome;
-        private ioopDBDataSet6TableAdapters.coachesTableAdapter coachesTableAdapter;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtLvlCoach;
         private System.Windows.Forms.Label Salary;

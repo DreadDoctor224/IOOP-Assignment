@@ -32,11 +32,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.data_grid_competitions = new System.Windows.Forms.DataGridView();
             this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ioopDBDataSet4 = new IOOP_Assignment.ioopDBDataSet4();
+            
             this.Btn_dtl03 = new System.Windows.Forms.Button();
             this.Btn_ext06 = new System.Windows.Forms.Button();
             this.Btn_hmpage008 = new System.Windows.Forms.Button();
-            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet4TableAdapters.competitionsTableAdapter();
+            
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +47,7 @@
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // label1
@@ -84,12 +84,11 @@
             // competitionsBindingSource
             // 
             this.competitionsBindingSource.DataMember = "competitions";
-            this.competitionsBindingSource.DataSource = this.ioopDBDataSet4;
+            
             // 
             // ioopDBDataSet4
             // 
-            this.ioopDBDataSet4.DataSetName = "ioopDBDataSet4";
-            this.ioopDBDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+           
             // 
             // Btn_dtl03
             // 
@@ -131,7 +130,7 @@
             // 
             // competitionsTableAdapter
             // 
-            this.competitionsTableAdapter.ClearBeforeFill = true;
+            
             // 
             // Column1
             // 
@@ -209,7 +208,7 @@
             this.Load += new System.EventHandler(this.Competitions_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet4)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -222,9 +221,7 @@
         private System.Windows.Forms.Button Btn_dtl03;
         private System.Windows.Forms.Button Btn_ext06;
         private System.Windows.Forms.Button Btn_hmpage008;
-        private ioopDBDataSet4 ioopDBDataSet4;
         private System.Windows.Forms.BindingSource competitionsBindingSource;
-        private ioopDBDataSet4TableAdapters.competitionsTableAdapter competitionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;

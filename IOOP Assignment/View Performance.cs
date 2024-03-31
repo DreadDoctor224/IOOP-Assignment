@@ -20,7 +20,7 @@ namespace IOOP_Assignment
         private void Performance_Form_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ioopDBDataSet2.memberCompetitions' table. You can move, or remove it, as needed.
-            this.memberCompetitionsTableAdapter.Fill(this.ioopDBDataSet2.memberCompetitions);
+            
 
         }
 

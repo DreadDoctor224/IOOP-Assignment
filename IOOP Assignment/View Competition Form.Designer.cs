@@ -45,11 +45,10 @@
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.competitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ioopDBDataSet3 = new IOOP_Assignment.ioopDBDataSet3();
-            this.competitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet3TableAdapters.competitionsTableAdapter();
+            
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // btn_exit004
@@ -203,16 +202,15 @@
             // competitionsBindingSource
             // 
             this.competitionsBindingSource.DataMember = "competitions";
-            this.competitionsBindingSource.DataSource = this.ioopDBDataSet3;
+            
             // 
             // ioopDBDataSet3
             // 
-            this.ioopDBDataSet3.DataSetName = "ioopDBDataSet3";
-            this.ioopDBDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // competitionsTableAdapter
             // 
-            this.competitionsTableAdapter.ClearBeforeFill = true;
+            
             // 
             // View_Competition_Form
             // 
@@ -230,7 +228,7 @@
             this.Load += new System.EventHandler(this.View_Competition_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_competitions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.competitionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet3)).EndInit();
+            
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,9 +247,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private ioopDBDataSet3 ioopDBDataSet3;
         private System.Windows.Forms.BindingSource competitionsBindingSource;
-        private ioopDBDataSet3TableAdapters.competitionsTableAdapter competitionsTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn competitionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn managerIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;

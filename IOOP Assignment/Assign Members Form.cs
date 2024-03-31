@@ -46,13 +46,22 @@ namespace IOOP_Assignment
                 return;
             }
 
-            Manager admin = new Manager();
-            admin.assignMembers(MemberID, CompetitionID);
+            Manager manager = new Manager();
+
+            try
+            {
+            manager.assignMembers(CompetitionID, txtCN.Text, txtResult.Text);
+                MessageBox.Show("Member Assigned Successfully!.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             txtCompetitionID.Clear();
             txtMemberID.Clear();
-
-            MessageBox.Show("Member Assigned Successfully!.");
+            txtCN.Clear();
+            txtResult.Clear();
         }
     }
 }

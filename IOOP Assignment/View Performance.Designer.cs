@@ -35,12 +35,12 @@
             this.competitionIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.resultDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.memberCompetitionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ioopDBDataSet2 = new IOOP_Assignment.ioopDBDataSet2();
+            
             this.button1 = new System.Windows.Forms.Button();
-            this.memberCompetitionsTableAdapter = new IOOP_Assignment.ioopDBDataSet2TableAdapters.memberCompetitionsTableAdapter();
+            
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCompetitionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // label1
@@ -97,12 +97,11 @@
             // memberCompetitionsBindingSource
             // 
             this.memberCompetitionsBindingSource.DataMember = "memberCompetitions";
-            this.memberCompetitionsBindingSource.DataSource = this.ioopDBDataSet2;
+            
             // 
             // ioopDBDataSet2
             // 
-            this.ioopDBDataSet2.DataSetName = "ioopDBDataSet2";
-            this.ioopDBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            ;
             // 
             // button1
             // 
@@ -117,7 +116,7 @@
             // 
             // memberCompetitionsTableAdapter
             // 
-            this.memberCompetitionsTableAdapter.ClearBeforeFill = true;
+           
             // 
             // Member_Performance_Form
             // 
@@ -134,7 +133,7 @@
             this.Load += new System.EventHandler(this.Performance_Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_performance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.memberCompetitionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet2)).EndInit();
+          
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,9 +144,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView data_grid_performance;
         private System.Windows.Forms.Button button1;
-        private ioopDBDataSet2 ioopDBDataSet2;
+        
         private System.Windows.Forms.BindingSource memberCompetitionsBindingSource;
-        private ioopDBDataSet2TableAdapters.memberCompetitionsTableAdapter memberCompetitionsTableAdapter;
+       
         private System.Windows.Forms.DataGridViewTextBoxColumn memberIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn competitionIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn resultDataGridViewTextBoxColumn;

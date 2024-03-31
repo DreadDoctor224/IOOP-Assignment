@@ -13,14 +13,15 @@ namespace IOOP_Assignment
     {
 
 
-        public void addMembers(string name, string email, int phoneNumber, string role)
+        public void addMembers(int userID, string name, string email, int phoneNumber, string role)
         {
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
 
             con.Open();
 
-                using (SqlCommand cmdAdd = new SqlCommand("INSERT INTO members (name, email, phonenumber, role) VALUES (@Name, @Email, @PhoneNumber, @Role)", con))
+                using (SqlCommand cmdAdd = new SqlCommand("INSERT INTO members (userID, name, email,  phonenumber, role) VALUES (@uID,@Name, @Email, @PhoneNumber, @Role)", con))
                 { 
+                    cmdAdd.Parameters.AddWithValue("@uID", userID);
                     cmdAdd.Parameters.AddWithValue("@Name", name);
                     cmdAdd.Parameters.AddWithValue("@Email", email);
                     cmdAdd.Parameters.AddWithValue("@PhoneNumber", phoneNumber);

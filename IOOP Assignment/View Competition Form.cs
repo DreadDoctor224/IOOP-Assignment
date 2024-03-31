@@ -25,7 +25,7 @@ namespace IOOP_Assignment
         private void View_Competition_Form_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'ioopDBDataSet3.competitions' table. You can move, or remove it, as needed.
-            this.competitionsTableAdapter.Fill(this.ioopDBDataSet3.competitions);
+           
 
         }
 

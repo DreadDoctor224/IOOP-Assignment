@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.ioopDBDataSet1 = new IOOP_Assignment.ioopDBDataSet();
+            
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnExit = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).BeginInit();
+            ;
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,8 +47,7 @@
             // 
             // ioopDBDataSet1
             // 
-            this.ioopDBDataSet1.DataSetName = "ioopDBDataSet";
-            this.ioopDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // dataGridView1
             // 
@@ -81,7 +80,6 @@
             this.Controls.Add(this.label1);
             this.Name = "Coach_view_payments";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -91,7 +89,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private ioopDBDataSet ioopDBDataSet1;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnExit;
     }

@@ -11,6 +11,7 @@ namespace IOOP_Assignment
     public class Manager : User
     {
         public int managerID { get; set; }
+
         public string name { get; set; }
 
         public string email { get; set; }
@@ -34,7 +35,7 @@ namespace IOOP_Assignment
             return check;
         }
 
-        // Adjusted AddCompetition method to check if manager exists
+        
         public void AddCompetition(int managerID, string competitionName, string date)
         {
             if (!managerCheck(managerID))
@@ -92,15 +93,58 @@ namespace IOOP_Assignment
             return status;
         }
 
-
-        public void assignMembers(int memberID, int compeitionID)
+         public bool memExist(int memberID)
         {
+            bool mem = false;
+
+            SqlConnection con =new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+
+            SqlCommand check = new SqlCommand("SELECT COUNT(*) FROM members WHERE memberID = @mID", con);
+            check.Parameters.AddWithValue("@mID", memberID);
+
+            
+
+            int c = Convert.ToInt32(check.ExecuteScalar());
+
+            if (c == 0)
+            {
+                mem =true;
+            }
+
+            con.Close();
+            return mem;
+        }
+
+        public bool compExist(int compitionID) 
+        {
+            bool comp = false;
             SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
             con.Open();
-            SqlCommand cmdAdd = new SqlCommand("INSERT INTO memberCompetitions (memberID, competitionID) VALUES (@m, @c)", con);
+            SqlCommand check = new SqlCommand("SELECT COUNT(*) FROM competitions WHERE competitionID = @cID", con);
+            check.Parameters.AddWithValue("@cID", compitionID);
+            
+            int c = Convert.ToInt32(check.ExecuteScalar());
+            if (c == 0)
+            {
+                comp = true;
+            }
+            con.Close();
+            return comp;
+        }
+
+        public void assignMembers(int compeitionID, string competitionName, string result)
+        {
+
+
+
+            SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["myCS"].ToString());
+            con.Open();
+            SqlCommand cmdAdd = new SqlCommand("INSERT INTO memberCompetitions (competitionID, competitionName, result) VALUES (@cID, @cn, @r)", con);
             //cmdAdd.Parameters.AddWithValue("@ID", userID);
-            cmdAdd.Parameters.AddWithValue("@m", memberID);
-            cmdAdd.Parameters.AddWithValue("@e", compeitionID);
+            cmdAdd.Parameters.AddWithValue("@cID", compeitionID);
+            cmdAdd.Parameters.AddWithValue("@cn", competitionName);
+            cmdAdd.Parameters.AddWithValue("@r", result);
 
 
             cmdAdd.ExecuteNonQuery();

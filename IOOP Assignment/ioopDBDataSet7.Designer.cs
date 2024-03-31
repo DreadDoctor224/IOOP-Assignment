@@ -24,7 +24,7 @@ namespace IOOP_Assignment {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class ioopDBDataSet : global::System.Data.DataSet {
         
-        private RecommendationsDataTable tableRecommendations;
+        private recommendationsDataTable tablerecommendations;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -54,8 +54,8 @@ namespace IOOP_Assignment {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["Recommendations"] != null)) {
-                    base.Tables.Add(new RecommendationsDataTable(ds.Tables["Recommendations"]));
+                if ((ds.Tables["recommendations"] != null)) {
+                    base.Tables.Add(new recommendationsDataTable(ds.Tables["recommendations"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace IOOP_Assignment {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public RecommendationsDataTable Recommendations {
+        public recommendationsDataTable recommendations {
             get {
-                return this.tableRecommendations;
+                return this.tablerecommendations;
             }
         }
         
@@ -152,8 +152,8 @@ namespace IOOP_Assignment {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["Recommendations"] != null)) {
-                    base.Tables.Add(new RecommendationsDataTable(ds.Tables["Recommendations"]));
+                if ((ds.Tables["recommendations"] != null)) {
+                    base.Tables.Add(new recommendationsDataTable(ds.Tables["recommendations"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace IOOP_Assignment {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableRecommendations = ((RecommendationsDataTable)(base.Tables["Recommendations"]));
+            this.tablerecommendations = ((recommendationsDataTable)(base.Tables["recommendations"]));
             if ((initTable == true)) {
-                if ((this.tableRecommendations != null)) {
-                    this.tableRecommendations.InitVars();
+                if ((this.tablerecommendations != null)) {
+                    this.tablerecommendations.InitVars();
                 }
             }
         }
@@ -204,13 +204,13 @@ namespace IOOP_Assignment {
             this.Namespace = "http://tempuri.org/ioopDBDataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableRecommendations = new RecommendationsDataTable();
-            base.Tables.Add(this.tableRecommendations);
+            this.tablerecommendations = new recommendationsDataTable();
+            base.Tables.Add(this.tablerecommendations);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeRecommendations() {
+        private bool ShouldSerializerecommendations() {
             return false;
         }
         
@@ -270,27 +270,27 @@ namespace IOOP_Assignment {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void RecommendationsRowChangeEventHandler(object sender, RecommendationsRowChangeEvent e);
+        public delegate void recommendationsRowChangeEventHandler(object sender, recommendationsRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class RecommendationsDataTable : global::System.Data.TypedTableBase<RecommendationsRow> {
+        public partial class recommendationsDataTable : global::System.Data.TypedTableBase<recommendationsRow> {
             
             private global::System.Data.DataColumn columnrecommendationID;
             
-            private global::System.Data.DataColumn columncoachID;
+            private global::System.Data.DataColumn columncoachName;
             
-            private global::System.Data.DataColumn columnmemberID;
+            private global::System.Data.DataColumn columnmemberName;
             
-            private global::System.Data.DataColumn columncompetitionID;
+            private global::System.Data.DataColumn columncompetitionName;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsDataTable() {
-                this.TableName = "Recommendations";
+            public recommendationsDataTable() {
+                this.TableName = "recommendations";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -298,7 +298,7 @@ namespace IOOP_Assignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal RecommendationsDataTable(global::System.Data.DataTable table) {
+            internal recommendationsDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -315,7 +315,7 @@ namespace IOOP_Assignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            protected RecommendationsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected recommendationsDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
@@ -330,25 +330,25 @@ namespace IOOP_Assignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn coachIDColumn {
+            public global::System.Data.DataColumn coachNameColumn {
                 get {
-                    return this.columncoachID;
+                    return this.columncoachName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn memberIDColumn {
+            public global::System.Data.DataColumn memberNameColumn {
                 get {
-                    return this.columnmemberID;
+                    return this.columnmemberName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn competitionIDColumn {
+            public global::System.Data.DataColumn competitionNameColumn {
                 get {
-                    return this.columncompetitionID;
+                    return this.columncompetitionName;
                 }
             }
             
@@ -363,55 +363,55 @@ namespace IOOP_Assignment {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRow this[int index] {
+            public recommendationsRow this[int index] {
                 get {
-                    return ((RecommendationsRow)(this.Rows[index]));
+                    return ((recommendationsRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RecommendationsRowChangeEventHandler RecommendationsRowChanging;
+            public event recommendationsRowChangeEventHandler recommendationsRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RecommendationsRowChangeEventHandler RecommendationsRowChanged;
+            public event recommendationsRowChangeEventHandler recommendationsRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RecommendationsRowChangeEventHandler RecommendationsRowDeleting;
+            public event recommendationsRowChangeEventHandler recommendationsRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event RecommendationsRowChangeEventHandler RecommendationsRowDeleted;
+            public event recommendationsRowChangeEventHandler recommendationsRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddRecommendationsRow(RecommendationsRow row) {
+            public void AddrecommendationsRow(recommendationsRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRow AddRecommendationsRow(int coachID, int memberID, int competitionID) {
-                RecommendationsRow rowRecommendationsRow = ((RecommendationsRow)(this.NewRow()));
+            public recommendationsRow AddrecommendationsRow(int coachName, int memberName, int competitionName) {
+                recommendationsRow rowrecommendationsRow = ((recommendationsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        coachID,
-                        memberID,
-                        competitionID};
-                rowRecommendationsRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowRecommendationsRow);
-                return rowRecommendationsRow;
+                        coachName,
+                        memberName,
+                        competitionName};
+                rowrecommendationsRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowrecommendationsRow);
+                return rowrecommendationsRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRow FindByrecommendationID(int recommendationID) {
-                return ((RecommendationsRow)(this.Rows.Find(new object[] {
+            public recommendationsRow FindByrecommendationID(int recommendationID) {
+                return ((recommendationsRow)(this.Rows.Find(new object[] {
                             recommendationID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                RecommendationsDataTable cln = ((RecommendationsDataTable)(base.Clone()));
+                recommendationsDataTable cln = ((recommendationsDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -419,16 +419,16 @@ namespace IOOP_Assignment {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new RecommendationsDataTable();
+                return new recommendationsDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
                 this.columnrecommendationID = base.Columns["recommendationID"];
-                this.columncoachID = base.Columns["coachID"];
-                this.columnmemberID = base.Columns["memberID"];
-                this.columncompetitionID = base.Columns["competitionID"];
+                this.columncoachName = base.Columns["coachName"];
+                this.columnmemberName = base.Columns["memberName"];
+                this.columncompetitionName = base.Columns["competitionName"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -436,12 +436,12 @@ namespace IOOP_Assignment {
             private void InitClass() {
                 this.columnrecommendationID = new global::System.Data.DataColumn("recommendationID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnrecommendationID);
-                this.columncoachID = new global::System.Data.DataColumn("coachID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncoachID);
-                this.columnmemberID = new global::System.Data.DataColumn("memberID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnmemberID);
-                this.columncompetitionID = new global::System.Data.DataColumn("competitionID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncompetitionID);
+                this.columncoachName = new global::System.Data.DataColumn("coachName", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncoachName);
+                this.columnmemberName = new global::System.Data.DataColumn("memberName", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnmemberName);
+                this.columncompetitionName = new global::System.Data.DataColumn("competitionName", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columncompetitionName);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnrecommendationID}, true));
                 this.columnrecommendationID.AutoIncrement = true;
@@ -450,33 +450,33 @@ namespace IOOP_Assignment {
                 this.columnrecommendationID.AllowDBNull = false;
                 this.columnrecommendationID.ReadOnly = true;
                 this.columnrecommendationID.Unique = true;
-                this.columncompetitionID.AllowDBNull = false;
+                this.columncompetitionName.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRow NewRecommendationsRow() {
-                return ((RecommendationsRow)(this.NewRow()));
+            public recommendationsRow NewrecommendationsRow() {
+                return ((recommendationsRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new RecommendationsRow(builder);
+                return new recommendationsRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(RecommendationsRow);
+                return typeof(recommendationsRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.RecommendationsRowChanged != null)) {
-                    this.RecommendationsRowChanged(this, new RecommendationsRowChangeEvent(((RecommendationsRow)(e.Row)), e.Action));
+                if ((this.recommendationsRowChanged != null)) {
+                    this.recommendationsRowChanged(this, new recommendationsRowChangeEvent(((recommendationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -484,8 +484,8 @@ namespace IOOP_Assignment {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.RecommendationsRowChanging != null)) {
-                    this.RecommendationsRowChanging(this, new RecommendationsRowChangeEvent(((RecommendationsRow)(e.Row)), e.Action));
+                if ((this.recommendationsRowChanging != null)) {
+                    this.recommendationsRowChanging(this, new recommendationsRowChangeEvent(((recommendationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -493,8 +493,8 @@ namespace IOOP_Assignment {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.RecommendationsRowDeleted != null)) {
-                    this.RecommendationsRowDeleted(this, new RecommendationsRowChangeEvent(((RecommendationsRow)(e.Row)), e.Action));
+                if ((this.recommendationsRowDeleted != null)) {
+                    this.recommendationsRowDeleted(this, new recommendationsRowChangeEvent(((recommendationsRow)(e.Row)), e.Action));
                 }
             }
             
@@ -502,14 +502,14 @@ namespace IOOP_Assignment {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.RecommendationsRowDeleting != null)) {
-                    this.RecommendationsRowDeleting(this, new RecommendationsRowChangeEvent(((RecommendationsRow)(e.Row)), e.Action));
+                if ((this.recommendationsRowDeleting != null)) {
+                    this.recommendationsRowDeleting(this, new recommendationsRowChangeEvent(((recommendationsRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveRecommendationsRow(RecommendationsRow row) {
+            public void RemoverecommendationsRow(recommendationsRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -536,7 +536,7 @@ namespace IOOP_Assignment {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "RecommendationsDataTable";
+                attribute2.FixedValue = "recommendationsDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -580,93 +580,93 @@ namespace IOOP_Assignment {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class RecommendationsRow : global::System.Data.DataRow {
+        public partial class recommendationsRow : global::System.Data.DataRow {
             
-            private RecommendationsDataTable tableRecommendations;
+            private recommendationsDataTable tablerecommendations;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal RecommendationsRow(global::System.Data.DataRowBuilder rb) : 
+            internal recommendationsRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableRecommendations = ((RecommendationsDataTable)(this.Table));
+                this.tablerecommendations = ((recommendationsDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public int recommendationID {
                 get {
-                    return ((int)(this[this.tableRecommendations.recommendationIDColumn]));
+                    return ((int)(this[this.tablerecommendations.recommendationIDColumn]));
                 }
                 set {
-                    this[this.tableRecommendations.recommendationIDColumn] = value;
+                    this[this.tablerecommendations.recommendationIDColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int coachID {
+            public int coachName {
                 get {
                     try {
-                        return ((int)(this[this.tableRecommendations.coachIDColumn]));
+                        return ((int)(this[this.tablerecommendations.coachNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'coachID\' in table \'Recommendations\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'coachName\' in table \'recommendations\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRecommendations.coachIDColumn] = value;
+                    this[this.tablerecommendations.coachNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int memberID {
+            public int memberName {
                 get {
                     try {
-                        return ((int)(this[this.tableRecommendations.memberIDColumn]));
+                        return ((int)(this[this.tablerecommendations.memberNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'memberID\' in table \'Recommendations\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'memberName\' in table \'recommendations\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRecommendations.memberIDColumn] = value;
+                    this[this.tablerecommendations.memberNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int competitionID {
+            public int competitionName {
                 get {
-                    return ((int)(this[this.tableRecommendations.competitionIDColumn]));
+                    return ((int)(this[this.tablerecommendations.competitionNameColumn]));
                 }
                 set {
-                    this[this.tableRecommendations.competitionIDColumn] = value;
+                    this[this.tablerecommendations.competitionNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IscoachIDNull() {
-                return this.IsNull(this.tableRecommendations.coachIDColumn);
+            public bool IscoachNameNull() {
+                return this.IsNull(this.tablerecommendations.coachNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetcoachIDNull() {
-                this[this.tableRecommendations.coachIDColumn] = global::System.Convert.DBNull;
+            public void SetcoachNameNull() {
+                this[this.tablerecommendations.coachNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsmemberIDNull() {
-                return this.IsNull(this.tableRecommendations.memberIDColumn);
+            public bool IsmemberNameNull() {
+                return this.IsNull(this.tablerecommendations.memberNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetmemberIDNull() {
-                this[this.tableRecommendations.memberIDColumn] = global::System.Convert.DBNull;
+            public void SetmemberNameNull() {
+                this[this.tablerecommendations.memberNameColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -674,22 +674,22 @@ namespace IOOP_Assignment {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class RecommendationsRowChangeEvent : global::System.EventArgs {
+        public class recommendationsRowChangeEvent : global::System.EventArgs {
             
-            private RecommendationsRow eventRow;
+            private recommendationsRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRowChangeEvent(RecommendationsRow row, global::System.Data.DataRowAction action) {
+            public recommendationsRowChangeEvent(recommendationsRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public RecommendationsRow Row {
+            public recommendationsRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -717,7 +717,7 @@ namespace IOOP_Assignment.ioopDBDataSetTableAdapters {
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class RecommendationsTableAdapter : global::System.ComponentModel.Component {
+    public partial class recommendationsTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -731,7 +731,7 @@ namespace IOOP_Assignment.ioopDBDataSetTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public RecommendationsTableAdapter() {
+        public recommendationsTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -828,11 +828,11 @@ namespace IOOP_Assignment.ioopDBDataSetTableAdapters {
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "Recommendations";
+            tableMapping.DataSetTable = "recommendations";
             tableMapping.ColumnMappings.Add("recommendationID", "recommendationID");
-            tableMapping.ColumnMappings.Add("coachID", "coachID");
-            tableMapping.ColumnMappings.Add("memberID", "memberID");
-            tableMapping.ColumnMappings.Add("competitionID", "competitionID");
+            tableMapping.ColumnMappings.Add("coachID", "coachName");
+            tableMapping.ColumnMappings.Add("memberID", "memberName");
+            tableMapping.ColumnMappings.Add("competitionID", "competitionName");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
@@ -893,7 +893,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(ioopDBDataSet.RecommendationsDataTable dataTable) {
+        public virtual int Fill(ioopDBDataSet.recommendationsDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -906,9 +906,9 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual ioopDBDataSet.RecommendationsDataTable GetData() {
+        public virtual ioopDBDataSet.recommendationsDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            ioopDBDataSet.RecommendationsDataTable dataTable = new ioopDBDataSet.RecommendationsDataTable();
+            ioopDBDataSet.recommendationsDataTable dataTable = new ioopDBDataSet.recommendationsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -916,7 +916,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(ioopDBDataSet.RecommendationsDataTable dataTable) {
+        public virtual int Update(ioopDBDataSet.recommendationsDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
@@ -924,7 +924,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update(ioopDBDataSet dataSet) {
-            return this.Adapter.Update(dataSet, "Recommendations");
+            return this.Adapter.Update(dataSet, "recommendations");
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1089,7 +1089,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         
         private UpdateOrderOption _updateOrder;
         
-        private RecommendationsTableAdapter _recommendationsTableAdapter;
+        private recommendationsTableAdapter _recommendationsTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1111,7 +1111,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
             "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
             "a", "System.Drawing.Design.UITypeEditor")]
-        public RecommendationsTableAdapter RecommendationsTableAdapter {
+        public recommendationsTableAdapter recommendationsTableAdapter {
             get {
                 return this._recommendationsTableAdapter;
             }
@@ -1171,7 +1171,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         private int UpdateUpdatedRows(ioopDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._recommendationsTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.Recommendations.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                global::System.Data.DataRow[] updatedRows = dataSet.recommendations.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
@@ -1190,7 +1190,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         private int UpdateInsertedRows(ioopDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._recommendationsTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.Recommendations.Select(null, null, global::System.Data.DataViewRowState.Added);
+                global::System.Data.DataRow[] addedRows = dataSet.recommendations.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._recommendationsTableAdapter.Update(addedRows));
@@ -1208,7 +1208,7 @@ SELECT recommendationID, coachID, memberID, competitionID FROM Recommendations W
         private int UpdateDeletedRows(ioopDBDataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._recommendationsTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.Recommendations.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                global::System.Data.DataRow[] deletedRows = dataSet.recommendations.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._recommendationsTableAdapter.Update(deletedRows));

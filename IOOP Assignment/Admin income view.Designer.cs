@@ -33,14 +33,14 @@
             this.DataGridViewadmincome = new System.Windows.Forms.DataGridView();
             this.Btn_homepage001 = new System.Windows.Forms.Button();
             this.Btn_exit96 = new System.Windows.Forms.Button();
-            this.ioopDBDataSet5 = new IOOP_Assignment.ioopDBDataSet5();
+            
             this.coachesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.coachesTableAdapter = new IOOP_Assignment.ioopDBDataSet5TableAdapters.coachesTableAdapter();
+            
             this.coachIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.incomeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewadmincome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet5)).BeginInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,17 +100,16 @@
             // 
             // ioopDBDataSet5
             // 
-            this.ioopDBDataSet5.DataSetName = "ioopDBDataSet5";
-            this.ioopDBDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // coachesBindingSource
             // 
             this.coachesBindingSource.DataMember = "coaches";
-            this.coachesBindingSource.DataSource = this.ioopDBDataSet5;
+            
             // 
             // coachesTableAdapter
             // 
-            this.coachesTableAdapter.ClearBeforeFill = true;
+            
             // 
             // coachIDDataGridViewTextBoxColumn
             // 
@@ -150,7 +149,7 @@
             this.Text = "Admin_income_view";
             this.Load += new System.EventHandler(this.Admin_income_view_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewadmincome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet5)).EndInit();
+            
             ((System.ComponentModel.ISupportInitialize)(this.coachesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -163,9 +162,7 @@
         private System.Windows.Forms.DataGridView DataGridViewadmincome;
         private System.Windows.Forms.Button Btn_homepage001;
         private System.Windows.Forms.Button Btn_exit96;
-        private ioopDBDataSet5 ioopDBDataSet5;
         private System.Windows.Forms.BindingSource coachesBindingSource;
-        private ioopDBDataSet5TableAdapters.coachesTableAdapter coachesTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn coachIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn incomeDataGridViewTextBoxColumn;

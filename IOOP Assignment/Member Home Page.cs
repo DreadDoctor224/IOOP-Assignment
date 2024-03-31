@@ -71,8 +71,11 @@ namespace IOOP_Assignment
 
         private void button6_Click(object sender, EventArgs e)
         {
-            Member_enroll_in_training form = new Member_enroll_in_training();
-            form.Show();
+            
+            Member member = new Member();
+          
+            member_enrollment enroll = new member_enrollment(member);
+            enroll.Show();
         }
     }
 }

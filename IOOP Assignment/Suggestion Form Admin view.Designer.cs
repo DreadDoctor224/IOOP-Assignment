@@ -37,14 +37,13 @@
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ioopDBDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ioopDBDataSet1 = new IOOP_Assignment.ioopDBDataSet1();
             this.lbl_suggest = new System.Windows.Forms.Label();
             this.Btn_hmpage05 = new System.Windows.Forms.Button();
             this.Btn_detailsug = new System.Windows.Forms.Button();
             this.Btn_exi8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).BeginInit();
+            
             this.SuspendLayout();
             // 
             // data_grid_suggestions
@@ -111,13 +110,12 @@
             // 
             // ioopDBDataSet1BindingSource
             // 
-            this.ioopDBDataSet1BindingSource.DataSource = this.ioopDBDataSet1;
+           
             this.ioopDBDataSet1BindingSource.Position = 0;
             // 
             // ioopDBDataSet1
             // 
-            this.ioopDBDataSet1.DataSetName = "ioopDBDataSet1";
-            this.ioopDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            
             // 
             // lbl_suggest
             // 
@@ -185,7 +183,7 @@
             this.Text = "Suggestion_Form";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_suggestions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ioopDBDataSet1)).EndInit();
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,6 +203,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.BindingSource ioopDBDataSet1BindingSource;
-        private ioopDBDataSet1 ioopDBDataSet1;
+        
     }
 }

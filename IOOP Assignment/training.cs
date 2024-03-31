@@ -9,16 +9,14 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace IOOP_Assignment
 {
-    public class Training
+    public class training
     {
 
-        public int TrainingID { get; set; }
-        public int CoachID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public string Level { get; set; }
-
-        public string Schedule { get; set; }
+        public int trainingID { get; set; }
+        public string name { get; set; }
+        public string description { get; set; }
+        public string level { get; set; }
+        public string schedule { get; set; }
 
 
 
