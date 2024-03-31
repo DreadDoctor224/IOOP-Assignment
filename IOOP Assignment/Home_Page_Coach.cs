@@ -59,5 +59,10 @@ namespace IOOP_Assignment
             updateProfile form = new updateProfile();
             form.Show();
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

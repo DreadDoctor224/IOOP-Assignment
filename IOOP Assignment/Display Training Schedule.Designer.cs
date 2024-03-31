@@ -44,12 +44,12 @@
             this.Lesson,
             this.Date,
             this.Time});
-            this.data_grid_training.Location = new System.Drawing.Point(346, 226);
-            this.data_grid_training.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.data_grid_training.Location = new System.Drawing.Point(231, 147);
             this.data_grid_training.Name = "data_grid_training";
             this.data_grid_training.RowHeadersWidth = 62;
-            this.data_grid_training.Size = new System.Drawing.Size(515, 309);
+            this.data_grid_training.Size = new System.Drawing.Size(343, 201);
             this.data_grid_training.TabIndex = 0;
+            this.data_grid_training.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.data_grid_training_CellContentClick);
             // 
             // Lesson
             // 
@@ -76,10 +76,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(398, 111);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(265, 72);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(372, 47);
+            this.label1.Size = new System.Drawing.Size(249, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "Training Schedule";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -89,9 +88,10 @@
             this.btn_exit.BackColor = System.Drawing.Color.Teal;
             this.btn_exit.Font = new System.Drawing.Font("Franklin Gothic Book", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_exit.ForeColor = System.Drawing.Color.White;
-            this.btn_exit.Location = new System.Drawing.Point(519, 583);
+            this.btn_exit.Location = new System.Drawing.Point(346, 379);
+            this.btn_exit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_exit.Name = "btn_exit";
-            this.btn_exit.Size = new System.Drawing.Size(159, 62);
+            this.btn_exit.Size = new System.Drawing.Size(106, 40);
             this.btn_exit.TabIndex = 4;
             this.btn_exit.Text = "Exit";
             this.btn_exit.UseVisualStyleBackColor = false;
@@ -99,14 +99,13 @@
             // 
             // member_display_training_schedule
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_exit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.data_grid_training);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "member_display_training_schedule";
             this.Text = "Training schedule ";
             ((System.ComponentModel.ISupportInitialize)(this.data_grid_training)).EndInit();

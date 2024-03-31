@@ -22,9 +22,15 @@ namespace IOOP_Assignment
 
         }
 
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void data_grid_training_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

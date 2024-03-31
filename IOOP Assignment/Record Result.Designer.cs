@@ -178,6 +178,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "Manager_view_results";
             this.Text = "Form9";
+            this.Load += new System.EventHandler(this.Manager_view_results_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -46,5 +46,10 @@ namespace IOOP_Assignment
         {
             showResults();
         }
+
+        private void Manager_view_results_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
